@@ -1,0 +1,1051 @@
+# Logfile created on 2019-11-20 17:29:58 +0900 by logger.rb/61378
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-20 17:29:58 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [67170b99] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as ec2-user@18.182.147.85
+ DEBUG [67170b99] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [67170b99] Finished in 0.328 seconds with exit status 0 (successful).
+  INFO [182d3d23] Running /usr/bin/env mkdir -p /tmp as ec2-user@18.182.147.85
+ DEBUG [182d3d23] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [182d3d23] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mercari-production-shinagawajunki.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mercari-production-shinagawajunki.sh 100.0%
+  INFO [1b797cde] Running /usr/bin/env chmod 700 /tmp/git-ssh-mercari-production-shinagawajunki.sh as ec2-user@18.182.147.85
+ DEBUG [1b797cde] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-mercari-production-shinagawajunki.sh )
+  INFO [1b797cde] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [8dcc25e4] Running /usr/bin/env git ls-remote git@github.com:junki789/freemarket_sample_63a_nagoya.git HEAD as ec2-user@18.182.147.85
+ DEBUG [8dcc25e4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mercari-production-shinagawajunki.sh" ; /usr/bin/env git ls-remote git@github.com:junki789/freemarket_sample_63a_nagoya.git HEAD )
+ DEBUG [8dcc25e4] 	Warning: Permanently added the RSA host key for IP address '52.192.72.89' to the list of known hosts.
+ DEBUG [8dcc25e4] 	2e4f2d3394179f97ff6b97954bcd301ac3204ebb	HEAD
+  INFO [8dcc25e4] Finished in 2.079 seconds with exit status 0 (successful).
+  INFO [1716f7df] Running /usr/bin/env mkdir -p /var/www/mercari/shared /var/www/mercari/releases as ec2-user@18.182.147.85
+ DEBUG [1716f7df] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/mercari/shared /var/www/mercari/releases )
+  INFO [1716f7df] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO [545efc2c] Running /usr/bin/env mkdir -p /var/www/mercari/shared/log /var/www/mercari/shared/tmp/pids /var/www/mercari/shared/tmp/cache /var/www/mercari/shared/tmp/sockets /var/www/mercari/shared/vendor/bundle /var/www/mercari/shared/public/system /var/www/mercari/shared/public/uploads /var/www/mercari/shared/public/assets as ec2-user@18.182.147.85
+ DEBUG [545efc2c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/mercari/shared/log /var/www/mercari/shared/tmp/pids /var/www/mercari/shared/tmp/cache /var/www/mercari/shared/tmp/sockets /var/www/mercari/shared/vendor/bundle /var/www/mercari/shared/public/system /var/www/mercari/shared/public/uploads /var/www/mercari/shared/public/assets )
+  INFO [545efc2c] Finished in 0.137 seconds with exit status 0 (successful).
+ DEBUG [7fae6c89] Running [ -f /var/www/mercari/current/REVISION ] as ec2-user@18.182.147.85
+ DEBUG [7fae6c89] Command: [ -f /var/www/mercari/current/REVISION ]
+ DEBUG [7fae6c89] Finished in 0.120 seconds with exit status 1 (failed).
+ DEBUG [a7e72aca] Running [ -f /var/www/mercari/repo/HEAD ] as ec2-user@18.182.147.85
+ DEBUG [a7e72aca] Command: [ -f /var/www/mercari/repo/HEAD ]
+ DEBUG [a7e72aca] Finished in 0.162 seconds with exit status 1 (failed).
+ DEBUG [cf1ed579] Running if test ! -d /var/www/mercari; then echo "Directory does not exist '/var/www/mercari'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [cf1ed579] Command: if test ! -d /var/www/mercari; then echo "Directory does not exist '/var/www/mercari'" 1>&2; false; fi
+ DEBUG [cf1ed579] Finished in 0.141 seconds with exit status 0 (successful).
+  INFO [5ff6a1a6] Running /usr/bin/env git clone --mirror git@github.com:junki789/freemarket_sample_63a_nagoya.git /var/www/mercari/repo as ec2-user@18.182.147.85
+ DEBUG [5ff6a1a6] Command: cd /var/www/mercari && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mercari-production-shinagawajunki.sh" ; /usr/bin/env git clone --mirror git@github.com:junki789/freemarket_sample_63a_nagoya.git /var/www/mercari/repo )
+ DEBUG [5ff6a1a6] 	Cloning into bare repository '/var/www/mercari/repo'...
+  INFO [5ff6a1a6] Finished in 3.579 seconds with exit status 0 (successful).
+ DEBUG [986cf1a8] Running if test ! -d /var/www/mercari/repo; then echo "Directory does not exist '/var/www/mercari/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [986cf1a8] Command: if test ! -d /var/www/mercari/repo; then echo "Directory does not exist '/var/www/mercari/repo'" 1>&2; false; fi
+ DEBUG [986cf1a8] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [4508e4f1] Running /usr/bin/env git remote set-url origin git@github.com:junki789/freemarket_sample_63a_nagoya.git as ec2-user@18.182.147.85
+ DEBUG [4508e4f1] Command: cd /var/www/mercari/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mercari-production-shinagawajunki.sh" ; /usr/bin/env git remote set-url origin git@github.com:junki789/freemarket_sample_63a_nagoya.git )
+  INFO [4508e4f1] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [6af05b95] Running /usr/bin/env git remote update --prune as ec2-user@18.182.147.85
+ DEBUG [6af05b95] Command: cd /var/www/mercari/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mercari-production-shinagawajunki.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [6af05b95] 	Fetching origin
+  INFO [6af05b95] Finished in 2.002 seconds with exit status 0 (successful).
+ DEBUG [97284e26] Running if test ! -d /var/www/mercari/repo; then echo "Directory does not exist '/var/www/mercari/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [97284e26] Command: if test ! -d /var/www/mercari/repo; then echo "Directory does not exist '/var/www/mercari/repo'" 1>&2; false; fi
+ DEBUG [97284e26] Finished in 0.114 seconds with exit status 0 (successful).
+  INFO [8b5bf9cb] Running /usr/bin/env mkdir -p /var/www/mercari/releases/20191120083002 as ec2-user@18.182.147.85
+ DEBUG [8b5bf9cb] Command: cd /var/www/mercari/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mercari-production-shinagawajunki.sh" ; /usr/bin/env mkdir -p /var/www/mercari/releases/20191120083002 )
+  INFO [8b5bf9cb] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [87a139b5] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/mercari/releases/20191120083002 as ec2-user@18.182.147.85
+ DEBUG [87a139b5] Command: cd /var/www/mercari/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mercari-production-shinagawajunki.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/mercari/releases/20191120083002 )
+  INFO [87a139b5] Finished in 0.116 seconds with exit status 0 (successful).
+ DEBUG [f712eca1] Running if test ! -d /var/www/mercari/repo; then echo "Directory does not exist '/var/www/mercari/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [f712eca1] Command: if test ! -d /var/www/mercari/repo; then echo "Directory does not exist '/var/www/mercari/repo'" 1>&2; false; fi
+ DEBUG [f712eca1] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [b8271912] Running /usr/bin/env git rev-list --max-count=1 master as ec2-user@18.182.147.85
+ DEBUG [b8271912] Command: cd /var/www/mercari/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mercari-production-shinagawajunki.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [b8271912] 	2e4f2d3394179f97ff6b97954bcd301ac3204ebb
+ DEBUG [b8271912] Finished in 0.120 seconds with exit status 0 (successful).
+ DEBUG [7c680503] Running if test ! -d /var/www/mercari/releases/20191120083002; then echo "Directory does not exist '/var/www/mercari/releases/20191120083002'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [7c680503] Command: if test ! -d /var/www/mercari/releases/20191120083002; then echo "Directory does not exist '/var/www/mercari/releases/20191120083002'" 1>&2; false; fi
+ DEBUG [7c680503] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [83c8f42b] Running /usr/bin/env echo "2e4f2d3394179f97ff6b97954bcd301ac3204ebb" > REVISION as ec2-user@18.182.147.85
+ DEBUG [83c8f42b] Command: cd /var/www/mercari/releases/20191120083002 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env echo "2e4f2d3394179f97ff6b97954bcd301ac3204ebb" > REVISION )
+  INFO [83c8f42b] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [529ae07c] Running /usr/bin/env mkdir -p /var/www/mercari/releases/20191120083002 /var/www/mercari/releases/20191120083002/tmp /var/www/mercari/releases/20191120083002/vendor /var/www/mercari/releases/20191120083002/public as ec2-user@18.182.147.85
+ DEBUG [529ae07c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/mercari/releases/20191120083002 /var/www/mercari/releases/20191120083002/tmp /var/www/mercari/releases/20191120083002/vendor /var/www/mercari/releases/20191120083002/public )
+  INFO [529ae07c] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [deaba5d2] Running [ -L /var/www/mercari/releases/20191120083002/log ] as ec2-user@18.182.147.85
+ DEBUG [deaba5d2] Command: [ -L /var/www/mercari/releases/20191120083002/log ]
+ DEBUG [deaba5d2] Finished in 0.101 seconds with exit status 1 (failed).
+ DEBUG [8138b215] Running [ -d /var/www/mercari/releases/20191120083002/log ] as ec2-user@18.182.147.85
+ DEBUG [8138b215] Command: [ -d /var/www/mercari/releases/20191120083002/log ]
+ DEBUG [8138b215] Finished in 0.216 seconds with exit status 1 (failed).
+  INFO [8ed52dd0] Running /usr/bin/env ln -s /var/www/mercari/shared/log /var/www/mercari/releases/20191120083002/log as ec2-user@18.182.147.85
+ DEBUG [8ed52dd0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/mercari/shared/log /var/www/mercari/releases/20191120083002/log )
+  INFO [8ed52dd0] Finished in 0.062 seconds with exit status 0 (successful).
+ DEBUG [4caa74b3] Running [ -L /var/www/mercari/releases/20191120083002/tmp/pids ] as ec2-user@18.182.147.85
+ DEBUG [4caa74b3] Command: [ -L /var/www/mercari/releases/20191120083002/tmp/pids ]
+ DEBUG [4caa74b3] Finished in 0.100 seconds with exit status 1 (failed).
+ DEBUG [75453209] Running [ -d /var/www/mercari/releases/20191120083002/tmp/pids ] as ec2-user@18.182.147.85
+ DEBUG [75453209] Command: [ -d /var/www/mercari/releases/20191120083002/tmp/pids ]
+ DEBUG [75453209] Finished in 0.103 seconds with exit status 1 (failed).
+  INFO [eef55b01] Running /usr/bin/env ln -s /var/www/mercari/shared/tmp/pids /var/www/mercari/releases/20191120083002/tmp/pids as ec2-user@18.182.147.85
+ DEBUG [eef55b01] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/mercari/shared/tmp/pids /var/www/mercari/releases/20191120083002/tmp/pids )
+  INFO [eef55b01] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [4f7eef20] Running [ -L /var/www/mercari/releases/20191120083002/tmp/cache ] as ec2-user@18.182.147.85
+ DEBUG [4f7eef20] Command: [ -L /var/www/mercari/releases/20191120083002/tmp/cache ]
+ DEBUG [4f7eef20] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [ed3e852d] Running [ -d /var/www/mercari/releases/20191120083002/tmp/cache ] as ec2-user@18.182.147.85
+ DEBUG [ed3e852d] Command: [ -d /var/www/mercari/releases/20191120083002/tmp/cache ]
+ DEBUG [ed3e852d] Finished in 0.105 seconds with exit status 1 (failed).
+  INFO [506b632d] Running /usr/bin/env ln -s /var/www/mercari/shared/tmp/cache /var/www/mercari/releases/20191120083002/tmp/cache as ec2-user@18.182.147.85
+ DEBUG [506b632d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/mercari/shared/tmp/cache /var/www/mercari/releases/20191120083002/tmp/cache )
+  INFO [506b632d] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [f669aa5e] Running [ -L /var/www/mercari/releases/20191120083002/tmp/sockets ] as ec2-user@18.182.147.85
+ DEBUG [f669aa5e] Command: [ -L /var/www/mercari/releases/20191120083002/tmp/sockets ]
+ DEBUG [f669aa5e] Finished in 0.109 seconds with exit status 1 (failed).
+ DEBUG [c1ddcce2] Running [ -d /var/www/mercari/releases/20191120083002/tmp/sockets ] as ec2-user@18.182.147.85
+ DEBUG [c1ddcce2] Command: [ -d /var/www/mercari/releases/20191120083002/tmp/sockets ]
+ DEBUG [c1ddcce2] Finished in 0.136 seconds with exit status 1 (failed).
+  INFO [9f022955] Running /usr/bin/env ln -s /var/www/mercari/shared/tmp/sockets /var/www/mercari/releases/20191120083002/tmp/sockets as ec2-user@18.182.147.85
+ DEBUG [9f022955] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/mercari/shared/tmp/sockets /var/www/mercari/releases/20191120083002/tmp/sockets )
+  INFO [9f022955] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [9eb17233] Running [ -L /var/www/mercari/releases/20191120083002/vendor/bundle ] as ec2-user@18.182.147.85
+ DEBUG [9eb17233] Command: [ -L /var/www/mercari/releases/20191120083002/vendor/bundle ]
+ DEBUG [9eb17233] Finished in 0.100 seconds with exit status 1 (failed).
+ DEBUG [5d2081ec] Running [ -d /var/www/mercari/releases/20191120083002/vendor/bundle ] as ec2-user@18.182.147.85
+ DEBUG [5d2081ec] Command: [ -d /var/www/mercari/releases/20191120083002/vendor/bundle ]
+ DEBUG [5d2081ec] Finished in 0.102 seconds with exit status 1 (failed).
+  INFO [85ab4ea8] Running /usr/bin/env ln -s /var/www/mercari/shared/vendor/bundle /var/www/mercari/releases/20191120083002/vendor/bundle as ec2-user@18.182.147.85
+ DEBUG [85ab4ea8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/mercari/shared/vendor/bundle /var/www/mercari/releases/20191120083002/vendor/bundle )
+  INFO [85ab4ea8] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [f558a7f3] Running [ -L /var/www/mercari/releases/20191120083002/public/system ] as ec2-user@18.182.147.85
+ DEBUG [f558a7f3] Command: [ -L /var/www/mercari/releases/20191120083002/public/system ]
+ DEBUG [f558a7f3] Finished in 0.096 seconds with exit status 1 (failed).
+ DEBUG [38e33e24] Running [ -d /var/www/mercari/releases/20191120083002/public/system ] as ec2-user@18.182.147.85
+ DEBUG [38e33e24] Command: [ -d /var/www/mercari/releases/20191120083002/public/system ]
+ DEBUG [38e33e24] Finished in 0.093 seconds with exit status 1 (failed).
+  INFO [3d960798] Running /usr/bin/env ln -s /var/www/mercari/shared/public/system /var/www/mercari/releases/20191120083002/public/system as ec2-user@18.182.147.85
+ DEBUG [3d960798] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/mercari/shared/public/system /var/www/mercari/releases/20191120083002/public/system )
+  INFO [3d960798] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [1a0a8439] Running [ -L /var/www/mercari/releases/20191120083002/public/uploads ] as ec2-user@18.182.147.85
+ DEBUG [1a0a8439] Command: [ -L /var/www/mercari/releases/20191120083002/public/uploads ]
+ DEBUG [1a0a8439] Finished in 0.092 seconds with exit status 1 (failed).
+ DEBUG [1b665730] Running [ -d /var/www/mercari/releases/20191120083002/public/uploads ] as ec2-user@18.182.147.85
+ DEBUG [1b665730] Command: [ -d /var/www/mercari/releases/20191120083002/public/uploads ]
+ DEBUG [1b665730] Finished in 0.092 seconds with exit status 1 (failed).
+  INFO [d9208c8e] Running /usr/bin/env ln -s /var/www/mercari/shared/public/uploads /var/www/mercari/releases/20191120083002/public/uploads as ec2-user@18.182.147.85
+ DEBUG [d9208c8e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/mercari/shared/public/uploads /var/www/mercari/releases/20191120083002/public/uploads )
+  INFO [d9208c8e] Finished in 0.094 seconds with exit status 0 (successful).
+ DEBUG [dee307ff] Running [ -L /var/www/mercari/releases/20191120083002/public/assets ] as ec2-user@18.182.147.85
+ DEBUG [dee307ff] Command: [ -L /var/www/mercari/releases/20191120083002/public/assets ]
+ DEBUG [dee307ff] Finished in 0.096 seconds with exit status 1 (failed).
+ DEBUG [e39ab77a] Running [ -d /var/www/mercari/releases/20191120083002/public/assets ] as ec2-user@18.182.147.85
+ DEBUG [e39ab77a] Command: [ -d /var/www/mercari/releases/20191120083002/public/assets ]
+ DEBUG [e39ab77a] Finished in 0.102 seconds with exit status 1 (failed).
+  INFO [7e4b46d8] Running /usr/bin/env ln -s /var/www/mercari/shared/public/assets /var/www/mercari/releases/20191120083002/public/assets as ec2-user@18.182.147.85
+ DEBUG [7e4b46d8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/mercari/shared/public/assets /var/www/mercari/releases/20191120083002/public/assets )
+  INFO [7e4b46d8] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [eca2800b] Running if test ! -d /var/www/mercari/releases/20191120083002; then echo "Directory does not exist '/var/www/mercari/releases/20191120083002'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [eca2800b] Command: if test ! -d /var/www/mercari/releases/20191120083002; then echo "Directory does not exist '/var/www/mercari/releases/20191120083002'" 1>&2; false; fi
+ DEBUG [eca2800b] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [444ed2d2] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/mercari/shared/bundle as ec2-user@18.182.147.85
+ DEBUG [444ed2d2] Command: cd /var/www/mercari/releases/20191120083002 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/mercari/shared/bundle )
+ DEBUG [444ed2d2] 	Could not locate Gemfile
+ DEBUG [444ed2d2] Finished in 0.353 seconds with exit status 10 (failed).
+  INFO [fd31d5fa] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/mercari/shared/bundle --jobs 4 --without development test --deployment --quiet as ec2-user@18.182.147.85
+ DEBUG [fd31d5fa] Command: cd /var/www/mercari/releases/20191120083002 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/mercari/shared/bundle --jobs 4 --without development test --deployment --quiet )
+ DEBUG [fd31d5fa] 	Could not locate Gemfile
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-20 19:10:03 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f20bbc4e] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as ec2-user@18.182.147.85
+ DEBUG [f20bbc4e] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [f20bbc4e] Finished in 0.436 seconds with exit status 0 (successful).
+  INFO [a46570cb] Running /usr/bin/env mkdir -p /tmp as ec2-user@18.182.147.85
+ DEBUG [a46570cb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [a46570cb] Finished in 0.108 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh 0.0%
+  INFO Uploading /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh 100.0%
+  INFO [1c4ead31] Running /usr/bin/env chmod 700 /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh as ec2-user@18.182.147.85
+ DEBUG [1c4ead31] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh )
+  INFO [1c4ead31] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [622cc394] Running /usr/bin/env git ls-remote git@github.com:junki789/freemarket_sample_63a_nagoya.git HEAD as ec2-user@18.182.147.85
+ DEBUG [622cc394] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git ls-remote git@github.com:junki789/freemarket_sample_63a_nagoya.git HEAD )
+ DEBUG [622cc394] 	Warning: Permanently added the RSA host key for IP address '52.69.186.44' to the list of known hosts.
+ DEBUG [622cc394] 	30589ae3f6e15882ed788586d05c8d5f84becfc9	HEAD
+  INFO [622cc394] Finished in 1.855 seconds with exit status 0 (successful).
+  INFO [6714358a] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared /var/www/freemarket_sample_63a_nagoya/releases as ec2-user@18.182.147.85
+ DEBUG [6714358a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared /var/www/freemarket_sample_63a_nagoya/releases )
+  INFO [6714358a] Finished in 0.110 seconds with exit status 0 (successful).
+  INFO [327544c0] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/shared/public/assets as ec2-user@18.182.147.85
+ DEBUG [327544c0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/shared/public/assets )
+  INFO [327544c0] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [b9dda1d9] Running [ -f /var/www/freemarket_sample_63a_nagoya/current/REVISION ] as ec2-user@18.182.147.85
+ DEBUG [b9dda1d9] Command: [ -f /var/www/freemarket_sample_63a_nagoya/current/REVISION ]
+ DEBUG [b9dda1d9] Finished in 0.097 seconds with exit status 1 (failed).
+ DEBUG [72e05347] Running [ -f /var/www/freemarket_sample_63a_nagoya/repo/HEAD ] as ec2-user@18.182.147.85
+ DEBUG [72e05347] Command: [ -f /var/www/freemarket_sample_63a_nagoya/repo/HEAD ]
+ DEBUG [72e05347] Finished in 0.101 seconds with exit status 1 (failed).
+ DEBUG [433f16d2] Running if test ! -d /var/www/freemarket_sample_63a_nagoya; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [433f16d2] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya'" 1>&2; false; fi
+ DEBUG [433f16d2] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [af4c2af4] Running /usr/bin/env git clone --mirror git@github.com:junki789/freemarket_sample_63a_nagoya.git /var/www/freemarket_sample_63a_nagoya/repo as ec2-user@18.182.147.85
+ DEBUG [af4c2af4] Command: cd /var/www/freemarket_sample_63a_nagoya && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git clone --mirror git@github.com:junki789/freemarket_sample_63a_nagoya.git /var/www/freemarket_sample_63a_nagoya/repo )
+ DEBUG [af4c2af4] 	Cloning into bare repository '/var/www/freemarket_sample_63a_nagoya/repo'...
+  INFO [af4c2af4] Finished in 2.242 seconds with exit status 0 (successful).
+ DEBUG [d2d789af] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [d2d789af] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [d2d789af] Finished in 0.105 seconds with exit status 0 (successful).
+  INFO [84738ff1] Running /usr/bin/env git remote set-url origin git@github.com:junki789/freemarket_sample_63a_nagoya.git as ec2-user@18.182.147.85
+ DEBUG [84738ff1] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git remote set-url origin git@github.com:junki789/freemarket_sample_63a_nagoya.git )
+  INFO [84738ff1] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [2d46e102] Running /usr/bin/env git remote update --prune as ec2-user@18.182.147.85
+ DEBUG [2d46e102] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [2d46e102] 	Fetching origin
+  INFO [2d46e102] Finished in 2.041 seconds with exit status 0 (successful).
+ DEBUG [e6f26b0c] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [e6f26b0c] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [e6f26b0c] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [e33069ff] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120101006 as ec2-user@18.182.147.85
+ DEBUG [e33069ff] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120101006 )
+  INFO [e33069ff] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [7fcf1c74] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/freemarket_sample_63a_nagoya/releases/20191120101006 as ec2-user@18.182.147.85
+ DEBUG [7fcf1c74] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/freemarket_sample_63a_nagoya/releases/20191120101006 )
+  INFO [7fcf1c74] Finished in 0.108 seconds with exit status 0 (successful).
+ DEBUG [c1006729] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [c1006729] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [c1006729] Finished in 0.327 seconds with exit status 0 (successful).
+ DEBUG [f2f32111] Running /usr/bin/env git rev-list --max-count=1 master as ec2-user@18.182.147.85
+ DEBUG [f2f32111] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [f2f32111] 	30589ae3f6e15882ed788586d05c8d5f84becfc9
+ DEBUG [f2f32111] Finished in 0.110 seconds with exit status 0 (successful).
+ DEBUG [1585ef01] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120101006'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [1585ef01] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120101006'" 1>&2; false; fi
+ DEBUG [1585ef01] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [836b3baa] Running /usr/bin/env echo "30589ae3f6e15882ed788586d05c8d5f84becfc9" > REVISION as ec2-user@18.182.147.85
+ DEBUG [836b3baa] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120101006 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env echo "30589ae3f6e15882ed788586d05c8d5f84becfc9" > REVISION )
+  INFO [836b3baa] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [c1a4050b] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120101006 /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/vendor /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public as ec2-user@18.182.147.85
+ DEBUG [c1a4050b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120101006 /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/vendor /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public )
+  INFO [c1a4050b] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [7e7e0a36] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/log ] as ec2-user@18.182.147.85
+ DEBUG [7e7e0a36] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/log ]
+ DEBUG [7e7e0a36] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [5019fbca] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/log ] as ec2-user@18.182.147.85
+ DEBUG [5019fbca] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/log ]
+ DEBUG [5019fbca] Finished in 0.110 seconds with exit status 1 (failed).
+  INFO [281b9c24] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/log as ec2-user@18.182.147.85
+ DEBUG [281b9c24] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/log )
+  INFO [281b9c24] Finished in 0.105 seconds with exit status 0 (successful).
+ DEBUG [df48ed6e] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/pids ] as ec2-user@18.182.147.85
+ DEBUG [df48ed6e] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/pids ]
+ DEBUG [df48ed6e] Finished in 0.108 seconds with exit status 1 (failed).
+ DEBUG [37a4df3f] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/pids ] as ec2-user@18.182.147.85
+ DEBUG [37a4df3f] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/pids ]
+ DEBUG [37a4df3f] Finished in 0.104 seconds with exit status 1 (failed).
+  INFO [71a5a272] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/pids as ec2-user@18.182.147.85
+ DEBUG [71a5a272] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/pids )
+  INFO [71a5a272] Finished in 0.105 seconds with exit status 0 (successful).
+ DEBUG [cd891810] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/cache ] as ec2-user@18.182.147.85
+ DEBUG [cd891810] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/cache ]
+ DEBUG [cd891810] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [c5c3808a] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/cache ] as ec2-user@18.182.147.85
+ DEBUG [c5c3808a] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/cache ]
+ DEBUG [c5c3808a] Finished in 0.103 seconds with exit status 1 (failed).
+  INFO [2c2f0bfe] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/cache as ec2-user@18.182.147.85
+ DEBUG [2c2f0bfe] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/cache )
+  INFO [2c2f0bfe] Finished in 0.105 seconds with exit status 0 (successful).
+ DEBUG [d05cb136] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/sockets ] as ec2-user@18.182.147.85
+ DEBUG [d05cb136] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/sockets ]
+ DEBUG [d05cb136] Finished in 0.106 seconds with exit status 1 (failed).
+ DEBUG [3641588c] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/sockets ] as ec2-user@18.182.147.85
+ DEBUG [3641588c] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/sockets ]
+ DEBUG [3641588c] Finished in 0.102 seconds with exit status 1 (failed).
+  INFO [6df0c9e1] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/sockets as ec2-user@18.182.147.85
+ DEBUG [6df0c9e1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/tmp/sockets )
+  INFO [6df0c9e1] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [67b287ff] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/vendor/bundle ] as ec2-user@18.182.147.85
+ DEBUG [67b287ff] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/vendor/bundle ]
+ DEBUG [67b287ff] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [67c41a51] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/vendor/bundle ] as ec2-user@18.182.147.85
+ DEBUG [67c41a51] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/vendor/bundle ]
+ DEBUG [67c41a51] Finished in 0.105 seconds with exit status 1 (failed).
+  INFO [d4509011] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/vendor/bundle as ec2-user@18.182.147.85
+ DEBUG [d4509011] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/vendor/bundle )
+  INFO [d4509011] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [c3b220a8] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/system ] as ec2-user@18.182.147.85
+ DEBUG [c3b220a8] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/system ]
+ DEBUG [c3b220a8] Finished in 0.097 seconds with exit status 1 (failed).
+ DEBUG [fca89d80] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/system ] as ec2-user@18.182.147.85
+ DEBUG [fca89d80] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/system ]
+ DEBUG [fca89d80] Finished in 0.097 seconds with exit status 1 (failed).
+  INFO [100e64c9] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/system as ec2-user@18.182.147.85
+ DEBUG [100e64c9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/system )
+  INFO [100e64c9] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [0ed86d68] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/uploads ] as ec2-user@18.182.147.85
+ DEBUG [0ed86d68] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/uploads ]
+ DEBUG [0ed86d68] Finished in 0.097 seconds with exit status 1 (failed).
+ DEBUG [2b70e35b] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/uploads ] as ec2-user@18.182.147.85
+ DEBUG [2b70e35b] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/uploads ]
+ DEBUG [2b70e35b] Finished in 0.098 seconds with exit status 1 (failed).
+  INFO [fbfa5ef2] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/uploads as ec2-user@18.182.147.85
+ DEBUG [fbfa5ef2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/uploads )
+  INFO [fbfa5ef2] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [022f9bff] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/assets ] as ec2-user@18.182.147.85
+ DEBUG [022f9bff] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/assets ]
+ DEBUG [022f9bff] Finished in 0.098 seconds with exit status 1 (failed).
+ DEBUG [47a8b253] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/assets ] as ec2-user@18.182.147.85
+ DEBUG [47a8b253] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/assets ]
+ DEBUG [47a8b253] Finished in 0.097 seconds with exit status 1 (failed).
+  INFO [292f8dff] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/assets /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/assets as ec2-user@18.182.147.85
+ DEBUG [292f8dff] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/assets /var/www/freemarket_sample_63a_nagoya/releases/20191120101006/public/assets )
+  INFO [292f8dff] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [f69f4efd] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120101006'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [f69f4efd] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101006; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120101006'" 1>&2; false; fi
+ DEBUG [f69f4efd] Finished in 0.094 seconds with exit status 0 (successful).
+ DEBUG [0d120668] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/freemarket_sample_63a_nagoya/shared/bundle as ec2-user@18.182.147.85
+ DEBUG [0d120668] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120101006 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/freemarket_sample_63a_nagoya/shared/bundle )
+ DEBUG [0d120668] 	Could not locate Gemfile
+ DEBUG [0d120668] Finished in 0.302 seconds with exit status 10 (failed).
+  INFO [93008271] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/freemarket_sample_63a_nagoya/shared/bundle --jobs 4 --without development test --deployment --quiet as ec2-user@18.182.147.85
+ DEBUG [93008271] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120101006 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/freemarket_sample_63a_nagoya/shared/bundle --jobs 4 --without development test --deployment --quiet )
+ DEBUG [93008271] 	Could not locate Gemfile
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-20 19:16:29 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [5fa6d303] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as ec2-user@18.182.147.85
+ DEBUG [5fa6d303] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [5fa6d303] Finished in 0.333 seconds with exit status 0 (successful).
+  INFO [8bd02d1b] Running /usr/bin/env mkdir -p /tmp as ec2-user@18.182.147.85
+ DEBUG [8bd02d1b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [8bd02d1b] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh 0.0%
+  INFO Uploading /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh 100.0%
+  INFO [ddb60093] Running /usr/bin/env chmod 700 /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh as ec2-user@18.182.147.85
+ DEBUG [ddb60093] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh )
+  INFO [ddb60093] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [b53a4736] Running /usr/bin/env git ls-remote git@github.com:junki789/freemarket_sample_63a_nagoya.git HEAD as ec2-user@18.182.147.85
+ DEBUG [b53a4736] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git ls-remote git@github.com:junki789/freemarket_sample_63a_nagoya.git HEAD )
+ DEBUG [b53a4736] 	30589ae3f6e15882ed788586d05c8d5f84becfc9	HEAD
+  INFO [b53a4736] Finished in 2.643 seconds with exit status 0 (successful).
+  INFO [899ceee6] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared /var/www/freemarket_sample_63a_nagoya/releases as ec2-user@18.182.147.85
+ DEBUG [899ceee6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared /var/www/freemarket_sample_63a_nagoya/releases )
+  INFO [899ceee6] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [468338a9] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/shared/public/assets as ec2-user@18.182.147.85
+ DEBUG [468338a9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/shared/public/assets )
+  INFO [468338a9] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [6e7fefce] Running [ -f /var/www/freemarket_sample_63a_nagoya/current/REVISION ] as ec2-user@18.182.147.85
+ DEBUG [6e7fefce] Command: [ -f /var/www/freemarket_sample_63a_nagoya/current/REVISION ]
+ DEBUG [6e7fefce] Finished in 0.096 seconds with exit status 1 (failed).
+ DEBUG [ab695933] Running [ -f /var/www/freemarket_sample_63a_nagoya/repo/HEAD ] as ec2-user@18.182.147.85
+ DEBUG [ab695933] Command: [ -f /var/www/freemarket_sample_63a_nagoya/repo/HEAD ]
+ DEBUG [ab695933] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/freemarket_sample_63a_nagoya/repo
+ DEBUG [e974cceb] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [e974cceb] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [e974cceb] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [65692464] Running /usr/bin/env git remote set-url origin git@github.com:junki789/freemarket_sample_63a_nagoya.git as ec2-user@18.182.147.85
+ DEBUG [65692464] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git remote set-url origin git@github.com:junki789/freemarket_sample_63a_nagoya.git )
+  INFO [65692464] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [e8021b45] Running /usr/bin/env git remote update --prune as ec2-user@18.182.147.85
+ DEBUG [e8021b45] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [e8021b45] 	Fetching origin
+  INFO [e8021b45] Finished in 1.798 seconds with exit status 0 (successful).
+ DEBUG [686075bc] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [686075bc] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [686075bc] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [75fa8ea7] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120101633 as ec2-user@18.182.147.85
+ DEBUG [75fa8ea7] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120101633 )
+  INFO [75fa8ea7] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [b247090c] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/freemarket_sample_63a_nagoya/releases/20191120101633 as ec2-user@18.182.147.85
+ DEBUG [b247090c] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/freemarket_sample_63a_nagoya/releases/20191120101633 )
+  INFO [b247090c] Finished in 0.108 seconds with exit status 0 (successful).
+ DEBUG [d1e1e727] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [d1e1e727] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [d1e1e727] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [344078a7] Running /usr/bin/env git rev-list --max-count=1 master as ec2-user@18.182.147.85
+ DEBUG [344078a7] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [344078a7] 	30589ae3f6e15882ed788586d05c8d5f84becfc9
+ DEBUG [344078a7] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [38dbaa99] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120101633'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [38dbaa99] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120101633'" 1>&2; false; fi
+ DEBUG [38dbaa99] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [42cbeaee] Running /usr/bin/env echo "30589ae3f6e15882ed788586d05c8d5f84becfc9" > REVISION as ec2-user@18.182.147.85
+ DEBUG [42cbeaee] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120101633 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env echo "30589ae3f6e15882ed788586d05c8d5f84becfc9" > REVISION )
+  INFO [42cbeaee] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [8cca9393] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120101633 /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/vendor /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public as ec2-user@18.182.147.85
+ DEBUG [8cca9393] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120101633 /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/vendor /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public )
+  INFO [8cca9393] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [7bb74925] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/log ] as ec2-user@18.182.147.85
+ DEBUG [7bb74925] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/log ]
+ DEBUG [7bb74925] Finished in 0.097 seconds with exit status 1 (failed).
+ DEBUG [479cf0ee] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/log ] as ec2-user@18.182.147.85
+ DEBUG [479cf0ee] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/log ]
+ DEBUG [479cf0ee] Finished in 0.100 seconds with exit status 1 (failed).
+  INFO [1772ca44] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/log as ec2-user@18.182.147.85
+ DEBUG [1772ca44] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/log )
+  INFO [1772ca44] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [1f5ac303] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/pids ] as ec2-user@18.182.147.85
+ DEBUG [1f5ac303] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/pids ]
+ DEBUG [1f5ac303] Finished in 0.100 seconds with exit status 1 (failed).
+ DEBUG [b6d977c7] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/pids ] as ec2-user@18.182.147.85
+ DEBUG [b6d977c7] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/pids ]
+ DEBUG [b6d977c7] Finished in 0.097 seconds with exit status 1 (failed).
+  INFO [185e25ff] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/pids as ec2-user@18.182.147.85
+ DEBUG [185e25ff] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/pids )
+  INFO [185e25ff] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [d42874ad] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/cache ] as ec2-user@18.182.147.85
+ DEBUG [d42874ad] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/cache ]
+ DEBUG [d42874ad] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [da51d344] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/cache ] as ec2-user@18.182.147.85
+ DEBUG [da51d344] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/cache ]
+ DEBUG [da51d344] Finished in 0.100 seconds with exit status 1 (failed).
+  INFO [7043161b] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/cache as ec2-user@18.182.147.85
+ DEBUG [7043161b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/cache )
+  INFO [7043161b] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [0828c70a] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/sockets ] as ec2-user@18.182.147.85
+ DEBUG [0828c70a] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/sockets ]
+ DEBUG [0828c70a] Finished in 0.096 seconds with exit status 1 (failed).
+ DEBUG [79693a0e] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/sockets ] as ec2-user@18.182.147.85
+ DEBUG [79693a0e] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/sockets ]
+ DEBUG [79693a0e] Finished in 0.100 seconds with exit status 1 (failed).
+  INFO [ba625044] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/sockets as ec2-user@18.182.147.85
+ DEBUG [ba625044] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/tmp/sockets )
+  INFO [ba625044] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [9b98aae0] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/vendor/bundle ] as ec2-user@18.182.147.85
+ DEBUG [9b98aae0] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/vendor/bundle ]
+ DEBUG [9b98aae0] Finished in 0.096 seconds with exit status 1 (failed).
+ DEBUG [f7f21d08] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/vendor/bundle ] as ec2-user@18.182.147.85
+ DEBUG [f7f21d08] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/vendor/bundle ]
+ DEBUG [f7f21d08] Finished in 0.096 seconds with exit status 1 (failed).
+  INFO [17a30ba0] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/vendor/bundle as ec2-user@18.182.147.85
+ DEBUG [17a30ba0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/vendor/bundle )
+  INFO [17a30ba0] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [73c0f904] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/system ] as ec2-user@18.182.147.85
+ DEBUG [73c0f904] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/system ]
+ DEBUG [73c0f904] Finished in 0.100 seconds with exit status 1 (failed).
+ DEBUG [b6a3ade6] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/system ] as ec2-user@18.182.147.85
+ DEBUG [b6a3ade6] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/system ]
+ DEBUG [b6a3ade6] Finished in 0.098 seconds with exit status 1 (failed).
+  INFO [0e48d209] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/system as ec2-user@18.182.147.85
+ DEBUG [0e48d209] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/system )
+  INFO [0e48d209] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [2e4f0983] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/uploads ] as ec2-user@18.182.147.85
+ DEBUG [2e4f0983] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/uploads ]
+ DEBUG [2e4f0983] Finished in 0.100 seconds with exit status 1 (failed).
+ DEBUG [1d59e7d5] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/uploads ] as ec2-user@18.182.147.85
+ DEBUG [1d59e7d5] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/uploads ]
+ DEBUG [1d59e7d5] Finished in 0.101 seconds with exit status 1 (failed).
+  INFO [020d1b9d] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/uploads as ec2-user@18.182.147.85
+ DEBUG [020d1b9d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/uploads )
+  INFO [020d1b9d] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [5680e4bf] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/assets ] as ec2-user@18.182.147.85
+ DEBUG [5680e4bf] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/assets ]
+ DEBUG [5680e4bf] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [ef9ef6d2] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/assets ] as ec2-user@18.182.147.85
+ DEBUG [ef9ef6d2] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/assets ]
+ DEBUG [ef9ef6d2] Finished in 0.099 seconds with exit status 1 (failed).
+  INFO [3e5c8c46] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/assets /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/assets as ec2-user@18.182.147.85
+ DEBUG [3e5c8c46] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/assets /var/www/freemarket_sample_63a_nagoya/releases/20191120101633/public/assets )
+  INFO [3e5c8c46] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [d45931d5] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120101633'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [d45931d5] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101633; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120101633'" 1>&2; false; fi
+ DEBUG [d45931d5] Finished in 0.095 seconds with exit status 0 (successful).
+ DEBUG [d77360b8] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/freemarket_sample_63a_nagoya/shared/bundle as ec2-user@18.182.147.85
+ DEBUG [d77360b8] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120101633 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/freemarket_sample_63a_nagoya/shared/bundle )
+ DEBUG [d77360b8] 	Could not locate Gemfile
+ DEBUG [d77360b8] Finished in 0.389 seconds with exit status 10 (failed).
+  INFO [551c714b] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/freemarket_sample_63a_nagoya/shared/bundle --jobs 4 --without development test --deployment --quiet as ec2-user@18.182.147.85
+ DEBUG [551c714b] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120101633 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/freemarket_sample_63a_nagoya/shared/bundle --jobs 4 --without development test --deployment --quiet )
+ DEBUG [551c714b] 	Could not locate Gemfile
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-20 19:18:19 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c03e0e75] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as ec2-user@18.182.147.85
+ DEBUG [c03e0e75] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [c03e0e75] Finished in 0.611 seconds with exit status 0 (successful).
+  INFO [6d3b4a2a] Running /usr/bin/env mkdir -p /tmp as ec2-user@18.182.147.85
+ DEBUG [6d3b4a2a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [6d3b4a2a] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh 0.0%
+  INFO Uploading /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh 100.0%
+  INFO [b93d2500] Running /usr/bin/env chmod 700 /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh as ec2-user@18.182.147.85
+ DEBUG [b93d2500] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh )
+  INFO [b93d2500] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [cef2b518] Running /usr/bin/env git ls-remote git@github.com:junki789/freemarket_sample_63a_nagoya.git HEAD as ec2-user@18.182.147.85
+ DEBUG [cef2b518] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git ls-remote git@github.com:junki789/freemarket_sample_63a_nagoya.git HEAD )
+ DEBUG [cef2b518] 	30589ae3f6e15882ed788586d05c8d5f84becfc9	HEAD
+  INFO [cef2b518] Finished in 1.873 seconds with exit status 0 (successful).
+  INFO [0c188c5d] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared /var/www/freemarket_sample_63a_nagoya/releases as ec2-user@18.182.147.85
+ DEBUG [0c188c5d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared /var/www/freemarket_sample_63a_nagoya/releases )
+  INFO [0c188c5d] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [24e6b7e6] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/shared/public/assets as ec2-user@18.182.147.85
+ DEBUG [24e6b7e6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/shared/public/assets )
+  INFO [24e6b7e6] Finished in 0.092 seconds with exit status 0 (successful).
+ DEBUG [55e9a6b4] Running [ -f /var/www/freemarket_sample_63a_nagoya/current/REVISION ] as ec2-user@18.182.147.85
+ DEBUG [55e9a6b4] Command: [ -f /var/www/freemarket_sample_63a_nagoya/current/REVISION ]
+ DEBUG [55e9a6b4] Finished in 0.093 seconds with exit status 1 (failed).
+ DEBUG [dda22428] Running [ -f /var/www/freemarket_sample_63a_nagoya/repo/HEAD ] as ec2-user@18.182.147.85
+ DEBUG [dda22428] Command: [ -f /var/www/freemarket_sample_63a_nagoya/repo/HEAD ]
+ DEBUG [dda22428] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/freemarket_sample_63a_nagoya/repo
+ DEBUG [1eef6381] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [1eef6381] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [1eef6381] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [f5b77792] Running /usr/bin/env git remote set-url origin git@github.com:junki789/freemarket_sample_63a_nagoya.git as ec2-user@18.182.147.85
+ DEBUG [f5b77792] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git remote set-url origin git@github.com:junki789/freemarket_sample_63a_nagoya.git )
+  INFO [f5b77792] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [23c34edd] Running /usr/bin/env git remote update --prune as ec2-user@18.182.147.85
+ DEBUG [23c34edd] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [23c34edd] 	Fetching origin
+  INFO [23c34edd] Finished in 1.874 seconds with exit status 0 (successful).
+ DEBUG [b5d8b93c] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [b5d8b93c] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [b5d8b93c] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [61e444ba] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120101822 as ec2-user@18.182.147.85
+ DEBUG [61e444ba] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120101822 )
+  INFO [61e444ba] Finished in 0.106 seconds with exit status 0 (successful).
+  INFO [f7534fee] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/freemarket_sample_63a_nagoya/releases/20191120101822 as ec2-user@18.182.147.85
+ DEBUG [f7534fee] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/freemarket_sample_63a_nagoya/releases/20191120101822 )
+  INFO [f7534fee] Finished in 0.109 seconds with exit status 0 (successful).
+ DEBUG [8efc6577] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [8efc6577] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [8efc6577] Finished in 0.106 seconds with exit status 0 (successful).
+ DEBUG [89a092ff] Running /usr/bin/env git rev-list --max-count=1 master as ec2-user@18.182.147.85
+ DEBUG [89a092ff] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [89a092ff] 	30589ae3f6e15882ed788586d05c8d5f84becfc9
+ DEBUG [89a092ff] Finished in 0.106 seconds with exit status 0 (successful).
+ DEBUG [5bbda3c1] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120101822'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [5bbda3c1] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120101822'" 1>&2; false; fi
+ DEBUG [5bbda3c1] Finished in 0.106 seconds with exit status 0 (successful).
+  INFO [2ca42b60] Running /usr/bin/env echo "30589ae3f6e15882ed788586d05c8d5f84becfc9" > REVISION as ec2-user@18.182.147.85
+ DEBUG [2ca42b60] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120101822 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env echo "30589ae3f6e15882ed788586d05c8d5f84becfc9" > REVISION )
+  INFO [2ca42b60] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [05286641] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120101822 /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/vendor /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public as ec2-user@18.182.147.85
+ DEBUG [05286641] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120101822 /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/vendor /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public )
+  INFO [05286641] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [676be86f] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/log ] as ec2-user@18.182.147.85
+ DEBUG [676be86f] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/log ]
+ DEBUG [676be86f] Finished in 0.107 seconds with exit status 1 (failed).
+ DEBUG [770dbf3e] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/log ] as ec2-user@18.182.147.85
+ DEBUG [770dbf3e] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/log ]
+ DEBUG [770dbf3e] Finished in 0.103 seconds with exit status 1 (failed).
+  INFO [9e3b9a34] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/log as ec2-user@18.182.147.85
+ DEBUG [9e3b9a34] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/log )
+  INFO [9e3b9a34] Finished in 0.106 seconds with exit status 0 (successful).
+ DEBUG [b70bac2a] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/pids ] as ec2-user@18.182.147.85
+ DEBUG [b70bac2a] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/pids ]
+ DEBUG [b70bac2a] Finished in 0.102 seconds with exit status 1 (failed).
+ DEBUG [ae1a2109] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/pids ] as ec2-user@18.182.147.85
+ DEBUG [ae1a2109] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/pids ]
+ DEBUG [ae1a2109] Finished in 0.100 seconds with exit status 1 (failed).
+  INFO [234ce752] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/pids as ec2-user@18.182.147.85
+ DEBUG [234ce752] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/pids )
+  INFO [234ce752] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [4d355e06] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/cache ] as ec2-user@18.182.147.85
+ DEBUG [4d355e06] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/cache ]
+ DEBUG [4d355e06] Finished in 0.103 seconds with exit status 1 (failed).
+ DEBUG [701dedc5] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/cache ] as ec2-user@18.182.147.85
+ DEBUG [701dedc5] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/cache ]
+ DEBUG [701dedc5] Finished in 0.106 seconds with exit status 1 (failed).
+  INFO [f06027ff] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/cache as ec2-user@18.182.147.85
+ DEBUG [f06027ff] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/cache )
+  INFO [f06027ff] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [b8056665] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/sockets ] as ec2-user@18.182.147.85
+ DEBUG [b8056665] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/sockets ]
+ DEBUG [b8056665] Finished in 0.098 seconds with exit status 1 (failed).
+ DEBUG [a0dcdeef] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/sockets ] as ec2-user@18.182.147.85
+ DEBUG [a0dcdeef] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/sockets ]
+ DEBUG [a0dcdeef] Finished in 0.102 seconds with exit status 1 (failed).
+  INFO [996856e8] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/sockets as ec2-user@18.182.147.85
+ DEBUG [996856e8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/tmp/sockets )
+  INFO [996856e8] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [af6d4902] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/vendor/bundle ] as ec2-user@18.182.147.85
+ DEBUG [af6d4902] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/vendor/bundle ]
+ DEBUG [af6d4902] Finished in 0.101 seconds with exit status 1 (failed).
+ DEBUG [53b34b3e] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/vendor/bundle ] as ec2-user@18.182.147.85
+ DEBUG [53b34b3e] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/vendor/bundle ]
+ DEBUG [53b34b3e] Finished in 0.102 seconds with exit status 1 (failed).
+  INFO [b6fa1345] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/vendor/bundle as ec2-user@18.182.147.85
+ DEBUG [b6fa1345] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/vendor/bundle )
+  INFO [b6fa1345] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [08d059f5] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/system ] as ec2-user@18.182.147.85
+ DEBUG [08d059f5] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/system ]
+ DEBUG [08d059f5] Finished in 0.103 seconds with exit status 1 (failed).
+ DEBUG [69aabc8a] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/system ] as ec2-user@18.182.147.85
+ DEBUG [69aabc8a] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/system ]
+ DEBUG [69aabc8a] Finished in 0.103 seconds with exit status 1 (failed).
+  INFO [5a228c6c] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/system as ec2-user@18.182.147.85
+ DEBUG [5a228c6c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/system )
+  INFO [5a228c6c] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [0eafe800] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/uploads ] as ec2-user@18.182.147.85
+ DEBUG [0eafe800] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/uploads ]
+ DEBUG [0eafe800] Finished in 0.103 seconds with exit status 1 (failed).
+ DEBUG [393c3194] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/uploads ] as ec2-user@18.182.147.85
+ DEBUG [393c3194] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/uploads ]
+ DEBUG [393c3194] Finished in 0.100 seconds with exit status 1 (failed).
+  INFO [18adb8b2] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/uploads as ec2-user@18.182.147.85
+ DEBUG [18adb8b2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/uploads )
+  INFO [18adb8b2] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [fed00fe6] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/assets ] as ec2-user@18.182.147.85
+ DEBUG [fed00fe6] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/assets ]
+ DEBUG [fed00fe6] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [53ece28b] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/assets ] as ec2-user@18.182.147.85
+ DEBUG [53ece28b] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/assets ]
+ DEBUG [53ece28b] Finished in 0.100 seconds with exit status 1 (failed).
+  INFO [d2be2257] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/assets /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/assets as ec2-user@18.182.147.85
+ DEBUG [d2be2257] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/assets /var/www/freemarket_sample_63a_nagoya/releases/20191120101822/public/assets )
+  INFO [d2be2257] Finished in 0.106 seconds with exit status 0 (successful).
+ DEBUG [24476a4f] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120101822'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [24476a4f] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120101822; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120101822'" 1>&2; false; fi
+ DEBUG [24476a4f] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [dcb37d77] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/freemarket_sample_63a_nagoya/shared/bundle as ec2-user@18.182.147.85
+ DEBUG [dcb37d77] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120101822 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/freemarket_sample_63a_nagoya/shared/bundle )
+ DEBUG [dcb37d77] 	Could not locate Gemfile
+ DEBUG [dcb37d77] Finished in 0.366 seconds with exit status 10 (failed).
+  INFO [bde6c84f] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/freemarket_sample_63a_nagoya/shared/bundle --jobs 4 --without development test --deployment --quiet as ec2-user@18.182.147.85
+ DEBUG [bde6c84f] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120101822 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/freemarket_sample_63a_nagoya/shared/bundle --jobs 4 --without development test --deployment --quiet )
+ DEBUG [bde6c84f] 	Could not locate Gemfile
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-20 19:33:09 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [2c74eb38] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as ec2-user@18.182.147.85
+ DEBUG [2c74eb38] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [2c74eb38] Finished in 0.436 seconds with exit status 0 (successful).
+  INFO [fc175087] Running /usr/bin/env mkdir -p /tmp as ec2-user@18.182.147.85
+ DEBUG [fc175087] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [fc175087] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh 0.0%
+  INFO Uploading /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh 100.0%
+  INFO [f26ce678] Running /usr/bin/env chmod 700 /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh as ec2-user@18.182.147.85
+ DEBUG [f26ce678] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh )
+  INFO [f26ce678] Finished in 0.106 seconds with exit status 0 (successful).
+  INFO [3d742012] Running /usr/bin/env git ls-remote git@github.com:junki789/freemarket_sample_63a_nagoya.git HEAD as ec2-user@18.182.147.85
+ DEBUG [3d742012] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git ls-remote git@github.com:junki789/freemarket_sample_63a_nagoya.git HEAD )
+ DEBUG [3d742012] 	30589ae3f6e15882ed788586d05c8d5f84becfc9	HEAD
+  INFO [3d742012] Finished in 1.850 seconds with exit status 0 (successful).
+  INFO [216a2f49] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared /var/www/freemarket_sample_63a_nagoya/releases as ec2-user@18.182.147.85
+ DEBUG [216a2f49] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared /var/www/freemarket_sample_63a_nagoya/releases )
+  INFO [216a2f49] Finished in 0.108 seconds with exit status 0 (successful).
+  INFO [a6df2d1a] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/shared/public/assets as ec2-user@18.182.147.85
+ DEBUG [a6df2d1a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/shared/public/assets )
+  INFO [a6df2d1a] Finished in 0.109 seconds with exit status 0 (successful).
+ DEBUG [8b13aab3] Running [ -f /var/www/freemarket_sample_63a_nagoya/current/REVISION ] as ec2-user@18.182.147.85
+ DEBUG [8b13aab3] Command: [ -f /var/www/freemarket_sample_63a_nagoya/current/REVISION ]
+ DEBUG [8b13aab3] Finished in 0.481 seconds with exit status 1 (failed).
+ DEBUG [5c29127f] Running [ -f /var/www/freemarket_sample_63a_nagoya/repo/HEAD ] as ec2-user@18.182.147.85
+ DEBUG [5c29127f] Command: [ -f /var/www/freemarket_sample_63a_nagoya/repo/HEAD ]
+ DEBUG [5c29127f] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/freemarket_sample_63a_nagoya/repo
+ DEBUG [447fdb85] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [447fdb85] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [447fdb85] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [87b9c99d] Running /usr/bin/env git remote set-url origin git@github.com:junki789/freemarket_sample_63a_nagoya.git as ec2-user@18.182.147.85
+ DEBUG [87b9c99d] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git remote set-url origin git@github.com:junki789/freemarket_sample_63a_nagoya.git )
+  INFO [87b9c99d] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [a23c8d30] Running /usr/bin/env git remote update --prune as ec2-user@18.182.147.85
+ DEBUG [a23c8d30] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [a23c8d30] 	Fetching origin
+  INFO [a23c8d30] Finished in 1.948 seconds with exit status 0 (successful).
+ DEBUG [86571905] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [86571905] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [86571905] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [23a92bb2] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120103313 as ec2-user@18.182.147.85
+ DEBUG [23a92bb2] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120103313 )
+  INFO [23a92bb2] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [fe3082b6] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/freemarket_sample_63a_nagoya/releases/20191120103313 as ec2-user@18.182.147.85
+ DEBUG [fe3082b6] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/freemarket_sample_63a_nagoya/releases/20191120103313 )
+  INFO [fe3082b6] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [4296bea7] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [4296bea7] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [4296bea7] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [ca2cf79a] Running /usr/bin/env git rev-list --max-count=1 master as ec2-user@18.182.147.85
+ DEBUG [ca2cf79a] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [ca2cf79a] 	30589ae3f6e15882ed788586d05c8d5f84becfc9
+ DEBUG [ca2cf79a] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [82870de5] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120103313'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [82870de5] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120103313'" 1>&2; false; fi
+ DEBUG [82870de5] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [d82dfbba] Running /usr/bin/env echo "30589ae3f6e15882ed788586d05c8d5f84becfc9" > REVISION as ec2-user@18.182.147.85
+ DEBUG [d82dfbba] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120103313 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env echo "30589ae3f6e15882ed788586d05c8d5f84becfc9" > REVISION )
+  INFO [d82dfbba] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [b1256e2a] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120103313 /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/vendor /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public as ec2-user@18.182.147.85
+ DEBUG [b1256e2a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120103313 /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/vendor /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public )
+  INFO [b1256e2a] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [bdaa6cd8] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/log ] as ec2-user@18.182.147.85
+ DEBUG [bdaa6cd8] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/log ]
+ DEBUG [bdaa6cd8] Finished in 0.095 seconds with exit status 1 (failed).
+ DEBUG [ddec1037] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/log ] as ec2-user@18.182.147.85
+ DEBUG [ddec1037] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/log ]
+ DEBUG [ddec1037] Finished in 0.094 seconds with exit status 1 (failed).
+  INFO [70210cdd] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/log as ec2-user@18.182.147.85
+ DEBUG [70210cdd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/log )
+  INFO [70210cdd] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [0255dd74] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/pids ] as ec2-user@18.182.147.85
+ DEBUG [0255dd74] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/pids ]
+ DEBUG [0255dd74] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [665c7c7a] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/pids ] as ec2-user@18.182.147.85
+ DEBUG [665c7c7a] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/pids ]
+ DEBUG [665c7c7a] Finished in 0.094 seconds with exit status 1 (failed).
+  INFO [cd3648a3] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/pids as ec2-user@18.182.147.85
+ DEBUG [cd3648a3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/pids )
+  INFO [cd3648a3] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [42736953] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/cache ] as ec2-user@18.182.147.85
+ DEBUG [42736953] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/cache ]
+ DEBUG [42736953] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [b7104889] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/cache ] as ec2-user@18.182.147.85
+ DEBUG [b7104889] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/cache ]
+ DEBUG [b7104889] Finished in 0.100 seconds with exit status 1 (failed).
+  INFO [2990b477] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/cache as ec2-user@18.182.147.85
+ DEBUG [2990b477] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/cache )
+  INFO [2990b477] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [107e3c1a] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/sockets ] as ec2-user@18.182.147.85
+ DEBUG [107e3c1a] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/sockets ]
+ DEBUG [107e3c1a] Finished in 0.103 seconds with exit status 1 (failed).
+ DEBUG [ec90c801] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/sockets ] as ec2-user@18.182.147.85
+ DEBUG [ec90c801] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/sockets ]
+ DEBUG [ec90c801] Finished in 0.104 seconds with exit status 1 (failed).
+  INFO [1f741db5] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/sockets as ec2-user@18.182.147.85
+ DEBUG [1f741db5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/tmp/sockets )
+  INFO [1f741db5] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [b9b2013e] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/vendor/bundle ] as ec2-user@18.182.147.85
+ DEBUG [b9b2013e] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/vendor/bundle ]
+ DEBUG [b9b2013e] Finished in 0.102 seconds with exit status 1 (failed).
+ DEBUG [84a9061b] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/vendor/bundle ] as ec2-user@18.182.147.85
+ DEBUG [84a9061b] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/vendor/bundle ]
+ DEBUG [84a9061b] Finished in 0.100 seconds with exit status 1 (failed).
+  INFO [1902728d] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/vendor/bundle as ec2-user@18.182.147.85
+ DEBUG [1902728d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/vendor/bundle )
+  INFO [1902728d] Finished in 0.106 seconds with exit status 0 (successful).
+ DEBUG [acc1036b] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/system ] as ec2-user@18.182.147.85
+ DEBUG [acc1036b] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/system ]
+ DEBUG [acc1036b] Finished in 0.105 seconds with exit status 1 (failed).
+ DEBUG [28544d5b] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/system ] as ec2-user@18.182.147.85
+ DEBUG [28544d5b] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/system ]
+ DEBUG [28544d5b] Finished in 0.104 seconds with exit status 1 (failed).
+  INFO [4b10788c] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/system as ec2-user@18.182.147.85
+ DEBUG [4b10788c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/system )
+  INFO [4b10788c] Finished in 0.107 seconds with exit status 0 (successful).
+ DEBUG [d0c15aa6] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/uploads ] as ec2-user@18.182.147.85
+ DEBUG [d0c15aa6] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/uploads ]
+ DEBUG [d0c15aa6] Finished in 0.102 seconds with exit status 1 (failed).
+ DEBUG [c11a5450] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/uploads ] as ec2-user@18.182.147.85
+ DEBUG [c11a5450] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/uploads ]
+ DEBUG [c11a5450] Finished in 0.101 seconds with exit status 1 (failed).
+  INFO [2e8c2f19] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/uploads as ec2-user@18.182.147.85
+ DEBUG [2e8c2f19] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/uploads )
+  INFO [2e8c2f19] Finished in 0.107 seconds with exit status 0 (successful).
+ DEBUG [f293f2df] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/assets ] as ec2-user@18.182.147.85
+ DEBUG [f293f2df] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/assets ]
+ DEBUG [f293f2df] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [02ecc955] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/assets ] as ec2-user@18.182.147.85
+ DEBUG [02ecc955] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/assets ]
+ DEBUG [02ecc955] Finished in 0.102 seconds with exit status 1 (failed).
+  INFO [a85ce3c0] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/assets /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/assets as ec2-user@18.182.147.85
+ DEBUG [a85ce3c0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/assets /var/www/freemarket_sample_63a_nagoya/releases/20191120103313/public/assets )
+  INFO [a85ce3c0] Finished in 0.105 seconds with exit status 0 (successful).
+ DEBUG [fbd095cd] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120103313'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [fbd095cd] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120103313; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120103313'" 1>&2; false; fi
+ DEBUG [fbd095cd] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [e1b152c7] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/freemarket_sample_63a_nagoya/shared/bundle as ec2-user@18.182.147.85
+ DEBUG [e1b152c7] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120103313 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/freemarket_sample_63a_nagoya/shared/bundle )
+ DEBUG [e1b152c7] 	Could not locate Gemfile
+ DEBUG [e1b152c7] Finished in 0.344 seconds with exit status 10 (failed).
+  INFO [e332d6dd] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/freemarket_sample_63a_nagoya/shared/bundle --jobs 4 --without development test --deployment --quiet as ec2-user@18.182.147.85
+ DEBUG [e332d6dd] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120103313 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/freemarket_sample_63a_nagoya/shared/bundle --jobs 4 --without development test --deployment --quiet )
+ DEBUG [e332d6dd] 	Could not locate Gemfile
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-20 19:40:22 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [562df381] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as ec2-user@18.182.147.85
+ DEBUG [562df381] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [562df381] Finished in 0.423 seconds with exit status 0 (successful).
+  INFO [e9132dbe] Running /usr/bin/env mkdir -p /tmp as ec2-user@18.182.147.85
+ DEBUG [e9132dbe] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [e9132dbe] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh 0.0%
+  INFO Uploading /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh 100.0%
+  INFO [16e073b1] Running /usr/bin/env chmod 700 /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh as ec2-user@18.182.147.85
+ DEBUG [16e073b1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh )
+  INFO [16e073b1] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [ff0befc4] Running /usr/bin/env git ls-remote git@github.com:junki789/freemarket_sample_63a_nagoya.git HEAD as ec2-user@18.182.147.85
+ DEBUG [ff0befc4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git ls-remote git@github.com:junki789/freemarket_sample_63a_nagoya.git HEAD )
+ DEBUG [ff0befc4] 	30589ae3f6e15882ed788586d05c8d5f84becfc9	HEAD
+  INFO [ff0befc4] Finished in 2.145 seconds with exit status 0 (successful).
+  INFO [269fd17c] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared /var/www/freemarket_sample_63a_nagoya/releases as ec2-user@18.182.147.85
+ DEBUG [269fd17c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared /var/www/freemarket_sample_63a_nagoya/releases )
+  INFO [269fd17c] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [c46bb88b] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/shared/public/assets as ec2-user@18.182.147.85
+ DEBUG [c46bb88b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/shared/public/assets )
+  INFO [c46bb88b] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [d511e5e2] Running [ -f /var/www/freemarket_sample_63a_nagoya/current/REVISION ] as ec2-user@18.182.147.85
+ DEBUG [d511e5e2] Command: [ -f /var/www/freemarket_sample_63a_nagoya/current/REVISION ]
+ DEBUG [d511e5e2] Finished in 0.124 seconds with exit status 1 (failed).
+ DEBUG [3915f15c] Running [ -f /var/www/freemarket_sample_63a_nagoya/repo/HEAD ] as ec2-user@18.182.147.85
+ DEBUG [3915f15c] Command: [ -f /var/www/freemarket_sample_63a_nagoya/repo/HEAD ]
+ DEBUG [3915f15c] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/freemarket_sample_63a_nagoya/repo
+ DEBUG [ac3925c2] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [ac3925c2] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [ac3925c2] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [ef91f41e] Running /usr/bin/env git remote set-url origin git@github.com:junki789/freemarket_sample_63a_nagoya.git as ec2-user@18.182.147.85
+ DEBUG [ef91f41e] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git remote set-url origin git@github.com:junki789/freemarket_sample_63a_nagoya.git )
+  INFO [ef91f41e] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [d435255e] Running /usr/bin/env git remote update --prune as ec2-user@18.182.147.85
+ DEBUG [d435255e] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [d435255e] 	Fetching origin
+  INFO [d435255e] Finished in 2.086 seconds with exit status 0 (successful).
+ DEBUG [c657a314] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [c657a314] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [c657a314] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [c459eb50] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120104025 as ec2-user@18.182.147.85
+ DEBUG [c459eb50] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120104025 )
+  INFO [c459eb50] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [bc61362b] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/freemarket_sample_63a_nagoya/releases/20191120104025 as ec2-user@18.182.147.85
+ DEBUG [bc61362b] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/freemarket_sample_63a_nagoya/releases/20191120104025 )
+  INFO [bc61362b] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [cb75f44b] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [cb75f44b] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [cb75f44b] Finished in 0.095 seconds with exit status 0 (successful).
+ DEBUG [8c0fd725] Running /usr/bin/env git rev-list --max-count=1 master as ec2-user@18.182.147.85
+ DEBUG [8c0fd725] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [8c0fd725] 	30589ae3f6e15882ed788586d05c8d5f84becfc9
+ DEBUG [8c0fd725] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [52e956f4] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120104025'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [52e956f4] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120104025'" 1>&2; false; fi
+ DEBUG [52e956f4] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [cbc7c7d4] Running /usr/bin/env echo "30589ae3f6e15882ed788586d05c8d5f84becfc9" > REVISION as ec2-user@18.182.147.85
+ DEBUG [cbc7c7d4] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120104025 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env echo "30589ae3f6e15882ed788586d05c8d5f84becfc9" > REVISION )
+  INFO [cbc7c7d4] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [2fcbaa94] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120104025 /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/vendor /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public as ec2-user@18.182.147.85
+ DEBUG [2fcbaa94] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120104025 /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/vendor /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public )
+  INFO [2fcbaa94] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [99434f27] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/log ] as ec2-user@18.182.147.85
+ DEBUG [99434f27] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/log ]
+ DEBUG [99434f27] Finished in 0.091 seconds with exit status 1 (failed).
+ DEBUG [857293bc] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/log ] as ec2-user@18.182.147.85
+ DEBUG [857293bc] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/log ]
+ DEBUG [857293bc] Finished in 0.091 seconds with exit status 1 (failed).
+  INFO [da35bf57] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/log as ec2-user@18.182.147.85
+ DEBUG [da35bf57] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/log )
+  INFO [da35bf57] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [9247c15b] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/pids ] as ec2-user@18.182.147.85
+ DEBUG [9247c15b] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/pids ]
+ DEBUG [9247c15b] Finished in 0.090 seconds with exit status 1 (failed).
+ DEBUG [b9305ea6] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/pids ] as ec2-user@18.182.147.85
+ DEBUG [b9305ea6] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/pids ]
+ DEBUG [b9305ea6] Finished in 0.091 seconds with exit status 1 (failed).
+  INFO [0e3e9fed] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/pids as ec2-user@18.182.147.85
+ DEBUG [0e3e9fed] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/pids )
+  INFO [0e3e9fed] Finished in 0.095 seconds with exit status 0 (successful).
+ DEBUG [f42651c4] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/cache ] as ec2-user@18.182.147.85
+ DEBUG [f42651c4] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/cache ]
+ DEBUG [f42651c4] Finished in 0.091 seconds with exit status 1 (failed).
+ DEBUG [df17c50a] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/cache ] as ec2-user@18.182.147.85
+ DEBUG [df17c50a] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/cache ]
+ DEBUG [df17c50a] Finished in 0.095 seconds with exit status 1 (failed).
+  INFO [c8668934] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/cache as ec2-user@18.182.147.85
+ DEBUG [c8668934] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/cache )
+  INFO [c8668934] Finished in 0.094 seconds with exit status 0 (successful).
+ DEBUG [05ab29dd] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/sockets ] as ec2-user@18.182.147.85
+ DEBUG [05ab29dd] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/sockets ]
+ DEBUG [05ab29dd] Finished in 0.093 seconds with exit status 1 (failed).
+ DEBUG [041c5650] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/sockets ] as ec2-user@18.182.147.85
+ DEBUG [041c5650] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/sockets ]
+ DEBUG [041c5650] Finished in 0.091 seconds with exit status 1 (failed).
+  INFO [3fee5a4b] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/sockets as ec2-user@18.182.147.85
+ DEBUG [3fee5a4b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/tmp/sockets )
+  INFO [3fee5a4b] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [1881f610] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/vendor/bundle ] as ec2-user@18.182.147.85
+ DEBUG [1881f610] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/vendor/bundle ]
+ DEBUG [1881f610] Finished in 0.096 seconds with exit status 1 (failed).
+ DEBUG [7fe8bb0e] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/vendor/bundle ] as ec2-user@18.182.147.85
+ DEBUG [7fe8bb0e] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/vendor/bundle ]
+ DEBUG [7fe8bb0e] Finished in 0.092 seconds with exit status 1 (failed).
+  INFO [68475c1b] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/vendor/bundle as ec2-user@18.182.147.85
+ DEBUG [68475c1b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/vendor/bundle )
+  INFO [68475c1b] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [b1713684] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/system ] as ec2-user@18.182.147.85
+ DEBUG [b1713684] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/system ]
+ DEBUG [b1713684] Finished in 0.092 seconds with exit status 1 (failed).
+ DEBUG [c8dc82d8] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/system ] as ec2-user@18.182.147.85
+ DEBUG [c8dc82d8] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/system ]
+ DEBUG [c8dc82d8] Finished in 0.094 seconds with exit status 1 (failed).
+  INFO [7dd19ed3] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/system as ec2-user@18.182.147.85
+ DEBUG [7dd19ed3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/system )
+  INFO [7dd19ed3] Finished in 0.094 seconds with exit status 0 (successful).
+ DEBUG [3db877bf] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/uploads ] as ec2-user@18.182.147.85
+ DEBUG [3db877bf] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/uploads ]
+ DEBUG [3db877bf] Finished in 0.092 seconds with exit status 1 (failed).
+ DEBUG [88119676] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/uploads ] as ec2-user@18.182.147.85
+ DEBUG [88119676] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/uploads ]
+ DEBUG [88119676] Finished in 0.091 seconds with exit status 1 (failed).
+  INFO [5c756281] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/uploads as ec2-user@18.182.147.85
+ DEBUG [5c756281] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/uploads )
+  INFO [5c756281] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [083a7f94] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/assets ] as ec2-user@18.182.147.85
+ DEBUG [083a7f94] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/assets ]
+ DEBUG [083a7f94] Finished in 0.090 seconds with exit status 1 (failed).
+ DEBUG [9357b177] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/assets ] as ec2-user@18.182.147.85
+ DEBUG [9357b177] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/assets ]
+ DEBUG [9357b177] Finished in 0.093 seconds with exit status 1 (failed).
+  INFO [37c445b4] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/assets /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/assets as ec2-user@18.182.147.85
+ DEBUG [37c445b4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/assets /var/www/freemarket_sample_63a_nagoya/releases/20191120104025/public/assets )
+  INFO [37c445b4] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [97e58442] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120104025'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [97e58442] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104025; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120104025'" 1>&2; false; fi
+ DEBUG [97e58442] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [c26cb1fb] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/freemarket_sample_63a_nagoya/shared/bundle as ec2-user@18.182.147.85
+ DEBUG [c26cb1fb] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120104025 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/freemarket_sample_63a_nagoya/shared/bundle )
+ DEBUG [c26cb1fb] 	Could not locate Gemfile
+ DEBUG [c26cb1fb] Finished in 0.327 seconds with exit status 10 (failed).
+  INFO [51978d10] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/freemarket_sample_63a_nagoya/shared/bundle --jobs 4 --without development test --deployment --quiet as ec2-user@18.182.147.85
+ DEBUG [51978d10] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120104025 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/freemarket_sample_63a_nagoya/shared/bundle --jobs 4 --without development test --deployment --quiet )
+ DEBUG [51978d10] 	Could not locate Gemfile
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-20 19:42:06 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d9b1614e] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as ec2-user@18.182.147.85
+ DEBUG [d9b1614e] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [d9b1614e] Finished in 0.534 seconds with exit status 0 (successful).
+  INFO [c5874f68] Running /usr/bin/env mkdir -p /tmp as ec2-user@18.182.147.85
+ DEBUG [c5874f68] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [c5874f68] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh 0.0%
+  INFO Uploading /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh 100.0%
+  INFO [82a96044] Running /usr/bin/env chmod 700 /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh as ec2-user@18.182.147.85
+ DEBUG [82a96044] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh )
+  INFO [82a96044] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [a0afcb83] Running /usr/bin/env git ls-remote git@github.com:junki789/freemarket_sample_63a_nagoya.git HEAD as ec2-user@18.182.147.85
+ DEBUG [a0afcb83] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git ls-remote git@github.com:junki789/freemarket_sample_63a_nagoya.git HEAD )
+ DEBUG [a0afcb83] 	30589ae3f6e15882ed788586d05c8d5f84becfc9	HEAD
+  INFO [a0afcb83] Finished in 2.087 seconds with exit status 0 (successful).
+  INFO [4cd30fd8] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared /var/www/freemarket_sample_63a_nagoya/releases as ec2-user@18.182.147.85
+ DEBUG [4cd30fd8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared /var/www/freemarket_sample_63a_nagoya/releases )
+  INFO [4cd30fd8] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [3d919bd7] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/shared/public/assets as ec2-user@18.182.147.85
+ DEBUG [3d919bd7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/shared/public/assets )
+  INFO [3d919bd7] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [21bb0566] Running [ -f /var/www/freemarket_sample_63a_nagoya/current/REVISION ] as ec2-user@18.182.147.85
+ DEBUG [21bb0566] Command: [ -f /var/www/freemarket_sample_63a_nagoya/current/REVISION ]
+ DEBUG [21bb0566] Finished in 0.092 seconds with exit status 1 (failed).
+ DEBUG [0c614e4d] Running [ -f /var/www/freemarket_sample_63a_nagoya/repo/HEAD ] as ec2-user@18.182.147.85
+ DEBUG [0c614e4d] Command: [ -f /var/www/freemarket_sample_63a_nagoya/repo/HEAD ]
+ DEBUG [0c614e4d] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/freemarket_sample_63a_nagoya/repo
+ DEBUG [e80b29a7] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [e80b29a7] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [e80b29a7] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [48e7384b] Running /usr/bin/env git remote set-url origin git@github.com:junki789/freemarket_sample_63a_nagoya.git as ec2-user@18.182.147.85
+ DEBUG [48e7384b] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git remote set-url origin git@github.com:junki789/freemarket_sample_63a_nagoya.git )
+  INFO [48e7384b] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [181386b6] Running /usr/bin/env git remote update --prune as ec2-user@18.182.147.85
+ DEBUG [181386b6] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [181386b6] 	Fetching origin
+  INFO [181386b6] Finished in 2.073 seconds with exit status 0 (successful).
+ DEBUG [a43cb7ba] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [a43cb7ba] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [a43cb7ba] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [735bcde4] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120104210 as ec2-user@18.182.147.85
+ DEBUG [735bcde4] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120104210 )
+  INFO [735bcde4] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [277cef54] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/freemarket_sample_63a_nagoya/releases/20191120104210 as ec2-user@18.182.147.85
+ DEBUG [277cef54] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/freemarket_sample_63a_nagoya/releases/20191120104210 )
+  INFO [277cef54] Finished in 0.111 seconds with exit status 0 (successful).
+ DEBUG [6336cc2c] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [6336cc2c] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/repo; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/repo'" 1>&2; false; fi
+ DEBUG [6336cc2c] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [c9a0db3a] Running /usr/bin/env git rev-list --max-count=1 master as ec2-user@18.182.147.85
+ DEBUG [c9a0db3a] Command: cd /var/www/freemarket_sample_63a_nagoya/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-freemarket_sample_63a_nagoya-production-shinagawajunki.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [c9a0db3a] 	30589ae3f6e15882ed788586d05c8d5f84becfc9
+ DEBUG [c9a0db3a] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [c349697d] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120104210'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [c349697d] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120104210'" 1>&2; false; fi
+ DEBUG [c349697d] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [afbfe8cc] Running /usr/bin/env echo "30589ae3f6e15882ed788586d05c8d5f84becfc9" > REVISION as ec2-user@18.182.147.85
+ DEBUG [afbfe8cc] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120104210 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env echo "30589ae3f6e15882ed788586d05c8d5f84becfc9" > REVISION )
+  INFO [afbfe8cc] Finished in 0.105 seconds with exit status 0 (successful).
+  INFO [f185cc0e] Running /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120104210 /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/vendor /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public as ec2-user@18.182.147.85
+ DEBUG [f185cc0e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /var/www/freemarket_sample_63a_nagoya/releases/20191120104210 /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/vendor /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public )
+  INFO [f185cc0e] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [037e740c] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/log ] as ec2-user@18.182.147.85
+ DEBUG [037e740c] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/log ]
+ DEBUG [037e740c] Finished in 0.100 seconds with exit status 1 (failed).
+ DEBUG [1da2f156] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/log ] as ec2-user@18.182.147.85
+ DEBUG [1da2f156] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/log ]
+ DEBUG [1da2f156] Finished in 0.101 seconds with exit status 1 (failed).
+  INFO [5159292e] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/log as ec2-user@18.182.147.85
+ DEBUG [5159292e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/log /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/log )
+  INFO [5159292e] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [2bc96389] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/pids ] as ec2-user@18.182.147.85
+ DEBUG [2bc96389] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/pids ]
+ DEBUG [2bc96389] Finished in 0.102 seconds with exit status 1 (failed).
+ DEBUG [2479d339] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/pids ] as ec2-user@18.182.147.85
+ DEBUG [2479d339] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/pids ]
+ DEBUG [2479d339] Finished in 0.100 seconds with exit status 1 (failed).
+  INFO [43e6058c] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/pids as ec2-user@18.182.147.85
+ DEBUG [43e6058c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/pids /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/pids )
+  INFO [43e6058c] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [4c91a34e] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/cache ] as ec2-user@18.182.147.85
+ DEBUG [4c91a34e] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/cache ]
+ DEBUG [4c91a34e] Finished in 0.103 seconds with exit status 1 (failed).
+ DEBUG [f488a7ed] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/cache ] as ec2-user@18.182.147.85
+ DEBUG [f488a7ed] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/cache ]
+ DEBUG [f488a7ed] Finished in 0.103 seconds with exit status 1 (failed).
+  INFO [91cb0f49] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/cache as ec2-user@18.182.147.85
+ DEBUG [91cb0f49] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/cache /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/cache )
+  INFO [91cb0f49] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [9af250fb] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/sockets ] as ec2-user@18.182.147.85
+ DEBUG [9af250fb] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/sockets ]
+ DEBUG [9af250fb] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [2acc086a] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/sockets ] as ec2-user@18.182.147.85
+ DEBUG [2acc086a] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/sockets ]
+ DEBUG [2acc086a] Finished in 0.100 seconds with exit status 1 (failed).
+  INFO [76552ab6] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/sockets as ec2-user@18.182.147.85
+ DEBUG [76552ab6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/tmp/sockets /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/tmp/sockets )
+  INFO [76552ab6] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [bb928e1c] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/vendor/bundle ] as ec2-user@18.182.147.85
+ DEBUG [bb928e1c] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/vendor/bundle ]
+ DEBUG [bb928e1c] Finished in 0.103 seconds with exit status 1 (failed).
+ DEBUG [5e5bfeba] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/vendor/bundle ] as ec2-user@18.182.147.85
+ DEBUG [5e5bfeba] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/vendor/bundle ]
+ DEBUG [5e5bfeba] Finished in 0.099 seconds with exit status 1 (failed).
+  INFO [809f4e77] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/vendor/bundle as ec2-user@18.182.147.85
+ DEBUG [809f4e77] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/vendor/bundle /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/vendor/bundle )
+  INFO [809f4e77] Finished in 0.106 seconds with exit status 0 (successful).
+ DEBUG [b21dceb2] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/system ] as ec2-user@18.182.147.85
+ DEBUG [b21dceb2] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/system ]
+ DEBUG [b21dceb2] Finished in 0.102 seconds with exit status 1 (failed).
+ DEBUG [f005f661] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/system ] as ec2-user@18.182.147.85
+ DEBUG [f005f661] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/system ]
+ DEBUG [f005f661] Finished in 0.100 seconds with exit status 1 (failed).
+  INFO [5a70e681] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/system as ec2-user@18.182.147.85
+ DEBUG [5a70e681] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/system /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/system )
+  INFO [5a70e681] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [eab04c92] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/uploads ] as ec2-user@18.182.147.85
+ DEBUG [eab04c92] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/uploads ]
+ DEBUG [eab04c92] Finished in 0.098 seconds with exit status 1 (failed).
+ DEBUG [dcd9649a] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/uploads ] as ec2-user@18.182.147.85
+ DEBUG [dcd9649a] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/uploads ]
+ DEBUG [dcd9649a] Finished in 0.099 seconds with exit status 1 (failed).
+  INFO [af30cd00] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/uploads as ec2-user@18.182.147.85
+ DEBUG [af30cd00] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/uploads /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/uploads )
+  INFO [af30cd00] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [113f3b5a] Running [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/assets ] as ec2-user@18.182.147.85
+ DEBUG [113f3b5a] Command: [ -L /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/assets ]
+ DEBUG [113f3b5a] Finished in 0.096 seconds with exit status 1 (failed).
+ DEBUG [4dd82590] Running [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/assets ] as ec2-user@18.182.147.85
+ DEBUG [4dd82590] Command: [ -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/assets ]
+ DEBUG [4dd82590] Finished in 0.102 seconds with exit status 1 (failed).
+  INFO [249364ef] Running /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/assets /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/assets as ec2-user@18.182.147.85
+ DEBUG [249364ef] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /var/www/freemarket_sample_63a_nagoya/shared/public/assets /var/www/freemarket_sample_63a_nagoya/releases/20191120104210/public/assets )
+  INFO [249364ef] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [6dbecc7d] Running if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120104210'" 1>&2; false; fi as ec2-user@18.182.147.85
+ DEBUG [6dbecc7d] Command: if test ! -d /var/www/freemarket_sample_63a_nagoya/releases/20191120104210; then echo "Directory does not exist '/var/www/freemarket_sample_63a_nagoya/releases/20191120104210'" 1>&2; false; fi
+ DEBUG [6dbecc7d] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [e86bf8ba] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/freemarket_sample_63a_nagoya/shared/bundle as ec2-user@18.182.147.85
+ DEBUG [e86bf8ba] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120104210 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/freemarket_sample_63a_nagoya/shared/bundle )
+ DEBUG [e86bf8ba] 	Could not locate Gemfile
+ DEBUG [e86bf8ba] Finished in 0.326 seconds with exit status 10 (failed).
+  INFO [5bc74c0f] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/freemarket_sample_63a_nagoya/shared/bundle --jobs 4 --without development test --deployment --quiet as ec2-user@18.182.147.85
+ DEBUG [5bc74c0f] Command: cd /var/www/freemarket_sample_63a_nagoya/releases/20191120104210 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/freemarket_sample_63a_nagoya/shared/bundle --jobs 4 --without development test --deployment --quiet )
+ DEBUG [5bc74c0f] 	Could not locate Gemfile
