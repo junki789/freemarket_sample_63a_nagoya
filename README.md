@@ -43,9 +43,6 @@
 - has_many :comments
 - has_many :status
 - has_many :item_images
-- belongs_to:upper_category
-- belongs_to:middle_category
-- belongs_to:lower_category
 - belongs_to:user
 - belongs_to:size_type
 
@@ -139,8 +136,8 @@
 |zip_code1|string|null: false|
 |prefecture_id|integer|null: false|
 |city|string|null: false|
-|address1|string|-----|
-|address2|string|-----|
+|town|string|-----|
+|house_number|integer|-----|
 
 ### Association
 - belongs_to :user
