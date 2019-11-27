@@ -11,119 +11,121 @@
       %ul.search-menu
         %li.search-menu__list.category
           %h3.category
-            %a.search-menu__list__text{href: ""} カテゴリーから探す
+            .search-menu__list__text
+            = link_to'カテゴリーから探す'
         %li.search-menu__list.brand
           %h3.brand
-            %a.search-menu__list__text{href: ""} ブランドから探す
+            .search-menu__list__text
+            = link_to'ブランドから探す'
       .main__menu
-        %a.main__menu__show{href: ""} マイページ
-
+        .main__menu__show 
+        = link_to'マイページ'
 %main 
   .l-container.cleafix
     .l-side
       %nav.mypage-nav
         %ul.mypage-nav-list
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               マイページ
-              %i.icon-arrow-right
+              %i.icon-arrow-right 
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/notification/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               お知らせ
               %span.mypage-nav-number
                 99+
-              %i.icon-arrow-right
+            %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/todo/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               やることリスト
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/like/history/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               いいね！一覧
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/sell/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               出品する
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/listings/listing/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               出品した商品 - 出品中
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/listings/in_progress/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               出品した商品 - 取引中
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/listings/completed/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               出品した商品 - 売却済み
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/purchase/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               購入した商品 - 取引中
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/purchased/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               購入した商品 - 過去の取引
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/news/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               ニュース一覧
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/review/history/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               評価一覧
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/help_center/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               ガイド
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/support/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               お問い合わせ
               %i.icon-arrow-right
         %h3.mypage-nav-head メルペイ
         %ul.mypage-nav-list
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/sales/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               売上・振込申請
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/point/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               ポイント
               %i.icon-arrow-right
         %h3.mypage-nav-head 設定
         %ul.mypage-nav-list
           %li
-            %a.mypage-nav-list-item.active{:href => "/jp/mypage/profile/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               プロフィール
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/deliver_address/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               発送元・お届け先住所変更
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/card/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               支払い方法
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/email_password/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               メール/パスワード
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/identification/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               本人情報
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/mypage/sms_confirmation/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               電話番号の確認
               %i.icon-arrow-right
           %li
-            %a.mypage-nav-list-item{:href => "/jp/logout/"}
+            = link_to '#', class: 'mypage-nav-list-item' do
               ログアウト
               %i.icon-arrow-right
     .l-content
       %section.mypage-user-icon
-        %a{href: ""}
+        =link_to '#' do
           %figure
             = image_tag "", alt: "", height: "60"
           %h2.bold あああ
@@ -138,11 +140,11 @@
         %ul.mypage-tabs
           %li#mypage-top_left.active
             %h3
-              %a{"data-toggle": "tab"}
+              =link_to '#' do
                 お知らせ
           %li#mypage-top_right
             %h3
-              %a{"data-toggle": "tab"}
+              =link_to '#' do
                 やることリスト
         .tab-content
           %ul.mypage-tab-notification_top.mypage-top_left
@@ -154,11 +156,11 @@
         %ul.mypage-tabs
           %li#mypage-bottom_left.active
             %h3
-              %a{"data-toggle": "tab"}
+              =link_to '#' do
                 取引中
           %li#mypage-bottom_right
             %h3
-              %a{"data-toggle": "tab"}
+              =link_to '#' do
                 過去の取引
         .tab-content
           %ul.mypage-tab-notification_bottom.mypage-bottom_left
@@ -167,7 +169,7 @@
             %li.mypage-item-not-found.bold 過去の取引はありません
 
 .Botan
-  %a.Botan__main{:href => "/jp/sell/"}
+  =link_to '#', class: 'Botan__main' do
     .Botan__content
       .Botan__name 出品
       %svg.Botan__camera{"aria-hidden" => "true", :height => "16", :viewbox => "0 0 18 16", :width => "18"}
@@ -175,7 +177,7 @@
 
 %aside.Join
   .Join__head
-    %a.head__block{:href => "http://app.adjust.io/xio2ii?campaign=iOS&adgroup=common.footer"}
+    = link_to 'http://app.adjust.io/xio2ii?campaign=iOS&adgroup=common.footer', class: 'head__block' do
       %img.head__block__img{:alt => "", :src => "https://web-jp-assets.mercdn.net/_next/static/images/mercari_icon-f75780e32e41e052c8aaa8b446331cd8.png"}/
       .head__block__text
         スマホでかんたんフリマアプリ
@@ -187,9 +189,9 @@
         .main__text__down 今すぐ無料ダウンロード！
         .main__icon
           = link_to image_tag("logo_red.svg", size:"100x100" ,class:"sc-feryYK.jSTnBt"),""
-          %a.sc-cJOK.lgmdCB{:href => "https://itunes.apple.com/jp/app/id667861049?l=ja&mt=8", :target => "_blank"}
+          =link_to 'https://itunes.apple.com/jp/app/id667861049?l=ja&mt=8', class: 'vsc-cJOK.lgmdCB' do
             %img.sc-ccSCjj.sc-jKmXuR.kDwjrS{:alt => "", :src => "https://web-jp-assets.mercdn.net/_next/static/images/app-store-a5c17948c6fd6d5b60b13d421cd60b35.svg"}/
-          %a.sc-cJOK.lgmdCB{:href => "https://play.google.com/store/apps/details?id=com.kouzoh.mercari&hl=ja", :target => "_blank"}
+          =link_to 'https://play.google.com/store/apps/details?id=com.kouzoh.mercari&hl=ja', class: 'sc-cJOK.lgmdCB' do
             %img.sc-ccSCjj.sc-elNKlv.fofvah{:alt => "", :src => "https://web-jp-assets.mercdn.net/_next/static/images/google-play-495575abb895b405aa6336b2a4304958.svg"}/
       %figure.sc-bYwvMP.kzQJRg
         %img.sc-hUMlYv.cYtUcH{:alt => "", :src => ""}/

@@ -3675,3 +3675,1981 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 214ms (Views: 209.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/show" for ::1 at 2019-11-27 14:15:35 +0900
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/config/routes.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  resources :users onry: [index:, show:, edit:]
+                   ^~~~):
+  
+config/routes.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.2ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:16:56 +0900
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/config/routes.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  resources :users onry: [:index, :show, :edit]
+                   ^~~~):
+  
+config/routes.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.9ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:17:43 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (37.0ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:15: syntax error, unexpected '='
+...:Haml::Helpers.html_escape((( = link_to('')カテゴリー...
+...                              ^
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+...('')カテゴリーから探す
+...    ^~~~~~~~~~~~~~~~~~~~~~~~~~~):
+  
+app/views/users/show.html.haml:15: syntax error, unexpected '='
+app/views/users/show.html.haml:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.9ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:17:58 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (45.6ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+...('')カテゴリーから探す
+...    ^~~~~~~~~~~~~~~~~~~~~~~~~~~):
+  
+app/views/users/show.html.haml:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.2ms)
+Started GET "/" for ::1 at 2019-11-27 14:18:11 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  Rendered users/index.html.haml within layouts/application (147.3ms)
+Completed 200 OK in 195ms (Views: 188.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:20:43 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (62.2ms)
+Completed 200 OK in 103ms (Views: 99.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:20:45 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (49.0ms)
+Completed 200 OK in 73ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:20:47 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (52.6ms)
+Completed 200 OK in 82ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:20:47 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (58.0ms)
+Completed 200 OK in 86ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:20:49 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (50.2ms)
+Completed 200 OK in 76ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:20:51 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (55.1ms)
+Completed 200 OK in 84ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:21:33 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (44.8ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:19: syntax error, unexpected '='
+...:Haml::Helpers.html_escape((( = link_to('ブランドから...
+...                              ^):
+  
+app/views/users/show.html.haml:19: syntax error, unexpected '='
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.4ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:21:44 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (44.9ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:19: syntax error, unexpected '='
+...:Haml::Helpers.html_escape((( = link_to'ブランドから...
+...                              ^):
+  
+app/views/users/show.html.haml:19: syntax error, unexpected '='
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.3ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:21:52 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (47.4ms)
+Completed 200 OK in 72ms (Views: 68.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:21:53 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (54.6ms)
+Completed 200 OK in 82ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:22:36 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (49.7ms)
+Completed 200 OK in 79ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:23:46 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (52.3ms)
+Completed 200 OK in 343ms (Views: 338.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:24:53 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (59.8ms)
+Completed 200 OK in 84ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:25:04 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (47.7ms)
+Completed 200 OK in 334ms (Views: 330.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:25:10 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (50.1ms)
+Completed 200 OK in 76ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:25:44 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (47.5ms)
+Completed 200 OK in 342ms (Views: 338.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:25:57 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (50.9ms)
+Completed 200 OK in 331ms (Views: 327.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:26:05 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (51.1ms)
+Completed 200 OK in 337ms (Views: 334.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:26:12 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (48.5ms)
+Completed 200 OK in 329ms (Views: 325.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:26:27 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (48.0ms)
+Completed 200 OK in 334ms (Views: 330.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:26:37 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (49.3ms)
+Completed 200 OK in 76ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:26:55 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (56.9ms)
+Completed 200 OK in 325ms (Views: 321.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:27:07 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (51.3ms)
+Completed 200 OK in 358ms (Views: 353.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:28:01 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (51.2ms)
+Completed 200 OK in 328ms (Views: 323.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:28:08 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (49.4ms)
+Completed 200 OK in 325ms (Views: 321.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:28:20 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (52.2ms)
+Completed 200 OK in 336ms (Views: 331.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:28:37 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (48.7ms)
+Completed 200 OK in 330ms (Views: 326.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-27 14:29:08 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  Rendered users/index.html.haml within layouts/application (135.7ms)
+Completed 200 OK in 170ms (Views: 165.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:33:32 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (40.1ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.8ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:34:04 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (60.0ms)
+Completed 200 OK in 96ms (Views: 92.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:34:52 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (44.2ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:30: syntax error, unexpected '}', expecting =>
+...マイページ', {"/jp/mypage/"})
+...                                ^
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:30: syntax error, unexpected '}', expecting =>
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.5ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:35:00 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (102.1ms)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:30: unknown regexp options - ypag
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:30: syntax error, unexpected '}'
+...マイページ', {/jp/mypage/})
+...                              ^
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:30: unknown regexp options - ypag
+app/views/users/show.html.haml:30: syntax error, unexpected '}'
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.6ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:35:07 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (45.2ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:30: syntax error, unexpected '}'
+...'マイページ', {jp/mypage/})
+...                              ^
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:30: syntax error, unexpected '}'
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.6ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:35:38 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (48.2ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:31: syntax error, unexpected tIDENTIFIER, expecting ')'
+)).to_s);).to_s);; _hamlout.buffer <...
+   ^~~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:280: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:283: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/users/show.html.haml:31: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/users/show.html.haml:280: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/show.html.haml:283: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.0ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:37:03 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (46.5ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:31: syntax error, unexpected tIDENTIFIER, expecting ')'
+)).to_s);).to_s);; _hamlout.buffer <...
+   ^~~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:280: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:283: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/users/show.html.haml:31: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/users/show.html.haml:280: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/show.html.haml:283: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.6ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:37:11 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (43.5ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.6ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:37:32 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (54.5ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.0ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:37:48 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (45.8ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.7ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:38:00 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (53.1ms)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting end-of-input
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~):
+  
+app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.9ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:38:35 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (44.5ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting end-of-input
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~):
+  
+app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.6ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:38:37 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (43.1ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting end-of-input
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~):
+  
+app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.2ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:38:48 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (53.9ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.4ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:39:22 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (50.7ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.1ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:39:31 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (44.8ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.8ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:40:06 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (44.5ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.7ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:40:23 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (52.5ms)
+Completed 200 OK in 81ms (Views: 77.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-27 14:42:28 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  Rendered users/index.html.haml within layouts/application (90.1ms)
+Completed 200 OK in 135ms (Views: 129.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:42:38 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (71.2ms)
+Completed 200 OK in 100ms (Views: 95.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:46:03 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (45.5ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:30: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...k_to'マイページ' root_path do
+...                      ^~~~~~~~~):
+  
+app/views/users/show.html.haml:30: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.0ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:46:12 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (42.8ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:30: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...k_to'マイページ' root_path do
+...                      ^~~~~~~~~):
+  
+app/views/users/show.html.haml:30: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.8ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:46:19 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (65.7ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/":String):
+    27:         %ul.mypage-nav-list
+    28:           %li
+    29:             .mypage-nav-list-item
+    30:               = link_to'マイページ', root_path do
+    31:                 %i.icon-arrow-right
+    32:           %li
+    33:             %a.mypage-nav-list-item{:href => "/jp/mypage/notification/"}
+  
+app/views/users/show.html.haml:30:in `_app_views_users_show_html_haml___1236204110018539279_70275640343260'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.0ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:46:44 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (72.9ms)
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/jp/mypage/notification/":String):
+    27:         %ul.mypage-nav-list
+    28:           %li
+    29:             .mypage-nav-list-item
+    30:               = link_to'マイページ', "/jp/mypage/notification/" do
+    31:                 %i.icon-arrow-right
+    32:           %li
+    33:             %a.mypage-nav-list-item{:href => "/jp/mypage/notification/"}
+  
+app/views/users/show.html.haml:30:in `_app_views_users_show_html_haml___1236204110018539279_70275625446300'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.8ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:47:30 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (47.6ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.2ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:50:23 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (56.9ms)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/":String):
+    27:         %ul.mypage-nav-list
+    28:           %li
+    29:             .mypage-nav-list-item
+    30:               = link_to'マイページ', root_path do
+    31:                 %i.icon-arrow-right
+    32:           %li
+    33:             %a.mypage-nav-list-item{:href => "/jp/mypage/notification/"}
+  
+app/views/users/show.html.haml:30:in `_app_views_users_show_html_haml___1236204110018539279_70275666463980'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.0ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:52:39 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (58.2ms)
+Completed 200 OK in 88ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:54:36 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (48.8ms)
+Completed 200 OK in 75ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-27 14:54:39 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  Rendered users/index.html.haml within layouts/application (88.7ms)
+Completed 200 OK in 121ms (Views: 116.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:54:40 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (75.5ms)
+Completed 200 OK in 109ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:55:19 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (49.4ms)
+Completed 200 OK in 73ms (Views: 68.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:55:21 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (50.3ms)
+Completed 200 OK in 75ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:55:22 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (62.9ms)
+Completed 200 OK in 92ms (Views: 85.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:55:22 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (56.3ms)
+Completed 200 OK in 89ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:55:44 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (52.0ms)
+Completed 200 OK in 78ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 14:55:54 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (58.8ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:31: syntax error, unexpected ')'
+)).to_s);).to_s);; _hamlout.bu...
+^
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:280: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:283: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/users/show.html.haml:31: syntax error, unexpected ')'
+app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/users/show.html.haml:280: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/show.html.haml:283: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.7ms)
+Started GET "/users/show" for ::1 at 2019-11-27 14:55:59 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (56.2ms)
+Completed 200 OK in 85ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:00:52 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (54.7ms)
+Completed 200 OK in 82ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:02:00 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (72.2ms)
+Completed 200 OK in 276ms (Views: 271.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:02:43 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (53.9ms)
+Completed 200 OK in 200ms (Views: 196.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:03:14 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (52.4ms)
+Completed 200 OK in 205ms (Views: 200.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:05:36 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (56.0ms)
+Completed 200 OK in 81ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:05:36 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (44.9ms)
+Completed 200 OK in 66ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:05:49 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (52.5ms)
+Completed 200 OK in 80ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:07:31 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (64.8ms)
+Completed 200 OK in 93ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:07:45 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (51.8ms)
+Completed 200 OK in 76ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:07:48 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (50.7ms)
+Completed 200 OK in 76ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:07:58 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (51.6ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:30: syntax error, unexpected keyword_do_block
+...=  link_to'マイページ', do
+...                             ^~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:30: syntax error, unexpected keyword_do_block
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.6ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:08:03 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (52.6ms)
+Completed 200 OK in 80ms (Views: 75.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:08:25 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    27:         %ul.mypage-nav-list
+    28:           %li
+    29:             .mypage-nav-list-item マイページ
+    30:               = link_to do
+    31:                 %i.icon-arrow-right
+    32:           %li
+    33:             %a.mypage-nav-list-item{:href => "/jp/mypage/notification/"}
+  
+app/views/users/show.html.haml:30
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (81.7ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:08:35 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (51.9ms)
+Completed 200 OK in 77ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:08:52 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (58.5ms)
+Completed 200 OK in 84ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:09:44 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (49.5ms)
+Completed 200 OK in 74ms (Views: 70.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:09:46 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (49.5ms)
+Completed 200 OK in 75ms (Views: 71.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:11:16 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (52.7ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:36: syntax error, unexpected ')'
+)).to_s);).to_s);; _hamlout.bu...
+^
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:282: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:282: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:285: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/users/show.html.haml:36: syntax error, unexpected ')'
+app/views/users/show.html.haml:282: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/users/show.html.haml:282: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/show.html.haml:285: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.6ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:11:37 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (48.5ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:36: syntax error, unexpected ')'
+)).to_s);).to_s);; _hamlout.bu...
+^
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:282: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:282: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:285: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/users/show.html.haml:36: syntax error, unexpected ')'
+app/views/users/show.html.haml:282: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/users/show.html.haml:282: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/show.html.haml:285: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.7ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:12:56 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (53.4ms)
+Completed 200 OK in 78ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:17:17 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    28:           %li
+    29:             = link_to '#' class: .mypage-nav-list-item do
+    30:             マイページ
+    31:               %i.icon-arrow-right 
+    32:           %li
+    33:             %a.mypage-nav-list-item{:href => "/jp/mypage/notification/"}
+    34:               お知らせ
+  
+app/views/users/show.html.haml:31
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.7ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (177.9ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:17:26 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (45.4ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:29: syntax error, unexpected keyword_class, expecting ')'
+...tml_escape((( link_to '#' class: .mypage-nav-list-item do
+...                          ^~~~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:30: syntax error, unexpected ')'
+)).to_s);).to_s);; _hamlout.bu...
+^
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:280: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:283: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/users/show.html.haml:29: syntax error, unexpected keyword_class, expecting ')'
+app/views/users/show.html.haml:30: syntax error, unexpected ')'
+app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/users/show.html.haml:280: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/show.html.haml:283: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.1ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:17:36 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    28:           %li
+    29:           = link_to '#' class: .mypage-nav-list-item do
+    30:           マイページ
+    31:             %i.icon-arrow-right 
+    32:           %li
+    33:             %a.mypage-nav-list-item{:href => "/jp/mypage/notification/"}
+    34:               お知らせ
+  
+app/views/users/show.html.haml:31
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.0ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:17:48 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    28:           %li
+    29:             = link_to '#' class: .mypage-nav-list-item do
+    30:             マイページ
+    31:               %i.icon-arrow-right 
+    32:           %li
+    33:             %a.mypage-nav-list-item{:href => "/jp/mypage/notification/"}
+    34:               お知らせ
+  
+app/views/users/show.html.haml:31
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.1ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:18:38 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (47.0ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:29: syntax error, unexpected keyword_class, expecting keyword_end
+haml_temp =  link_to '#' class: 'mypage-nav-list-item' do
+                         ^~~~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:29: syntax error, unexpected keyword_do_block, expecting keyword_end
+...lass: 'mypage-nav-list-item' do
+...                             ^~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:29: syntax error, unexpected keyword_class, expecting keyword_end
+app/views/users/show.html.haml:29: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.2ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:19:17 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (58.2ms)
+Completed 200 OK in 91ms (Views: 88.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:20:04 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 13 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+    30:               マイページ
+    31:               %i.icon-arrow-right 
+    32:           %li
+    33:              = link_to '#', class: 'mypage-nav-list-item' do
+    34:               お知らせ
+    35:               %span.mypage-nav-number
+    36:                 99+
+  
+app/views/users/show.html.haml:33
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.5ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:20:16 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 13 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+    30:               マイページ
+    31:               %i.icon-arrow-right 
+    32:           %li
+    33:              = link_to '#', class: 'mypage-nav-list-item' do
+    34:               お知らせ
+    35:               %span.mypage-nav-number
+    36:                 99+
+  
+app/views/users/show.html.haml:33
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (81.8ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:20:42 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (50.1ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:34: syntax error, unexpected ')'
+)).to_s);).to_s);; _hamlout.bu...
+^
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:280: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:283: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/users/show.html.haml:34: syntax error, unexpected ')'
+app/views/users/show.html.haml:280: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/users/show.html.haml:280: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/show.html.haml:283: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.1ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:20:59 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (51.1ms)
+Completed 200 OK in 81ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:21:25 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (52.4ms)
+Completed 200 OK in 78ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:22:23 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (55.6ms)
+Completed 200 OK in 83ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:23:22 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (49.9ms)
+Completed 200 OK in 74ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:25:55 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (41.8ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:143: syntax error, unexpected '{', expecting keyword_end
+haml_temp =  link_to'name'{"data-toggle": "tab"}
+                          ^
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:143: syntax error, unexpected ':', expecting keyword_end
+...=  link_to'name'{"data-toggle": "tab"}
+...                              ^
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:143: syntax error, unexpected '}', expecting keyword_end
+..._to'name'{"data-toggle": "tab"}
+...                              ^
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:143: syntax error, unexpected '{', expecting keyword_end
+app/views/users/show.html.haml:143: syntax error, unexpected ':', expecting keyword_end
+app/views/users/show.html.haml:143: syntax error, unexpected '}', expecting keyword_end
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.7ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:26:29 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (46.7ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "tab":String):
+    140:         %ul.mypage-tabs
+    141:           %li#mypage-top_left.active
+    142:             %h3
+    143:               = link_to"data-toggle", "tab" do
+    144:                 お知らせ
+    145:           %li#mypage-top_right
+    146:             %h3
+  
+app/views/users/show.html.haml:143:in `_app_views_users_show_html_haml___1236204110018539279_70275662470540'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.7ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:29:07 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (40.7ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.9ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:29:17 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (52.8ms)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Botan__main):
+    169:             %li.mypage-item-not-found.bold 過去の取引はありません
+    170: 
+    171: .Botan
+    172:   =link_to '/jp/sell/', class: Botan__main do
+    173:     .Botan__content
+    174:       .Botan__name 出品
+    175:       %svg.Botan__camera{"aria-hidden" => "true", :height => "16", :viewbox => "0 0 18 16", :width => "18"}
+  
+app/views/users/show.html.haml:172:in `_app_views_users_show_html_haml___1236204110018539279_70275669252360'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.2ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:29:29 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (62.6ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Botan__main):
+    169:             %li.mypage-item-not-found.bold 過去の取引はありません
+    170: 
+    171: .Botan
+    172:   =link_to 'jp/sell', class: Botan__main do
+    173:     .Botan__content
+    174:       .Botan__name 出品
+    175:       %svg.Botan__camera{"aria-hidden" => "true", :height => "16", :viewbox => "0 0 18 16", :width => "18"}
+  
+app/views/users/show.html.haml:172:in `_app_views_users_show_html_haml___1236204110018539279_70275624296800'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.3ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:29:37 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (50.6ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Botan__main):
+    169:             %li.mypage-item-not-found.bold 過去の取引はありません
+    170: 
+    171: .Botan
+    172:   =link_to '/jp/sell', class: Botan__main do
+    173:     .Botan__content
+    174:       .Botan__name 出品
+    175:       %svg.Botan__camera{"aria-hidden" => "true", :height => "16", :viewbox => "0 0 18 16", :width => "18"}
+  
+app/views/users/show.html.haml:172:in `_app_views_users_show_html_haml___1236204110018539279_70275625086600'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (79.9ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:30:07 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (51.4ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Botan__main):
+    169:             %li.mypage-item-not-found.bold 過去の取引はありません
+    170: 
+    171: .Botan
+    172:   =link_to '#', class: Botan__main do
+    173:     .Botan__content
+    174:       .Botan__name 出品
+    175:       %svg.Botan__camera{"aria-hidden" => "true", :height => "16", :viewbox => "0 0 18 16", :width => "18"}
+  
+app/views/users/show.html.haml:172:in `_app_views_users_show_html_haml___1236204110018539279_70275665365500'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.6ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:30:27 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (49.2ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Botan__main):
+    169:             %li.mypage-item-not-found.bold 過去の取引はありません
+    170: 
+    171: .Botan
+    172: =link_to '#', class: Botan__main do
+    173:   .Botan__content
+    174:     .Botan__name 出品
+    175:     %svg.Botan__camera{"aria-hidden" => "true", :height => "16", :viewbox => "0 0 18 16", :width => "18"}
+  
+app/views/users/show.html.haml:172:in `_app_views_users_show_html_haml___1236204110018539279_70275663532280'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.8ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:39:51 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (55.2ms)
+Completed 200 OK in 106ms (Views: 100.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:39:52 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (60.4ms)
+Completed 200 OK in 86ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:45:26 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (55.0ms)
+Completed 200 OK in 80ms (Views: 77.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:46:03 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (47.1ms)
+Completed 200 OK in 74ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:46:17 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (50.0ms)
+Completed 200 OK in 76ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:48:20 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (57.6ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Botan__main):
+    169:             %li.mypage-item-not-found.bold 過去の取引はありません
+    170: 
+    171: .Botan
+    172:   =link_to '#', class: Botan__main do
+    173:     .Botan__content
+    174:       .Botan__name 出品
+    175:       %svg.Botan__camera{"aria-hidden" => "true", :height => "16", :viewbox => "0 0 18 16", :width => "18"}
+  
+app/views/users/show.html.haml:172:in `_app_views_users_show_html_haml___1236204110018539279_70275624566640'
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.0ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:48:53 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (49.3ms)
+Completed 200 OK in 80ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:50:04 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (50.3ms)
+Completed 200 OK in 71ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:50:16 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (54.1ms)
+Completed 200 OK in 225ms (Views: 221.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:50:48 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (48.6ms)
+Completed 200 OK in 72ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:52:35 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (50.3ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.3ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:52:47 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (49.6ms)
+Completed 200 OK in 82ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:54:31 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (52.1ms)
+Completed 200 OK in 77ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:56:57 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (38.7ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.5ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:57:13 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (52.5ms)
+Completed 200 OK in 83ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:58:23 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (37.2ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:163: syntax error, unexpected keyword_do_block
+haml_temp = link_to '#', do
+                         ^~
+/Users/kotaro3101/projects/freemarket_sample_63a_nagoya/app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.haml:163: syntax error, unexpected keyword_do_block
+app/views/users/show.html.haml:281: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/kotaro3101/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.0ms)
+Started GET "/users/show" for ::1 at 2019-11-27 15:58:29 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (49.1ms)
+Completed 200 OK in 75ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:58:57 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (55.5ms)
+Completed 200 OK in 82ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-27 15:59:04 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (49.1ms)
+Completed 200 OK in 77ms (Views: 72.2ms | ActiveRecord: 0.0ms)
+
+
