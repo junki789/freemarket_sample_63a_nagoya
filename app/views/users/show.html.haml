@@ -1,25 +1,25 @@
 %header
   .headernav
-    .main
-      .main__content
-        .main__logo
-          = link_to image_tag( "fmarket_logo_white.svg" ), '#'
-        %form.form__action__search{action: "#"}
-          %input{name: "keyword", placeholder: "何かお探しですか？", type: "search", value: "", class: "form__text"}
+    .main__header
+      .main__header__content
+        .main__logo__show
+          = link_to image_tag( "logo_red.svg" ), '#'
+        %form.form__action__search__show{action: "#"}
+          %input.show{name: "keyword", placeholder: "何かお探しですか？", type: "search", value: "", class: "form__text"}
             %input{class: "sbtn", type: "submit", value: "検索"}
-    .main__category
-      %ul.search-menu
-        %li.search-menu__list.category
-          %h3.category
-            .search-menu__list__text
-            = link_to'カテゴリーから探す'
-        %li.search-menu__list.brand
-          %h3.brand
-            .search-menu__list__text
-            = link_to'ブランドから探す'
-      .main__menu
-        .main__menu__show 
-        = link_to'マイページ'
+    .main__category__show
+      %ul.search-menu__show
+        %li.search-menu__show__list.category
+          %h3.show__category
+            = link_to '#', class: 'search-menu__show__list__text' do
+              カテゴリーから探す
+        %li.search-menu__show__list.brand
+          %h3.show__brand
+            = link_to '#', class: 'search-menu__show__list__text' do
+              ブランドから探す
+      .main__menu__show
+        = link_to '#', class: 'main__menu__show__btn' do
+          マイページ
 %main 
   .l-container.cleafix
     .l-side
@@ -172,7 +172,7 @@
   =link_to '#', class: 'Botan__main' do
     .Botan__content
       .Botan__name 出品
-      %svg.Botan__camera{"aria-hidden" : "true", height: "16", viewbox: "0 0 18 16", width: "18"}
+      %svg.Botan__camera{"aria-hidden": "true", height: "16", viewbox: "0 0 18 16", width: "18"}
         %path{d: "M6.3 0L4.653 1.778H1.8c-.99 0-1.8.8-1.8 1.778v10.666C0 15.2.81 16 1.8 16h14.4c.99 0 1.8-.8 1.8-1.778V3.556c0-.978-.81-1.778-1.8-1.778h-2.853L11.7 0H6.3zM9 13.333c-2.484 0-4.5-1.99-4.5-4.444 0-2.453 2.016-4.445 4.5-4.445s4.5 1.992 4.5 4.445c0 2.453-2.016 4.444-4.5 4.444zm0-1.6c1.59 0 2.88-1.273 2.88-2.844S10.59 6.044 9 6.044c-1.59 0-2.88 1.274-2.88 2.845 0 1.57 1.29 2.844 2.88 2.844z", :fill => "currentColor", "fill-rule" => "nonzero"}
 
 %aside.Join

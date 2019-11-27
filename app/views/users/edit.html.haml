@@ -1,24 +1,24 @@
 %header
   .headernav
-    .main
-      .main__content
-        .main__logo
+    .main__header
+      .main__header__content
+        .main__logo__show
           = link_to image_tag( "logo_red.svg" ), '#'
-        %form.form__action__search{action: "#"}
-          %input{name: "keyword", placeholder: "何かお探しですか？", type: "search", value: "", class: "form__text"}
+        %form.form__action__search__show{action: "#"}
+          %input.show{name: "keyword", placeholder: "何かお探しですか？", type: "search", value: "", class: "form__text"}
             %input{class: "sbtn", type: "submit", value: "検索"}
-    .main__category
-      %ul.search-menu
-        %li.search-menu__list.category
-          %h3
-            = link_to '#', class: 'search-menu__list__text' do
+    .main__category__show
+      %ul.search-menu__show
+        %li.search-menu__show__list.category
+          %h3.show__category
+            = link_to '#', class: 'search-menu__show__list__text' do
               カテゴリーから探す
-        %li.search-menu__list.brand
-          %h3
-            = link_to '#', class: 'search-menu__list__text' do
+        %li.search-menu__show__list.brand
+          %h3.show__brand
+            = link_to '#', class: 'search-menu__show__list__text' do
               ブランドから探す
-      .main__menu
-        = link_to '#', class: 'main__menu__new' do
+      .main__menu__show
+        = link_to '#', class: 'main__menu__show__btn' do
           マイページ
 %body 
   .full-page

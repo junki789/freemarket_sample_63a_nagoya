@@ -7,6 +7,86 @@ body {
   color: #333;
   line-height: 1;
 }
+// header部分
+.main__header__content {
+  display: flex;
+  justify-content: center;
+}
+
+.main__logo__show {
+  height: 48px;
+  width: 48px;
+  margin-top: 3px;
+  margin-right: 21px;
+}
+
+.form__action__search__show {
+  height: 3px;
+  margin-top: 7px;
+}
+
+input.show[type="search"] {
+  -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    border: none; 
+    font-size: 1em;
+    height: 39px;
+    width: 800px;
+    background-color: lightgray;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border:solid 1px gray;
+    border-width: 0;
+    padding: 0;
+}
+
+.main__category__show {
+  clear: both;
+  display: flex;
+  justify-content: center;
+}
+
+.search-menu__show {
+  margin-right: 450px;
+  display: flex;
+  margin-top:  5px;
+}
+
+h3.show__category {
+  font-size: 13px;
+  margin-right: 50px;
+}
+
+h3.show__brand {
+  font-size: 13px;
+  margin-right: 50px;
+}
+
+
+.search-menu__list__text {
+  text-decoration: none;
+}
+
+.search-menu__show li {
+  display: inline-block;
+}
+
+
+
+
+.main__menu__show__btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  color: #FFF;
+  border-radius: 3px;
+  margin-top: 13px;
+}
+// body部分
 .full-page {
  
   height: 200%;
@@ -30,6 +110,7 @@ div {
 .l-content {
   float: right;
   width: 700px;
+  margin-top: -20px;
 }
 
 .l-chapter-container:first-child {
@@ -296,111 +377,6 @@ h3 {
 
 .mypage-nav-head+.mypage-nav-list {
   margin: 8px 0 0;
-}
-
-.main__content {
-  display: flex;
-  justify-content: center;
-}
-
-.main__logo {
-  height: 48px;
-  width: 48px;
-  margin-top: 3px;
-  margin-right: 21px;
-}
-
-.form__action__search {
-  height: 3px;
-  margin-top: 7px;
-}
-
-input[type="search"] {
-  -moz-appearance: none;
-    -webkit-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    border: none; 
-    font-size: 1em;
-    height: 39px;
-    width: 800px;
-    background-color: lightgray;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    border:solid 1px gray;
-    border-width: 0;
-    padding: 0;
-}
-
-.sbtn{
-  width:70px;
-  height:39px;
-  left:20px;
-  top:0;
-  border-radius: 3px;
-  background: lightgray; 
-  border:none; 
-  color:rgb(129, 72, 72); 
-  font-weight:bold;
-  font-size:16px;
-  border:solid 1px gray;
-  border-width: 0;
-  padding: 0;
-}
-
-.main__category {
-  clear: both;
-  display: flex;
-  justify-content: center;
-}
-
-.search-menu {
-  margin-right: 450px;
-}
-
-h3 {
-  font-size: 13px;
-  margin-right: 50px;
-}
-
-a.search-menu__list__text {
-  text-decoration: none;
-}
-
-.search-menu li {
-  display: inline-block;
-}
-
-.main__menu {
-  float: right;
-}
-
-a.main__menu__new {
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  background: #668ad8;
-  color: #FFF;
-  border-radius: 3px;
-  margin-top: 13px;
-}
-
-
-a.main__menu__login {
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  color: #67c5ff;
-  border: solid 1px #67c5ff;
-  background: white;
-  border-radius: 3px;
-  transition: .4s;
-
-  &:hover {
-    background: #305be9;
-    color: rgb(255, 255, 255);
-  }
 }
 
 .Botan {
