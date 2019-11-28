@@ -2182,3 +2182,343 @@ puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
   Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.6ms)
+Started GET "/" for ::1 at 2019-11-28 16:15:34 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.haml within layouts/application
+  Rendered items/index.html.haml within layouts/application (693.7ms)
+Completed 500 Internal Server Error in 720ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: users.
+Load paths:
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/config
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/images
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/javascripts
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/stylesheets
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.0.7.2/lib/assets/compiled
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts):
+    3:     .main
+    4:       .main__content
+    5:         .main__logo
+    6:           = link_to image_tag( "fmarket_logo_white.svg" ), '#'
+    7:         %form.form__action__search{action: "#"}
+    8:           %input{name: "keyword", placeholder: "何かお探しですか？", type: "search", value: "", class: "form__text"}
+    9:             %input{class: "sbtn", type: "submit", value: "検索"}
+  
+app/assets/stylesheets/application.scss:2
+app/views/items/index.html.haml:6:in `_app_views_items_index_html_haml__1290638764874582673_70186437100780'
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.7ms)
+Started GET "/" for ::1 at 2019-11-28 16:18:04 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  Rendered users/index.html.haml within layouts/application (119.8ms)
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: users.
+Load paths:
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/config
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/images
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/javascripts
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/stylesheets
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.0.7.2/lib/assets/compiled
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts):
+    3:     .main
+    4:       .main__content
+    5:         .main__logo
+    6:           = link_to image_tag( "fmarket_logo_white.svg" ), '#'
+    7:         %form.form__action__search{action: "#"}
+    8:           %input{name: "keyword", placeholder: "何かお探しですか？", type: "search", value: "", class: "form__text"}
+    9:             %input{class: "sbtn", type: "submit", value: "検索"}
+  
+app/assets/stylesheets/application.scss:2
+app/views/users/index.html.haml:6:in `_app_views_users_index_html_haml___4534787172646193566_70186464616560'
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.4ms)
+Started GET "/" for ::1 at 2019-11-28 16:31:56 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  Rendered users/index.html.haml within layouts/application (203.9ms)
+Completed 500 Internal Server Error in 222ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/config
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/images
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/javascripts
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/stylesheets
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.0.7.2/lib/assets/compiled
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts):
+    3:     .main
+    4:       .main__content
+    5:         .main__logo
+    6:           = link_to image_tag( "fmarket_logo_white.svg" ), '#'
+    7:         %form.form__action__search{action: "#"}
+    8:           %input{name: "keyword", placeholder: "何かお探しですか？", type: "search", value: "", class: "form__text"}
+    9:             %input{class: "sbtn", type: "submit", value: "検索"}
+  
+app/assets/stylesheets/application.scss:1
+app/views/users/index.html.haml:6:in `_app_views_users_index_html_haml___4534787172646193566_70186396145180'
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.4ms)
+Started GET "/" for ::1 at 2019-11-28 16:32:01 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  Rendered users/index.html.haml within layouts/application (80.1ms)
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/config
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/images
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/javascripts
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/stylesheets
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.0.7.2/lib/assets/compiled
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts):
+    3:     .main
+    4:       .main__content
+    5:         .main__logo
+    6:           = link_to image_tag( "fmarket_logo_white.svg" ), '#'
+    7:         %form.form__action__search{action: "#"}
+    8:           %input{name: "keyword", placeholder: "何かお探しですか？", type: "search", value: "", class: "form__text"}
+    9:             %input{class: "sbtn", type: "submit", value: "検索"}
+  
+app/assets/stylesheets/application.scss:1
+app/views/users/index.html.haml:6:in `_app_views_users_index_html_haml___4534787172646193566_70186397342420'
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.9ms)
+Started GET "/" for ::1 at 2019-11-28 16:33:04 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  Rendered users/index.html.haml within layouts/application (2146.4ms)
+Completed 500 Internal Server Error in 2169ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: protospace.
+Load paths:
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/config
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/images
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/javascripts
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/stylesheets
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.0.7.2/lib/assets/compiled
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.4.1/assets/fonts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.4.1/assets/images):
+    3:     .main
+    4:       .main__content
+    5:         .main__logo
+    6:           = link_to image_tag( "fmarket_logo_white.svg" ), '#'
+    7:         %form.form__action__search{action: "#"}
+    8:           %input{name: "keyword", placeholder: "何かお探しですか？", type: "search", value: "", class: "form__text"}
+    9:             %input{class: "sbtn", type: "submit", value: "検索"}
+  
+app/assets/stylesheets/application.scss:3
+app/views/users/index.html.haml:6:in `_app_views_users_index_html_haml__3671188770059029650_70223027017640'
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.6ms)
+Started GET "/" for ::1 at 2019-11-28 16:33:40 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  Rendered users/index.html.haml within layouts/application (552.3ms)
+Completed 500 Internal Server Error in 562ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: protospace.
+Load paths:
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/config
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/images
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/javascripts
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/stylesheets
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.0.7.2/lib/assets/compiled
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.4.1/assets/fonts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.4.1/assets/images):
+    3:     .main
+    4:       .main__content
+    5:         .main__logo
+    6:           = link_to image_tag( "fmarket_logo_white.svg" ), '#'
+    7:         %form.form__action__search{action: "#"}
+    8:           %input{name: "keyword", placeholder: "何かお探しですか？", type: "search", value: "", class: "form__text"}
+    9:             %input{class: "sbtn", type: "submit", value: "検索"}
+  
+app/assets/stylesheets/application.scss:3
+app/views/users/index.html.haml:6:in `_app_views_users_index_html_haml__3671188770059029650_70223081522840'
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.3ms)
+Started GET "/" for ::1 at 2019-11-28 18:34:44 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (5.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UsersController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-28 18:34:46 +0900
+Processing by UsersController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-28 18:34:53 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  Rendered users/index.html.haml within layouts/application (381.0ms)
+Completed 500 Internal Server Error in 397ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: users.
+Load paths:
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/config
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/images
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/javascripts
+  /Users/kawashima/projects/freemarket_sample_63a_nagoya/app/assets/stylesheets
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.0.7.2/lib/assets/compiled
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.4.1/assets/fonts
+  /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.4.1/assets/images):
+    3:     .main
+    4:       .main__content
+    5:         .main__logo
+    6:           = link_to image_tag( "fmarket_logo_white.svg" ), '#'
+    7:         %form.form__action__search{action: "#"}
+    8:           %input{name: "keyword", placeholder: "何かお探しですか？", type: "search", value: "", class: "form__text"}
+    9:             %input{class: "sbtn", type: "submit", value: "検索"}
+  
+app/assets/stylesheets/application.scss:2
+app/views/users/index.html.haml:6:in `_app_views_users_index_html_haml__1797287336128071942_70247551052500'
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.1ms)
+Started GET "/favicon.ico" for ::1 at 2019-11-28 18:34:54 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered collection of /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (27.8ms)
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendering /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kawashima/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (134.6ms)
+Started GET "/" for ::1 at 2019-11-28 18:38:10 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  Rendered users/index.html.haml within layouts/application (399.5ms)
+Completed 200 OK in 468ms (Views: 465.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-28 18:43:30 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  Rendered users/index.html.haml within layouts/application (489.1ms)
+Completed 200 OK in 567ms (Views: 556.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2019-11-28 18:48:52 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"onry"=>[:index, :show, :edit], "id"=>"show"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (53.8ms)
+Completed 200 OK in 81ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
