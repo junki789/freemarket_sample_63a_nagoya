@@ -5,3 +5,4 @@ if Rails.env.development? || Rails.env.test?
   else
     storage :fog
   end
+end
