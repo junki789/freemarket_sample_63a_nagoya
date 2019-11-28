@@ -63,4 +63,5 @@ end
 
 gem 'carrierwave'
 gem 'fog-aws'
-gem "haml-rails"
+gem 'ancestry'
+gem 'devise'
