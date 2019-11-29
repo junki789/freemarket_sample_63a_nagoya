@@ -124,49 +124,11 @@
               ログアウト
               %i.icon-arrow-right
     .l-content
-      %section.mypage-user-icon
-        =link_to '#' do
-          %figure
-            = image_tag "", alt: "", height: "60"
-          %h2.bold あああ
-          .mypage-number
-            %div
-              評価
-              %span.bold 0
-            %div
-              出品数
-              %span.bold 0
-      %section.mypage-tab-container-notification-todo
-        %ul.mypage-tabs
-          %li#mypage-top_left.active
-            %h3
-              =link_to '#' do
-                お知らせ
-          %li#mypage-top_right
-            %h3
-              =link_to '#' do
-                やることリスト
-        .tab-content
-          %ul.mypage-tab-notification_top.mypage-top_left
-            %li.mypage-item-not-found.bold 現在、お知らせはありません
-          %ul.mypage-tab-notification_top.mypage-top_right
-            %li.mypage-item-not-found.bold 現在、やることリストはありません
-      %section.mypage-tab-container
-        %h2.mypage-tab-head 購入した商品
-        %ul.mypage-tabs
-          %li#mypage-bottom_left.active
-            %h3
-              =link_to '#' do
-                取引中
-          %li#mypage-bottom_right
-            %h3
-              =link_to '#' do
-                過去の取引
-        .tab-content
-          %ul.mypage-tab-notification_bottom.mypage-bottom_left
-            %li.mypage-item-not-found.bold 取引中の商品がありません
-          %ul.mypage-tab-notification_bottom.mypage-bottom_right
-            %li.mypage-item-not-found.bold 過去の取引はありません
+      .l-chapter-container
+        %form.l-single-inner{:action => "https://www.mercari.com/jp/logout/", :method => "POST", :novalidate => "novalidate"}
+          .l-single-content
+            %button.btn-default.btn-red{:type => "submit"} ログアウト
+            %input{:name => "__csrf_value", :type => "hidden", :value => "0071175018f21679240b7278801f54c1d632775a92357372f271a66593603709a22dc7472ed18e3d507ab01782d42836fc6d926abc54352538ce971c32bc137a4"}/
 
 .Botan
   =link_to '#', class: 'Botan__main' do
