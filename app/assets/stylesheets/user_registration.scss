@@ -1,0 +1,108 @@
+h1 {
+  display: inline-block;
+  margin: 40px 0 0;
+}
+
+h2 {
+  font-size: 22px;
+  padding: 32px;
+}
+
+li {
+  margin: 16px 0 0;
+  font-size: 12px;
+  list-style: none;
+  display:inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    line-height: 48px;
+    font-size: 14px;
+    background-color: #ec420e;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+}
+
+p {
+  font-size: 14px;
+  border-style: solid;
+  border-width: 0;
+}
+
+.newbtn {
+  display: block;
+  margin: 8px 0 0;
+  border: 1px solid #0099e8;
+  background: #0099e8;
+  color: #fff;
+  line-height: 40px;
+}
+
+.btn-deafault{
+  display: block;
+  width: 100%;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+}
+
+.registration-container {
+  padding: 0 0 220px;
+  background-color: #f5f5f5;
+  &__header {
+    text-align: center;
+    display: block;
+    height: 128px;
+  &--image {
+    width: 185px;
+    height: 49px;
+    margin: 40px auto 0px;
+    }
+  }
+  &__main {
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin : 0 auto;
+    width: 700px;
+    background-color: #fff;
+  }
+  &__footer {
+    text-align: center;
+  &--image {
+    width: 80px;
+    height: 65px;
+  }
+  }
+  &__clearfix {
+    text-align: center;
+  }
+}
+
+.login-container {
+  max-width: none;
+  width: 456px;
+  margin: 0 auto;
+  background: #fff;
+  &__noaccount {
+    padding: 40px 64px;
+    text-align: center;
+    display: block;
+    margin: 8px 0 0;
+    line-height: 40px;
+    border-style: solid;
+    border-width: 0;
+  }
+  &__form {
+    padding: 32px 64px;
+  }
+}

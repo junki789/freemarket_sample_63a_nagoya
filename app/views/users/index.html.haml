@@ -17,8 +17,7 @@
             %a.search-menu__list__text{href: ""} ブランドから探す
       .main__menu
         %a.main__menu__new{href: ""} 新規会員登録
-        %a.main__menu__login{href: "users/show"} ログイン
-
+        = link_to "ログイン", new_user_session_path, class: "main__menu__login"
 .main
   .BBody  
     .Body
