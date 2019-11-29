@@ -17,7 +17,8 @@
           .login-container__group
             .login-container__group--recaptcha
           %input{type: "checkbox", name: "check"}私はロボットではありません
-          %button{type: "submit"}ログイン
+          = link_to 'user_path', class: 'button' do
+            ログイン
           = link_to "パスワードをお忘れの方", "https://www.mercari.com/jp/password/reset/start/"
   .registration-container__footer
     .registration-container__nav
