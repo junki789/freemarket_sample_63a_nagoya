@@ -1,0 +1,14 @@
+%p#notice= notice
+%h1 Sizes
+%table
+  %thead
+    %tr
+      %th{:colspan => "3"}
+  %tbody
+    - @sizes.each do |size|
+      %tr
+        %td= link_to 'Show', size
+        %td= link_to 'Edit', edit_size_path(size)
+        %td= link_to 'Destroy', size, method: :delete, data: { confirm: 'Are you sure?' }
+%br/
+= link_to 'New Size', new_size_path
