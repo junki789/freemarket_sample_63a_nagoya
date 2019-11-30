@@ -11,10 +11,10 @@
     .signup-main__inner.signup-main__inner--registration-form
       .signup-main__content
         = link_to registration_signup_index_path, class: 'signup-main__btn-default signup-main__btn-mail' do
-          //= icon 'far', 'envelope'
+          = icon 'far', 'envelope'
           メールアドレスで登録する
         %button.signup-main__btn-default.signup-main__btn-sns.signup-main__btn-sns--facebook{ id: 'signup-main__facebook-login' }
-          //= icon 'fab', 'facebook-square'
+          = icon 'fab', 'facebook-square'
           Facebookで登録する
         %button.signup-main__btn-default.signup-main__btn-sns.signup-main__btn-sns--google{ id: 'signup-main__google-login' }
           = image_tag 'google.svg'
@@ -38,4 +38,3 @@
     %p
       %small
         © 2019 Mercari 
-

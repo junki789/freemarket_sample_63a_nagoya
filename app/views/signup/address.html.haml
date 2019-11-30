@@ -1,0 +1,97 @@
+.signup-container
+
+  %header.signup-header
+    %h1
+      = link_to root_path do
+        = image_tag 'fmarket_logo_red.svg', alt: 'mercari'
+    %nav.signup-header__progress-bar.signup-header__bar
+      %ol.clearfix
+        %li.signup-header__list.signup-header__list--through
+          会員情報
+          .signup-header__progress-status
+        %li.signup-header__list.signup-header__list--through
+          電話番号認証
+          .signup-header__progress-status
+        %li.signup-header__list.signup-header__list--active
+          住所入力
+          .signup-header__progress-status
+        %li.signup-header__list
+          支払い方法
+          .signup-header__progress-status
+        %li.signup-header__list
+          完了
+          .signup-header__progress-status
+                                                    
+  %main.signup-main
+    %section.signup-main__container
+      %h2.signup-main__head.signup-main__head--registration
+        住所入力
+      = form_for @user, url: creditcard_signup_index_path, method: 'GET', class: 'signup-main__inner signup-main__inner--registration-form' do |f|
+        .signup-main__content
+          .signup-main__form-group
+            %div
+              = f.label 'お名前(全角)', class: 'signup-main__label'
+              %span.signup-main__form-require 必須                                                                                                            
+              = f.text_field :last_name, { class: 'signup-main__input-default', placeholder: '例) 山田' }
+              = f.text_field :first_name, { class: 'signup-main__input-default', placeholder: '例) 彩' }
+          
+          .signup-main__form-group.signup-main__form-group--half
+            %div
+              = f.label 'お名前カナ(全角)', class: 'signup-main__label'
+              %span.signup-main__form-require 必須
+              = f.text_field :last_name_kana, { class: 'signup-main__input-default', placeholder: '例) ヤマダ' }
+              = f.text_field :first_name_kana, { class: 'signup-main__input-default', placeholder: '例) アヤ' }
+          
+          .signup-main__form-group
+            = f.label '郵便番号'
+            %span.signup-main__form-require 必須
+            = f.text_field :zip_code1, { class: 'signup-main__input-default', placeholder: '例) 123-4567', value: '' }
+
+          .signup-main__form-group
+            = f.label '都道府県'
+            %span.signup-main__form-require 必須
+            = f.text_field :prefecture_id, { class: 'signup-main__input-default', placeholder: '例) 北海道' , value: ''} 
+          
+          .signup-main__form-group
+            = f.label '市区町村'
+            %span.signup-main__form-require 必須
+            = f.text_field :city, { class: 'signup-main__input-default', placeholder: '例) 横浜市緑区' , value: ''}
+       
+          .signup-main__form-group
+            = f.label '番地'
+            %span.signup-main__form-require 必須
+            = f.text_field :address1, { class: 'signup-main__input-default', placeholder: '例) 青山1−1−1' , value: ''}
+       
+          .signup-main__form-group
+            = f.label '建物名'
+            %span.signup-main__form-arbitrary 任意
+            = f.text_field :address2, { class: 'signup-main__input-default', placeholder: '例) 柳ビル103' , value: ''}
+       
+          .signup-main__form-group
+            = f.label '電話'
+            %span.signup-main__form-arbitrary 任意
+            = f.text_field :telephone, { class: 'signup-main__input-default', placeholder: '例) 09012345678' , value: ''}
+
+          .signup-main__form-group
+            %div
+            = f.submit '次へ進む', class: 'signup-main__btn-default signup-main__btn-red'
+              
+
+
+  .signup-footer
+    %nav
+      %ul.clearfix
+        %li
+          = link_to root_path do
+            プライバシーポリシー
+        %li
+          = link_to root_path do
+            メルカリ利用規約
+        %li
+          = link_to root_path do
+            特定商取引に関する表記
+    = link_to root_path, class: 'signup-footer__logo' do
+      = image_tag 'fmarket_logo_white.svg', alt: 'mercari', height: '65', width: '80'
+    %p
+      %small
+        © 2019 Mercari

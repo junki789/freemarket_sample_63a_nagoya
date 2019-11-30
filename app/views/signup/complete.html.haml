@@ -1,0 +1,57 @@
+.signup-container
+
+  %header.signup-header
+    %h1
+      = link_to root_path do
+        = image_tag 'fmarket_logo_red.svg', alt: 'mercari'
+    %nav.signup-header__progress-bar.signup-header__bar
+      %ol.clearfix
+        %li.signup-header__list.signup-header__list--through
+          会員情報
+          .signup-header__progress-status
+        %li.signup-header__list.signup-header__list--through
+          電話番号認証
+          .signup-header__progress-status
+        %li.signup-header__list.signup-header__list--through
+          住所入力
+          .signup-header__progress-status
+        %li.signup-header__list.signup-header__list--through
+          支払い方法
+          .signup-header__progress-status
+        %li.signup-header__list.signup-header__list--active
+          完了
+          .signup-header__progress-status
+
+  %main.signup-main
+    %section.signup-main__container.signup-main__done
+      %h2.signup-main__head.signup-main__head--registration
+        会員登録完了
+      .signup-main__inner.signup-main__inner--registration-form
+        .signup-main__content
+          %p
+            ありがとうございます。
+            %br
+            会員登録が完了しました。
+          = link_to users_path, class: 'signup-main__btn-default signup-main__btn-red' do
+            メルカリをはじめる
+    
+      = link_to root_path, target: '_blank', class: 'signup-main__banner-sp' do
+        = image_tag 'banner-sp.jpg'
+
+  .signup-footer
+    %nav
+      %ul.clearfix
+        %li
+          = link_to root_path do
+            プライバシーポリシー
+        %li
+          = link_to root_path do
+            メルカリ利用規約
+        %li
+          = link_to root_path do
+            特定商取引に関する表記
+    = link_to root_path, class: 'signup-footer__logo' do
+      = image_tag 'fmarket_logo_white.svg', alt: 'mercari', height: '65', width: '80'
+    %p
+      %small
+        © 2019 Mercari  
