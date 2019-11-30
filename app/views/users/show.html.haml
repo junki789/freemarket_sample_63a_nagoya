@@ -120,7 +120,7 @@
               電話番号の確認
               %i.icon-arrow-right
           %li
-            = link_to edit_user_registration_path,class: 'mypage-nav-list-item' do
+            = link_to edit_user_registration_path, method:'delete',class: 'mypage-nav-list-item' do
               ログアウト
               %i.icon-arrow-right
     .l-content
@@ -177,8 +177,8 @@
 
 %aside.Join
   .Join__head
-    = link_to 'http://app.adjust.io/xio2ii?campaign=iOS&adgroup=common.footer', class: 'head__block' do
-      %img.head__block__img{alt: "", src: "https://web-jp-assets.mercdn.net/_next/static/images/mercari_icon-f75780e32e41e052c8aaa8b446331cd8.png"}/
+    = link_to '#', class: 'head__block' do
+      = link_to image_tag("#" ,class:"head__block__img"),""
       .head__block__text
         スマホでかんたんフリマアプリ
         .head__block__content 今すぐ無料ダウンロード！
@@ -190,11 +190,11 @@
         .main__icon
           = link_to image_tag("logo_red.svg", size:"100x100" ,class:"sc-feryYK.jSTnBt"),""
           =link_to 'https://itunes.apple.com/jp/app/id667861049?l=ja&mt=8', class: 'vsc-cJOK.lgmdCB' do
-            %img.sc-ccSCjj.sc-jKmXuR.kDwjrS{alt: "", src: "https://web-jp-assets.mercdn.net/_next/static/images/app-store-a5c17948c6fd6d5b60b13d421cd60b35.svg"}/
+            = link_to image_tag("#" ,class:"sc-ccSCjj.sc-jKmXuR.kDwjrS"),""
           =link_to 'https://play.google.com/store/apps/details?id=com.kouzoh.mercari&hl=ja', class: 'sc-cJOK.lgmdCB' do
-            %img.sc-ccSCjj.sc-elNKlv.fofvah{alt: "", src: "https://web-jp-assets.mercdn.net/_next/static/images/google-play-495575abb895b405aa6336b2a4304958.svg"}/
+            = link_to image_tag("#" ,class:"sc-ccSCjj.sc-elNKlv.fofvah"),""
       %figure.sc-bYwvMP.kzQJRg
-        %img.sc-hUMlYv.cYtUcH{alt: "", src: ""}/
+        = link_to image_tag("#" ,class:"sc-hUMlYv.cYtUcH"),""
 %footer
   .footer-wrap
     .footer-wrap__body
