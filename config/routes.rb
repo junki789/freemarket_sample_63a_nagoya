@@ -9,7 +9,11 @@ Rails.application.routes.draw do
   resources :items
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'users#index'
-  resources :users, onry: [:index, :show, :edit]
+  resources :users, onry: [:index, :show, :edit] do
+    collection do
+      get 'confirmation'
+    end
+  end
   resources :signup, only: [:index, :create] do
     collection do
       get 'registration'
