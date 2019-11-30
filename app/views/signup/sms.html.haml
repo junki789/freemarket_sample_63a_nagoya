@@ -1,0 +1,61 @@
+.signup-container
+
+  %header.signup-header
+    %h1
+      = link_to root_path do
+        = image_tag 'fmarket_logo_red.svg', alt: 'mercari'
+    %nav.signup-header__progress-bar.signup-header__bar
+      %ol.clearfix
+        %li.signup-header__list.signup-header__list--through
+          会員情報
+          .signup-header__progress-status
+        %li.signup-header__list.signup-header__list--active
+          電話番号認証
+          .signup-header__progress-status
+        %li.signup-header__list
+          住所入力
+          .signup-header__progress-status
+        %li.signup-header__list
+          支払い方法
+          .signup-header__progress-status
+        %li.signup-header__list
+          完了
+          .signup-header__progress-status
+
+  %main.signup-main
+    %section.signup-main__container
+      %h2.signup-main__chapter-head.signup-main__chapter-head--registration
+        電話番号の確認
+      = form_for @user, url: address_signup_index_path, method: 'GET', class: 'signup-main__inner signup-main__inner--registration-form' do |f|
+        .signup-main__content
+          .signup-main__form-group
+            = f.label '携帯電話の番号', class: 'signup-main__label'
+            = f.text_field :phone_num, { class: 'signup-main__input-default', placeholder: '携帯電話の番号を入力', value: '' }
+          
+          %p
+            本人確認のため、携帯電話のSMS(ショートメッセージサービス)を利用して認証を行います。
+          = f.submit 'SMSを送信する', class: 'signup-main__btn-default signup-main__btn-red'
+          %p
+            ※電話番号は本人確認や不正利用防止のために利用します。他のユーザーに公開されることはありません。
+          .signup-main__form-group.signup-main__text--right
+            = link_to root_path, target: '_blank' do
+              電話番号の確認が必要な理由
+              = icon 'fas', 'chevron-right'
+
+  .signup-footer
+    %nav
+      %ul.clearfix
+        %li
+          = link_to root_path do
+            プライバシーポリシー
+        %li
+          = link_to root_path do
+            メルカリ利用規約
+        %li
+          = link_to root_path do
+            特定商取引に関する表記
+    = link_to root_path, class: 'signup-footer__logo' do
+      = image_tag 'fmarket_logo_white.svg', alt: 'mercari', height: '65', width: '80'
+    %p
+      %small
+        © 2019 Mercari

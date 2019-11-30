@@ -1,0 +1,91 @@
+.signup-container
+
+  %header.signup-header
+    %h1
+      = link_to root_path do
+        = image_tag 'fmarket_logo_red.svg', alt: 'mercari'
+    %nav.signup-header__progress-bar.signup-header__bar
+      %ol.clearfix
+        %li.signup-header__list.signup-header__list--through
+          会員情報
+          .signup-header__progress-status
+        %li.signup-header__list.signup-header__list--through
+          電話番号認証
+          .signup-header__progress-status
+        %li.signup-header__list.signup-header__list--through
+          住所入力
+          .signup-header__progress-status
+        %li.signup-header__list.signup-header__list--active
+          支払い方法
+          .signup-header__progress-status
+        %li.signup-header__list
+          完了
+          .signup-header__progress-status
+
+  %main.signup-main
+    %section.signup-main__container
+      %h2.signup-main__chapter-head
+        支払い方法
+      = form_for @user, url: complete_signup_index_path, method: 'GET', id: 'charge-form', class: 'signup-main__inner signup-main__inner--registration-form', html: { name: 'inputForm' } do |f|
+        .signup-main__content
+          .signup-main__form-group
+            %label{ for: 'payment_card_no' } カード番号
+            %span.signup-main__form-require 必須
+            %input.signup-main__input-default{ type: 'text', id: 'card_number', placeholder: '半角数字のみ', maxlength: '19' }
+            %ul.signup-main__card-list
+              %li
+                = image_tag 'visa.svg', width: '49', height: '20'
+              %li
+                = image_tag 'master-card.svg', width: '34', height: '20'
+              %li
+                = image_tag 'saison-card.svg', width: '30', height: '20'
+              %li
+                = image_tag 'jcb.svg', width: '32', height: '20'
+              %li
+                = image_tag 'american_express.svg', width: '21', height: '20'
+              %li
+                = image_tag 'dinersclub.svg', width: '32', height: '20'
+              %li
+                = image_tag 'discover.svg', width: '32', height: '20'
+          .signup-main__form-group
+            %label{ for: 'payment_card_expire' } 有効期限
+            %span.signup-main__form-require 必須
+            %br
+
+            .signup-main__form-group.signup-main__form-group--half
+              = f.text_field :exp_month, { class: 'signup-main__input-default signup-main__input-default--half', placeholder: '01月', value: '' } 
+              %span 
+              = f.text_field :exp_year, { class: 'signup-main__input-default signup-main__input-default--half', placeholder: '19年', value: '' }
+              %span 
+
+          .signup-main__form-group
+            %label{ for: 'payment_card_security_code' } セキュリティコード
+            %span.signup-main__form-require 必須
+            %input.signup-main__input-default{ type: 'text', id: 'cvc', placeholder: 'カード背面4桁もしくは3桁の番号' }
+            
+            .signup-main__seqcode
+              .signup-main__seqcode--text{ id: 'seqcode-tips-toggle' }
+                %span.signup-main__form-question
+                  ?
+                カード裏面の番号とは？
+              
+         
+            = f.submit '次へ進む', id: 'token_submit', class: 'signup-main__btn-default signup-main__btn-red'
+
+  .signup-footer
+    %nav
+      %ul.clearfix
+        %li
+          = link_to root_path do
+            プライバシーポリシー
+        %li
+          = link_to root_path do
+            メルカリ利用規約
+        %li
+          = link_to root_path do
+            特定商取引に関する表記
+    = link_to root_path, class: 'signup-footer__logo' do
+      = image_tag 'fmarket_logo_white.svg', alt: 'mercari', height: '65', width: '80'
+    %p
+      %small
+        © 2019 Mercari
