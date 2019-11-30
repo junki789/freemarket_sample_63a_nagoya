@@ -63,6 +63,7 @@ class UsersController < ApplicationController
 
   def confirmation
     @user = User.new
+    
   end
 
   private
