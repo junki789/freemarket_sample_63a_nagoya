@@ -20,6 +20,9 @@
       .main__menu__show
         = link_to '#', class: 'main__menu__show__btn' do
           マイページ
+.breadcrumb
+- breadcrumb :users
+= render "shared/breadcrumb"
 %main 
   .l-container.cleafix
     .l-side
