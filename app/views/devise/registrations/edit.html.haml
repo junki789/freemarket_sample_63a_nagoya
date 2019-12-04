@@ -96,7 +96,7 @@
         %h3.mypage-nav-head 設定
         %ul.mypage-nav-list
           %li
-            = link_to edit_user_path, class: 'mypage-nav-list-item' do
+            = link_to '#', class: 'mypage-nav-list-item' do
               プロフィール
               %i.icon-arrow-right
           %li
@@ -120,15 +120,16 @@
               電話番号の確認
               %i.icon-arrow-right
           %li
-            = link_to edit_user_registration_path,class: 'mypage-nav-list-item' do
+            = link_to destroy_user_session_path,method: :delete,class: 'mypage-nav-list-item' do
               ログアウト
               %i.icon-arrow-right
     .l-content
       .l-chapter-container
         %form.l-single-inner{:action => "https://www.mercari.com/jp/logout/", :method => "POST", :novalidate => "novalidate"}
           .l-single-content
-            %button.btn-default.btn-red{:type => "submit"} ログアウト
-            %input{:name => "__csrf_value", :type => "hidden", :value => "0071175018f21679240b7278801f54c1d632775a92357372f271a66593603709a22dc7472ed18e3d507ab01782d42836fc6d926abc54352538ce971c32bc137a4"}/
+            = link_to destroy_user_session_path,method: :delete do
+              %button.btn-default.btn-red{:type => "submit"} ログアウト
+              %input{:name => "__csrf_value", :type => "hidden", :value => "0071175018f21679240b7278801f54c1d632775a92357372f271a66593603709a22dc7472ed18e3d507ab01782d42836fc6d926abc54352538ce971c32bc137a4"}/
 
 .Botan
   =link_to '#', class: 'Botan__main' do

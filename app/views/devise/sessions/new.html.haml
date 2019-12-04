@@ -9,17 +9,15 @@
         %button{type: "submit", class: "btn-default"} facebookでログイン
         %button{type: "submit", class: "btn-default"} googleでログイン
       
+      = form_for(resource, as: resource_name, url: session_path(resource_name), action: '/login/', method: 'POST', novalidate: 'novalidate') do |f|
         .login-container__inner
           .login-container__group
-            %input{type: "email", name: "email", placeholder: "メールアドレス"}
+            = f.email_field :email, { class: 'signup-main__login-input-text signup-main__input-default', placeholder: 'メールアドレス', autofocus: 'true', autocomplete: 'email' }
           .login-container__group
-            %input{type: "password", name: "password", placeholder: "パスワード"}
-          .login-container__group
-            .login-container__group--recaptcha
-          %input{type: "checkbox", name: "check"}私はロボットではありません
-          = link_to 'user_path', class: 'button' do
-            ログイン
-          = link_to "パスワードをお忘れの方", "https://www.mercari.com/jp/password/reset/start/"
+            = f.password_field :password, { class: 'signup-main__login-input-text signup-main__input-default', placeholder: 'パスワード', autocomplete: 'current-password' }
+            = f.submit 'ログイン', class: 'signup-main__login-submit signup-main__btn-default signup-main__btn-red'
+          = link_to '#' do
+            パスワードをお忘れの方
   .registration-container__footer
     .registration-container__nav
     = render 'shared/regi_footer'
