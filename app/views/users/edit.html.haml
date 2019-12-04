@@ -20,6 +20,9 @@
       .main__menu__show
         = link_to '#', class: 'main__menu__show__btn' do
           マイページ
+.breadcrumb
+- breadcrumb :prof
+= render "shared/breadcrumb"
 %body 
   .full-page
     .default-container             
