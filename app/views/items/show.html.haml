@@ -95,10 +95,10 @@
   .item-edit__box__main-contents
    = form_tag("/item/#{@item.id}", method: :post, action: :stop) do
     %button:type: "submit", class: "submit"}
-     %span.font-white 出品を停止する
+    %span.font-white 出品を停止する
   .item-edit__box__main-contents__button
    %button{type: "submit", class: "submit", id: "openModal"}
-    %span.font-white この商品を削除する
+   %span.font-white この商品を削除する
 
  - else
   .item-button-container
