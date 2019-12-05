@@ -99,11 +99,11 @@ ActiveRecord::Schema.define(version: 20191128015907) do
     t.string   "last_name",                           null: false
     t.string   "first_name_kana",                     null: false
     t.string   "last_name_kana",                      null: false
-    t.integer  "phone_number",                        null: false
-    t.integer  "birth_day",                           null: false
-    t.integer  "birth_month",                         null: false
-    t.integer  "birth_year",                          null: false
-    t.string   "self_introduce",                      null: false
+    t.integer  "phone_number"
+    t.integer  "birth_day"
+    t.integer  "birth_month"
+    t.integer  "birth_year"
+    t.string   "self_introduce"
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
