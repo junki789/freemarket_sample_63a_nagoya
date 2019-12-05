@@ -7,9 +7,7 @@ class User < ApplicationRecord
   has_many :comments
   has_many :salers
   has_one :address
-
-
-
+  
   def self.find_for_oauth(auth)
     sns = SnsCredential.where(uid: auth.uid, provider: auth.provider).first
     unless sns
@@ -26,6 +24,5 @@ class User < ApplicationRecord
     sns
     @user
   end
-
 end
 

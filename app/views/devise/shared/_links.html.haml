@@ -1,6 +1,4 @@
--# -- if controller_name != 'sessions'
-  -# = link_to "Log in", new_session_path(resource_name)
-  %br/
+　%br/
 - if devise_mapping.registerable? && controller_name != 'registrations'
   = link_to "Facebookで登録する", new_registration_path(resource_name)
   %br/
