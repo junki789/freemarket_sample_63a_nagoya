@@ -71,12 +71,10 @@ ActiveRecord::Schema.define(version: 20191205025113) do
   end
 
   create_table "sellers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "user_id"
-    t.integer  "item_id"
+    t.integer  "user"
+    t.integer  "item"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["item_id"], name: "index_sellers_on_item_id", using: :btree
-    t.index ["user_id"], name: "index_sellers_on_user_id", using: :btree
   end
 
   create_table "size_types", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -122,6 +120,4 @@ ActiveRecord::Schema.define(version: 20191205025113) do
   add_foreign_key "comments", "items"
   add_foreign_key "comments", "users"
   add_foreign_key "item_images", "items"
-  add_foreign_key "sellers", "items"
-  add_foreign_key "sellers", "users"
 end
