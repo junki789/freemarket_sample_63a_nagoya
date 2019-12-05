@@ -31,15 +31,15 @@ ActiveRecord::Schema.define(version: 20191205025113) do
   create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name",       null: false
     t.string   "ancestry"
-    t.integer  "size_id",    null: false
+    t.integer  "size_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["size_id"], name: "index_categories_on_size_id", using: :btree
   end
 
   create_table "comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "user_id",                  null: false
-    t.integer  "item_id",                  null: false
+    t.integer  "user_id"
+    t.integer  "item_id"
     t.text     "comment",    limit: 65535, null: false
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 20191205025113) do
   end
 
   create_table "item_images", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "item_id",    null: false
+    t.integer  "item_id"
     t.string   "image",      null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -71,8 +71,8 @@ ActiveRecord::Schema.define(version: 20191205025113) do
   end
 
   create_table "sellers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "user_id",    null: false
-    t.integer  "item_id",    null: false
+    t.integer  "user_id"
+    t.integer  "item_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["item_id"], name: "index_sellers_on_item_id", using: :btree
@@ -81,7 +81,7 @@ ActiveRecord::Schema.define(version: 20191205025113) do
 
   create_table "size_types", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name",       null: false
-    t.integer  "size_id",    null: false
+    t.integer  "size_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["size_id"], name: "index_size_types_on_size_id", using: :btree
