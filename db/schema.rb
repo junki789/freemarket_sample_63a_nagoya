@@ -31,20 +31,17 @@ ActiveRecord::Schema.define(version: 20191205025113) do
   create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name",       null: false
     t.string   "ancestry"
-    t.integer  "size_id"
+    t.string   "size"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["size_id"], name: "index_categories_on_size_id", using: :btree
   end
 
   create_table "comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "user_id"
-    t.integer  "item_id"
+    t.integer  "user"
+    t.integer  "item"
     t.text     "comment",    limit: 65535, null: false
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
-    t.index ["item_id"], name: "index_comments_on_item_id", using: :btree
-    t.index ["user_id"], name: "index_comments_on_user_id", using: :btree
   end
 
   create_table "item_images", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -79,10 +76,9 @@ ActiveRecord::Schema.define(version: 20191205025113) do
 
   create_table "size_types", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name",       null: false
-    t.integer  "size_id"
+    t.string   "size"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["size_id"], name: "index_size_types_on_size_id", using: :btree
   end
 
   create_table "sizes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -116,8 +112,5 @@ ActiveRecord::Schema.define(version: 20191205025113) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
-  add_foreign_key "categories", "sizes"
-  add_foreign_key "comments", "items"
-  add_foreign_key "comments", "users"
   add_foreign_key "item_images", "items"
 end
