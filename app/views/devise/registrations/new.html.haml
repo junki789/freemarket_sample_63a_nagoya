@@ -10,15 +10,15 @@
       新規会員登録
     .signup-main__inner.signup-main__inner--registration-form
       .signup-main__content
-        = link_to registration_signup_index_path, class: 'signup-main__btn-default signup-main__btn-mail' do
+        = link_to registration_signup_index_path, class: 'signup-main__btn-default signup-main__btn-mail',style:'color:white' do
           //= icon 'far', 'envelope'
           メールアドレスで登録する
-        %button.signup-main__btn-default.signup-main__btn-sns.signup-main__btn-sns--facebook{ id: 'signup-main__facebook-login' }
-          //= icon 'fab', 'facebook-square'
-          Facebookで登録する
+        %button.signup-main__btn-default.signup-main__btn-sns.signup-main__btn-sns--facebook{id: 'signup-main__facebook-login' }
+          = link_to user_facebook_omniauth_authorize_path, style:'color:white' do
+            Facebookで登録する
         %button.signup-main__btn-default.signup-main__btn-sns.signup-main__btn-sns--google{ id: 'signup-main__google-login' }
-          = image_tag 'google.svg'
-          Googleで登録する
+          = link_to user_google_oauth2_omniauth_authorize_path, style:'color:black' do
+            Googleで登録する
   %form
 
   .signup-footer
