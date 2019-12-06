@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :sellers
   resources :items
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root to: 'users#index'
+  root to: 'items#index'
   resources :users, onry: [:index, :show, :edit] do
     collection do
       get 'confirmation'

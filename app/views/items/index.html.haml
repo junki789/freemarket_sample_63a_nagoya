@@ -19,23 +19,8 @@
               = link_to '#', class: 'search-menu__show__list__text' do
                 ブランドから探す
         .main__menu__show
-          = link_to '/users/:id', class: 'main__menu__show__btn', style=top:20px;right:50px; do
+          = link_to user_path(current_user) , class: 'main__menu__show__btn' do
             マイページ
-      - else      
-        %ul.search-menu
-          %li.search-menu__list.category
-            %h3.category
-              = link_to '#', class: 'earch-menu__list__text' do
-                カテゴリーから探す
-          %li.search-menu__list.brand
-            %h3.brand
-              = link_to '#', class: 'search-menu__list__text' do
-                ブランドから探す
-        .main__menu
-          = link_to signup_index_path, class: 'main__menu__new' do
-            新規会員登録
-          = link_to new_user_session_path, class: 'main__menu__login' 
-            ログイン
 
 .main
   .BBody  
@@ -107,100 +92,112 @@
           .Body-item__lists
             .Body-item__head
               %h3.style_heading__3qSF6.common_fontFamily__3-3Si.style_responsiveLv2__3K0hn.sc-kxynE.icXKoL レディース新着アイテム
-              %a.sc-cooIXK.cVpVcG{:href => "/jp/category/1/"} もっと見る
-            .Body-item__center
-              %div
-                %ul.Body-item__list
-                  %li.Body-item__in
-                    %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
-                      %a.Body__link{:href => "https://item.mercari.com/jp/m89244724468/"}
-                        %figure.Body__link__image
-                          %figcaption
-                            %span いい感じのもの
-                          .Body__link__info
-                            %span{"aria-label" => "Price"} ¥62,900
-                            = image_tag "hukutati.webp",size: "150x200"
-                  %li.Body-item__in
-                    %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
-                      %a.Body__link{:href => ""}
-                        %figure.Body__link__image
-                          %figcaption
-                            %span いい感じのもの２
-                          .Body__link__info
-                            %span{"aria-label" => "Price"} ¥9,599
-                            = image_tag "kodomohuku2.jpeg",size: "150x200"
-                  %li.Body-item__in
-                    %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
-                      %a.Body__link{:href => ""}
-                        %figure.Body__link__image
-                          %figcaption
-                            %span いい感じのもの３
-                          .Body__link__info
-                            %span{"aria-label" => "Price"} ¥2,100
-                            = image_tag "kodomohuku1.gif",size: "150x200"
-                  %li.Body-item__in
-                    %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
-                      %a.Body__link{:href => ""}
-                        %figure.Body__link__image
-                          %figcaption
-                            %span いい感じのもの４
-                          .Body__link__info
-                            %span{"aria-label" => "Price"} ¥600
-                            = image_tag "zubon.jpg",size: "150x200"
-                  %li.Body-item__in
-                    %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
-                      %a.Body__link{:href => ""}
-                        %figure.Body__link__image
-                          %figcaption
-                            %span いい感じのもの５
-                          .Body__link__info
-                            %span{"aria-label" => "Price"} ¥8,000
-                            = image_tag "thuku.webp",size: "150x200"
-                  %li.Body-item__in
-                    %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
-                      %a.Body__link{:href => ""}
-                        %figure.Body__link__image
-                          %figcaption
-                            %span いい感じのもの６
-                          .Body__link__info
-                            %span{"aria-label" => "Price"} ¥999
-                            = image_tag "hukuhuku.png",size: "150x200"
-                  %li.Body-item__in
-                    %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
-                      %a.Body__link{:href => ""}
-                        %figure.Body__link__image
-                          %figcaption
-                            %span いい感じのもの７
-                          .Body__link__info
-                            %span{"aria-label" => "Price"} ¥999
-                            = image_tag "kodomohuku3.gif",size: "150x200"
-                  %li.Body-item__in
-                    %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
-                      %a.Body__link{:href => ""}
-                        %figure.Body__link__image
-                          %figcaption
-                            %span いい感じのもの８
-                          .Body__link__info
-                            %span{"aria-label" => "Price"} ¥9999
-                            = image_tag "kuro.png",size: "150x200"
-                  %li.Body-item__in
-                    %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
-                      %a.Body__link{:href => "https://item.mercari.com/jp/m65282029518/"}
-                        %figure.Body__link__image
-                          %figcaption
-                            %span いい感じのもの9
-                          .Body__link__info
-                            %span{"aria-label" => "Price"} ¥1890
-                            = image_tag "tatamu.webp",size: "150x200"
-                  %li.Body-item__in
-                    %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
-                      %a.Body__link{:href => "https://item.mercari.com/jp/m65282029518/"}
-                        %figure.Body__link__image
-                          %figcaption
-                            %span いい感じのもの10
-                          .Body__link__info
-                            %span{"aria-label" => "Price"} ¥24800
-                            = image_tag "ka.jpg",size: "150x200"
+              - @items.each do |item|
+                .pickup__area__items-box__items
+                  = link_to item_path(@items) do
+                    .pickup__area__items-box__items__photo
+                      = image_tag item.item_images class: "top_image",alt: "商品画像"
+                    .pickup__area__items-box__items__body
+                      %h4.pickup__area__items-box__items__name
+                        = item.name
+                      .pickup__area__items-box__items__num
+                        .pickup__area__items-box__items__num__price.bold
+                          ¥#{item.price}
+                  %p.pickup__area__items-box__items__tax (税込)
+            -# のちの調整のため一時的にコメントアウト  %a.sc-cooIXK.cVpVcG{:href => "/jp/category/1/"} もっと見る
+            -# .Body-item__center
+            -#   %div
+            -#     %ul.Body-item__list
+            -#       %li.Body-item__in
+            -#         %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
+            -#           %a.Body__link{:href => "https://item.mercari.com/jp/m89244724468/"}
+            -#             %figure.Body__link__image
+            -#               %figcaption
+            -#                 %span いい感じのもの
+            -#               .Body__link__info
+            -#                 %span{"aria-label" => "Price"} ¥62,900
+            -#                 = image_tag "hukutati.webp",size: "150x200"
+            -#       %li.Body-item__in
+            -#         %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
+            -#           %a.Body__link{:href => ""}
+            -#             %figure.Body__link__image
+            -#               %figcaption
+            -#                 %span いい感じのもの２
+            -#               .Body__link__info
+            -#                 %span{"aria-label" => "Price"} ¥9,599
+            -#                 = image_tag "kodomohuku2.jpeg",size: "150x200"
+            -#       %li.Body-item__in
+            -#         %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
+            -#           %a.Body__link{:href => ""}
+            -#             %figure.Body__link__image
+            -#               %figcaption
+            -#                 %span いい感じのもの３
+            -#               .Body__link__info
+            -#                 %span{"aria-label" => "Price"} ¥2,100
+            -#                 = image_tag "kodomohuku1.gif",size: "150x200"
+            -#       %li.Body-item__in
+            -#         %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
+            -#           %a.Body__link{:href => ""}
+            -#             %figure.Body__link__image
+            -#               %figcaption
+            -#                 %span いい感じのもの４
+            -#               .Body__link__info
+            -#                 %span{"aria-label" => "Price"} ¥600
+            -#                 = image_tag "zubon.jpg",size: "150x200"
+            -#       %li.Body-item__in
+            -#         %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
+            -#           %a.Body__link{:href => ""}
+            -#             %figure.Body__link__image
+            -#               %figcaption
+            -#                 %span いい感じのもの５
+            -#               .Body__link__info
+            -#                 %span{"aria-label" => "Price"} ¥8,000
+            -#                 = image_tag "thuku.webp",size: "150x200"
+            -#       %li.Body-item__in
+            -#         %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
+            -#           %a.Body__link{:href => ""}
+            -#             %figure.Body__link__image
+            -#               %figcaption
+            -#                 %span いい感じのもの６
+            -#               .Body__link__info
+            -#                 %span{"aria-label" => "Price"} ¥999
+            -#                 = image_tag "hukuhuku.png",size: "150x200"
+            -#       %li.Body-item__in
+            -#         %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
+            -#           %a.Body__link{:href => ""}
+            -#             %figure.Body__link__image
+            -#               %figcaption
+            -#                 %span いい感じのもの７
+            -#               .Body__link__info
+            -#                 %span{"aria-label" => "Price"} ¥999
+            -#                 = image_tag "kodomohuku3.gif",size: "150x200"
+            -#       %li.Body-item__in
+            -#         %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
+            -#           %a.Body__link{:href => ""}
+            -#             %figure.Body__link__image
+            -#               %figcaption
+            -#                 %span いい感じのもの８
+            -#               .Body__link__info
+            -#                 %span{"aria-label" => "Price"} ¥9999
+            -#                 = image_tag "kuro.png",size: "150x200"
+            -#       %li.Body-item__in
+            -#         %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
+            -#           %a.Body__link{:href => "https://item.mercari.com/jp/m65282029518/"}
+            -#             %figure.Body__link__image
+            -#               %figcaption
+            -#                 %span いい感じのもの9
+            -#               .Body__link__info
+            -#                 %span{"aria-label" => "Price"} ¥1890
+            -#                 = image_tag "tatamu.webp",size: "150x200"
+            -#       %li.Body-item__in
+            -#         %div{:style => "visibility: visible; transition: all 0.5s ease 0s; opacity: 1;"}
+            -#           %a.Body__link{:href => "https://item.mercari.com/jp/m65282029518/"}
+            -#             %figure.Body__link__image
+            -#               %figcaption
+            -#                 %span いい感じのもの10
+            -#               .Body__link__info
+            -#                 %span{"aria-label" => "Price"} ¥24800
+            -#                 = image_tag "ka.jpg",size: "150x200"
           
         .Body__bland
           %h2.style_heading__3qSF6.common_fontFamily__3-3Si.style_responsiveLv1__3ygH4.sc-gmeYpB.vlRns 人気のブランド

@@ -64,11 +64,11 @@ class ItemsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_item
-      # @item = Item.find(params[:id]) サーバーサイド未完成のため一時的にコメントアウト
+        @item = Item.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_params
-      params.fetch(:item, {})
+      params.require(:item).permit(:name, :content, :prefecture_code, :price, :status, :upper_category, :middle_category, :lower_category, :size_type, :selle, :image)
     end
 end
