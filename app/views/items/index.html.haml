@@ -19,7 +19,7 @@
               = link_to '#', class: 'search-menu__show__list__text' do
                 ブランドから探す
         .main__menu__show
-          = link_to '/users/:id', class: 'main__menu__show__btn', style=top:20px;right:50px; do
+          = link_to items_path(current_user), class: 'main__menu__show__btn' do
             マイページ
       - else      
         %ul.search-menu
@@ -34,7 +34,7 @@
         .main__menu
           = link_to signup_index_path, class: 'main__menu__new' do
             新規会員登録
-          = link_to new_user_session_path, class: 'main__menu__login' 
+          = link_to new_user_session_path, class: 'main__menu__login' do
             ログイン
 
 .main

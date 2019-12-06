@@ -6,6 +6,7 @@ class User < ApplicationRecord
   has_many :items
   has_many :comments
   has_many :salers
+  has_many :cards
   has_one :address
   
   def self.find_for_oauth(auth)
