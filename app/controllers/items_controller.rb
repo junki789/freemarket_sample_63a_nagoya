@@ -62,7 +62,7 @@ class ItemsController < ApplicationController
   end
 
   def purchase
-    Payjp.api_key = "sk_test_6516c8721822785639ad3c76"
+    Payjp.api_key = Rails.application.secrets.PAYJP_SECRET_KEY
     Payjp::Charge.create(
       amount: 809, # 決済する値段
       card: params['payjp-token'], # フォームを送信すると作成・送信されてくるトークン

@@ -1,12 +1,5 @@
 Rails.application.routes.draw do
-  get 'purchase/index'
-
-  get 'purchase/done'
-
-  get 'card/new'
-
-  get 'card/show'
-
+  
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
   resources :addresses
   resources :brands
