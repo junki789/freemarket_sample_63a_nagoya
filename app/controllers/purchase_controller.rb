@@ -1,6 +1,6 @@
 class PurchaseController < ApplicationController
   require 'payjp'
-  before_action :set_card,only: [:index ]
+  before_action :set_card,only: [:index,:pay ]
   Payjp.api_key = ENV["PAYJP_PRIVATE_KEY"]
   def index
     #Cardテーブルは前回記事で作成、テーブルからpayjpの顧客IDを検索
@@ -20,7 +20,7 @@ class PurchaseController < ApplicationController
     Payjp.api_key = Rails.application.secrets.PAYJP_SECRET_KEY
     Payjp::Charge.create(
     amount: 13500, #支払金額を入力（itemテーブル等に紐づけても良い）
-    customer: card.customer_id, #顧客ID
+    customer: @card.customer_id, #顧客ID
     currency: 'jpy', #日本円
   )
   redirect_to action: 'done' #完了画面に移動
