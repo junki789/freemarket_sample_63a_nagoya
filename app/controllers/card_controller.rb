@@ -2,10 +2,6 @@ class CardController < ApplicationController
 require "payjp"
 before_action :set_card,only: [:new, :delete, :show]
 
-def set_card
-  @card = Card.find_by(user_id: current_user.id)
- end
-
   def new
     redirect_to action: "show" if card.exists?
   end
@@ -49,4 +45,11 @@ def set_card
       @default_card_information = customer.cards.retrieve(card.card_id)
     end
   end
+
+  private
+  def set_card
+    @card = Card.find_by(user_id: current_user.id)
+   end
+
+
 end
