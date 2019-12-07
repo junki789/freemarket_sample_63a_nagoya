@@ -1,0 +1,8 @@
+%h2 購入を確定しますか？
+%p Apple MacBook Pro 13インチ
+%p ¥135,000(送料込み)
+%br
+%h3 支払い方法
+
+= form_tag(action: :pay, method: :post) do
+  %script.payjp-button{:src => "https://checkout.pay.jp", :type => "text/javascript" ,"data-text" => "購入する" ,"data-key" => "pk_test_ca6d8b3a8fd03c26a3ed82f4"}

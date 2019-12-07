@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
-
+  require 'payjp'
   # GET /items
   # GET /items.json
   def index
@@ -61,6 +61,14 @@ class ItemsController < ApplicationController
     end
   end
 
+  def purchase
+    Payjp.api_key = Rails.application.secrets.PAYJP_SECRET_KEY
+    Payjp::Charge.create(
+      amount: 809, # 決済する値段
+      card: params['payjp-token'], # フォームを送信すると作成・送信されてくるトークン
+      currency: 'jpy'
+    )
+  end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_item
