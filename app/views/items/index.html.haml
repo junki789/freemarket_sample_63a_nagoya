@@ -19,7 +19,7 @@
               = link_to '#', class: 'search-menu__show__list__text' do
                 ブランドから探す
         .main__menu__show
-          = link_to items_path(current_user), class: 'main__menu__show__btn' do
+          = link_to user_path(current_user), class: 'main__menu__show__btn' do
             マイページ
       - else      
         %ul.search-menu
