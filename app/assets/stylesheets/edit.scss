@@ -108,7 +108,6 @@ div {
 }
 
 .l-content {
-  float: right;
   width: 700px;
   margin-top: -20px;
 }
@@ -258,7 +257,7 @@ input {
 }
 
 .l-side {
-  float: left;
+
   width: 280px;
   margin: 0 40px 0 0;
 }
@@ -276,12 +275,11 @@ ul {
   padding-inline-start: 40px;
 }
 
-.mypage-nav-list li:first-child {
-  border: 0;
-}
-li {
+
+li.side__ber {
   display: list-item;
   text-align: -webkit-match-parent;
+  margin-top: 0px;
 }
 
 .mypage-nav-list-item {
