@@ -9,9 +9,15 @@ h1,h2,h3,h4,h5,h6,p {
   margin: 0;
 }
 
+.headernav {
+  background-color: white;
+  border-bottom: 1px solid;
+}
+
 .main__content {
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 .main__logo {
@@ -78,6 +84,13 @@ input[type="search"] {
 h3.category {
   font-size: 13px;
   margin-right: 50px;
+}
+
+.fa-list-ul:before {
+  color: red;
+}
+.fa-tag:before{
+  color: red;
 }
 
 h3.brand {
@@ -824,4 +837,9 @@ footer {
       color: white;
     }
   }
+}
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
