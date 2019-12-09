@@ -11,6 +11,7 @@ class CreateItems < ActiveRecord::Migration[5.0]
       t.string :lower_category, null: false, foreign_key: true
       t.string :size_type, null: false, foreign_key: true
       t.string :seller, null: false, foreign_key: true
+      t.integer :user_id, foreign_key: true
       t.timestamps
     end
   end

@@ -1,6 +1,6 @@
 .item__details
  %h2.item-name.bold
-  ジャケット
+  = @item.name
  .item__details__main-content
   .item__details__main-content-boxes
    .item__details__main-content-boxes__subject.back-silver
@@ -16,7 +16,8 @@
     %tr
      %th.back-silver 出品者
      %td
-      高橋
+      = link_to '/' do
+       = @user.nickname
       .user-rating
        .item-user-ratings
        %i.fas.fa-laugh
@@ -32,10 +33,12 @@
      %td
       .item-detail-table-sub-category
       %i.fa.fa-chevron-right.items-link_to
-      = link_to "ジャケット/アウター", class: "items-link_to"
+      = link_to "ジャケット/アウター", class: "items-link_to" do
+       = @item.upper_category
       .item-detail-table-sub-sub-category
       %i.fa.fa-chevron-right.items-link_to
-      = link_to "ダウンジャケット", class: "items-link_to"
+      = link_to "ダウンジャケット", class: "items-link_to" do
+       = @item.middle_category
     %tr
      %th.back-silver ブランド
      %td
@@ -44,13 +47,11 @@
     %tr
      %th.back-silver 商品のサイズ
      %td
-      -# = @item.size.sizeサーバーサイド未完成のためコメントアウト
-      L
+      = @item.size_type
     %tr
      %th.back-silver 商品の状態
      %td
-      -# = @item.condition.conditionサーバーサイド未完成のためコメントアウト
-      汚れ、破れなし。
+      = @item.content
     %tr
      %th.back-silver 配送料の負担
      %td
@@ -64,16 +65,15 @@
     %tr
      %th.back-silver 発送元地域
      %td
-      -# = link_to @item.prefecture.prefecture, class: "items-link_to"サーバーサイド未完成のためコメントアウト
-      ケアンズ（オーストラリア）
+      = link_to @item.prefecture_code
     %tr
      %th.back-silver 発送日の目安
      %td
-      -# = @item.delivery_day.dayサーバーサイド未完成のためコメントアウト
       一ヶ月以内に発送
  .item-price-box
-  %span.item-price.bold $150
-  -#  = converting_to_jpy(@item.price)サーバーサイド未完成のためコメントアウト
+  %span.item-price.bold 
+   = @item.price 
+   円
   %span.item-tax (税込)
   %span.item-shipping-fee 送料込み
   -# - if @item.item_state_id == 3サーバーサイド未完成のためコメントアウト
@@ -88,6 +88,19 @@
   -#  = @item.descriptionサーバーサイド未完成のためコメントアウト
 .item-edit__box
  .item-edit__box-main
+ - if user_signed_in? && (@item.user_id == current_user.id)
+  .item-edit__box__price.back-red.font-white
+   = link_to "商品の編集", "#", method: :get
+  .item-edit__box__or or
+  .item-edit__box__main-contents
+   = form_tag("#", method: :post, action: :stop) do
+    %button:type: "submit", class: "submit"}
+    %span.font-white 出品を停止する
+  .item-edit__box__main-contents__button
+   %button{type: "submit", class: "submit", id: "openModal"}
+   %span.font-white この商品を削除する
+
+ - else
   .item-button-container
    .item-button-container__left
     %button{name: "like", type: "button"}

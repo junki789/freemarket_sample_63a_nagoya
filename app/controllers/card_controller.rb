@@ -3,7 +3,7 @@ require "payjp"
 before_action :set_card,only: [:new, :delete, :show]
 
   def new
-    redirect_to action: "show" if card.exists?
+    redirect_to action: "show" if @card.exists?
   end
 
   def pay #payjpとCardのデータベース作成を実施します。
