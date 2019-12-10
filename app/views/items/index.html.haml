@@ -88,6 +88,7 @@
           -# = image_tag
           -# #photo5
           -# = image_tag
+          
       .Body__main
         .Body-category
           %h2.style_heading__3qSF6.common_fontFamily__3-3Si.style_responsiveLv1__3ygH4.sc-gmeYpB.vlRns 人気のカテゴリー
@@ -105,10 +106,10 @@
               %li.sc-iSDuPN.eltcJe
                 %a.sc-fZwumE.sc-fQejPQ.UkWLD おもちゃ・ホビー・グッズ
               
-        .Body-item
-          .Body-item__lists
-            .Body-item__head
-              %h3.style_heading__3qSF6.common_fontFamily__3-3Si.style_responsiveLv2__3K0hn.sc-kxynE.icXKoL レディース新着アイテム
+          %section.pickup
+            %h1.pickup__head.bold 新着アイテム
+            %section.pickup__area
+              .pickup__area__text-center もっと見る >
               - @items.each do |item|
                 .pickup__area__items-box__items
                   = link_to item_path(@items) do
