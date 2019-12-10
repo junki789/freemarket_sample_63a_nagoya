@@ -17,6 +17,7 @@ class ItemsController < ApplicationController
   # GET /items/new
   def new
     @item = Item.new
+    @item.item_images.build
   end
 
   # GET /items/1/edit
@@ -26,17 +27,32 @@ class ItemsController < ApplicationController
   # POST /items
   # POST /items.json
   def create
-    @item = Item.new(item_params)
 
-    respond_to do |format|
-      if @item.save
-        format.html { redirect_to @item, notice: 'Item was successfully created.' }
-        format.json { render :show, status: :created, location: @item }
-      else
-        format.html { render :new }
-        format.json { render json: @item.errors, status: :unprocessable_entity }
-      end
-    end
+    @item = Item.new(item_params)
+    #まだView設定がまだのため仮の登録データ、あとでViewからのデータをitem_paramsで定義します。
+    atai = 1
+    watasi = "hoge"
+
+    @item.status = atai
+    @item.upper_category = watasi
+    @item.middle_category = watasi
+    @item.lower_category = watasi
+    @item.seller = watasi
+    @item.size_type = watasi
+    @item.user_id = atai
+    
+    
+    @item.save
+    redirect_to root_path
+    # respond_to do |format|
+    #   if @item.save
+    #     format.html { redirect_to @item, notice: 'Item was successfully created.' }
+    #     format.json { render :show, status: :created, location: @item }
+    #   else
+    #     format.html { render :new }
+    #     format.json { render json: @item.errors, status: :unprocessable_entity }
+    #   end
+    # end
   end
 
   # PATCH/PUT /items/1
@@ -80,6 +96,8 @@ class ItemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_params
-      params.require(:item).permit(:name, :content, :prefecture_code, :price, :status, :upper_category, :middle_category, :lower_category, :size_type, :selle, :image)
+      #params.require(:item).permit( :name, :content, :price, :prefecture_code, :status, :size_type, :seller, :created_at, :updated_at, :category_id, :condition_id,  :delivery_charge, :delivery_days　)#.merge(user_id: current_user.id)
+      params.require(:item).permit(:name,:content,:category_id,:condition_id,:delivery_charge,:prefecture_code,:delivery_days,:price,item_images_attributes: [:image])
+      
     end
 end

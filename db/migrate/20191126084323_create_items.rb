@@ -7,7 +7,7 @@ class CreateItems < ActiveRecord::Migration[5.0]
       t.integer :prefecture_code, null: false
       t.integer :status, null: false,default: 0
       t.string :upper_category, null: false, foreign_key: true
-      t.string :middle_category, null: false, foreign_key: true
+      t.string :middle_category, null: false, foreign_key: trueq
       t.string :lower_category, null: false, foreign_key: true
       t.string :size_type, null: false, foreign_key: true
       t.string :seller, null: false, foreign_key: true
