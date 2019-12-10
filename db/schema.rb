@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(version: 20191206062344) do
     t.string   "lower_category",                            null: false
     t.string   "size_type",                                 null: false
     t.string   "seller",                                    null: false
+    t.integer  "user_id"
     t.datetime "created_at",                                null: false
     t.datetime "updated_at",                                null: false
   end

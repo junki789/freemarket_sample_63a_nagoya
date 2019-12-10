@@ -10,6 +10,8 @@ class ItemsController < ApplicationController
   # GET /items/1
   # GET /items/1.json
   def show
+    # 出品機能未実装のため仮置き
+    @user = User.find(1)
   end
 
   # GET /items/new
@@ -72,7 +74,8 @@ class ItemsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_item
-        @item = Item.find(params[:id])
+      # 出品機能未実装のため仮置き
+        @item = Item.find(1)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
