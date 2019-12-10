@@ -28,10 +28,12 @@
           %li.search-menu__list.category
             %h3.category
               = link_to '#', class: 'earch-menu__list__text' do
+                %i.fas.fa-list-ul
                 カテゴリーから探す
           %li.search-menu__list.brand
             %h3.brand
               = link_to '#', class: 'search-menu__list__text' do
+                %i.fas.fa-tag
                 ブランドから探す
         .main__menu
           = link_to signup_index_path, class: 'main__menu__new' do
