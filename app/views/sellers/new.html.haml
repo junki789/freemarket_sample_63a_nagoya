@@ -12,7 +12,7 @@
           .sell-main__inner
             %h2.sell-main__head
               商品の情報を入力
-            = form_for @seller, url: root_path, class:'sell-main__form' do |f|
+            = form_for @item, url: root_path, class:'sell-main__form' do |f|
               .sell-main__upload-box
                 %h3.sell-main__upload-head
                   出品画像
@@ -34,12 +34,12 @@
                 .sell-main__form-group
                   = f.label '商品名', class: 'sell-main__label'
                   %span.sell-main__form-require 必須
-                  = f.text_field :item, class: 'sell-main__input-default', placeholder: '商品名（必須 40文字まで)'
+                  = f.text_field :name, class: 'sell-main__input-default', placeholder: '商品名（必須 40文字まで)'
                   
                 .sell-main__form-group
                   = f.label '商品の説明', class: 'sell-main__label'
                   %span.sell-main__form-require 必須
-                  = f.text_area :item, class: 'sell-main__textarea-default', placeholder: '商品の説明（必須 1,000文字以内）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。', rows: '5' 
+                  = f.text_area :content, class: 'sell-main__textarea-default', placeholder: '商品の説明（必須 1,000文字以内）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。', rows: '5' 
                   
               .sell-main__content.clearfix
                 %h3.sell-main__sub-head 商品の詳細
@@ -51,8 +51,7 @@
                     %div{ id: 'sell-main__select-category--wrapper' }
                       .sell-main__select-wrap
                         %i.fas.fa-chevron-down
-                        = f.text_field :item, class: 'sell-main__input-default', placeholder: '--'
-                        //= f.collection_select :category_id, Category.where(sub: '0'), :id, :name, { prompt: '--' }, class: 'sell-main__select-default', id: 'sell-main__select-category--main'
+                        = f.collection_select :seller, Category.where(sub: '0'), :id, :name, { prompt: '--' }, class: 'sell-main__select-default', id: 'sell-main__select-category--main'
                     
                   .sell-main__form-group
                     = f.label :condition do
@@ -60,8 +59,7 @@
                       %span.sell-main__form-require 必須
                     .sell-main__select-wrap
                       %i.fas.fa-chevron-down
-                      = f.text_field :item, class: 'sell-main__input-default', placeholder: '--'
-                      //= f.collection_select :condition_id, Condition.all, :id, :value, { prompt: '--' }, class: 'sell-main__select-default'
+                      = f.collection_select :status, Condition.all, :id, :value, { prompt: '--' }, class: 'sell-main__select-default'
           
               
                 
@@ -71,8 +69,7 @@
                       %span.sell-main__form-require 必須
                     .sell-main__select-wrap
                       %i.fas.fa-chevron-down
-                      = f.text_field :item, class: 'sell-main__input-default', placeholder: '--'
-                      //= f.collection_select :delivery_charge_id, DeliveryCharge.all, :id, :value, { prompt: '--' }, class: 'sell-main__select-default'
+                      = f.collection_select :cost_payer, DeliveryCharge.all, :id, :value, { prompt: '--' }, class: 'sell-main__select-default'
             
                   .sell-main__form-group
                     = f.label :delivery_area_id do
@@ -80,8 +77,7 @@
                       %span.sell-main__form-require 必須
                     .sell-main__select-wrap
                       %i.fas.fa-chevron-down
-                      = f.text_field :item, class: 'sell-main__input-default', placeholder: '--'
-                      //= f.collection_select :prefecture_id, Prefecture.all, :id, :name, { prompt: '--' }, class: 'sell-main__select-default'
+                      = f.collection_select :prefecture_code, Prefecture.all, :id, :name, { prompt: '--' }, class: 'sell-main__select-default'
                 
                   .sell-main__form-group
                     = f.label :delivery_days do
@@ -89,8 +85,7 @@
                       %span.sell-main__form-require 必須
                     .sell-main__select-wrap
                       %i.fas.fa-chevron-down
-                      = f.text_field :item, class: 'sell-main__input-default', placeholder: '--'
-                      //= f.collection_select :delivery_days_id, DeliveryDays.all, :id, :value, { prompt: '--' }, class: 'sell-main__select-default'
+                      -# = f.collection_select :days, DeliveryDays.all, :id, :value, { prompt: '--' }, class: 'sell-main__select-default'
           
               .sell-main__content.clearfix
                 
@@ -104,7 +99,7 @@
                         .sell-main__right.sell-main__price-input 
                           
                         %div
-                          = f.text_field :item, { class: 'sell-main__input-default',id: 'sell-main__price-input', placeholder: '例）300',  value: '' }
+                          = f.text_field :name, { class: 'sell-main__input-default',id: 'sell-main__price-input', placeholder: '例）300',  value: '' }
           
 
                     %li.clearfix
@@ -139,4 +134,6 @@
     %p
       %small
         © 2019 Mercari   
+          
+
           
