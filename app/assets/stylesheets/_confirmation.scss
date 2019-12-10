@@ -5,3 +5,16 @@
 p.text-right {
   text-align: right;
 }
+
+.signup-main select {
+  position: relative;
+    height: 72px;
+    width: 354px;
+    padding: 0 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+}
