@@ -71,14 +71,16 @@ ul, ol {
 
 .mypage-tabs {
   border: 0;
-  background: #eee;
+  background: #F5F5F5;
   font-size: 0;
   margin-bottom: 0;
+  padding-left: 0px;
   li {
     display: inline-block;
     text-align: center;
     vertical-align: top;
     width: 50%;
+    margin-top: 0px;
     a {
       position: relative;
       display: block;
@@ -116,9 +118,19 @@ ul, ol {
   background-color: #fff;
 }
 
+ul.mypage-tab-notification_top.mypage-top_left {
+  background-color: white;
+  margin-top: 0px
+}
+
 .mypage-top_right, .mypage-bottom_right{
   display: none;
 }
+
+.mypage-top_center, .mypage-bottom_center {
+  display: none;
+}
+
 
 
 .mypage-tab-container {
@@ -138,4 +150,11 @@ ul, ol {
   .mypage-tab-head {
     padding: 0 16px;
   }
+}
+
+h3.mypage {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
 }
