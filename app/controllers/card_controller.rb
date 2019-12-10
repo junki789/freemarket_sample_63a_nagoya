@@ -3,7 +3,7 @@ require "payjp"
 before_action :set_card,only: [:new, :delete, :show]
 
   def new
-    redirect_to action: "show" if @card.exists?
+    #redirect_to action: "show" if @card.exists?
   end
 
   def pay #payjpとCardのデータベース作成を実施します。
@@ -41,8 +41,8 @@ before_action :set_card,only: [:new, :delete, :show]
       redirect_to action: "new" 
     else
       Payjp.api_key = Rails.application.secrets.PAYJP_SECRET_KEY
-      customer = Payjp::Customer.retrieve(card.customer_id)
-      @default_card_information = customer.cards.retrieve(card.card_id)
+      customer = Payjp::Customer.retrieve(@card.customer_id)
+      @default_card_information = customer.cards.retrieve(@card.card_id)
     end
   end
 
