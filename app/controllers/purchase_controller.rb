@@ -6,6 +6,7 @@ class PurchaseController < ApplicationController
     #Cardテーブルは前回記事で作成、テーブルからpayjpの顧客IDを検索
     if @card.blank?
       #登録された情報がない場合にカード登録画面に移動
+      #現状未実装の為一時的にコメントアウト
       # redirect_to controller: "card", action: "new"
     else
       Payjp.api_key = Rails.application.secrets.PAYJP_SECRET_KEY
