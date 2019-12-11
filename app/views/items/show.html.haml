@@ -98,8 +98,9 @@
     %span.font-white 出品を停止する
   .item-edit__box__main-contents__button
    %button{type: "submit", class: "submit", id: "openModal"}
-   %span.font-white この商品を削除する
-
+   /%span.font-white この商品を削除する
+   /削除ボタン追加
+   = link_to 'この商品を削除する', "/items/#{@item.id}", method: :delete
  - else
   .item-button-container
    .item-button-container__left

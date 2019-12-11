@@ -12,6 +12,7 @@ class ItemsController < ApplicationController
   def show
     # 出品機能未実装のため仮置き
     @user = User.find(1)
+    #@item = Item.find(params[:id])
   end
 
   # GET /items/new
@@ -72,10 +73,12 @@ class ItemsController < ApplicationController
   # DELETE /items/1
   # DELETE /items/1.json
   def destroy
-    @item.destroy
     respond_to do |format|
-      format.html { redirect_to items_url, notice: 'Item was successfully destroyed.' }
+      format.html { redirect_to root_path, notice: 'Item was successfully destroyed.' }
       format.json { head :no_content }
+      if @item.user_id == current_user.id
+      @item.destroy # destroyメソッドを使用し対象の商品を削除する。
+      end
     end
   end
 
@@ -91,7 +94,7 @@ class ItemsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_item
       # 出品機能未実装のため仮置き
-        @item = Item.find(1)
+        @item = Item.find(29)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
