@@ -96,7 +96,7 @@ class ItemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_params
-      #params.require(:item).permit( :name, :content, :price, :prefecture_code, :status, :size_type, :seller, :created_at, :updated_at, :category_id, :condition_id,  :delivery_charge, :delivery_days)#.merge(user_id: current_user.id)
+      #params.require(:item).permit( :name, :content, :price, :prefecture_code, :status, :size_type, :seller, :created_at, :updated_at, :category_id, :condition_id,  :delivery_charge, :delivery_days　)#.merge(user_id: current_user.id)
       params.require(:item).permit(:name,:content,:category_id,:condition_id,:delivery_charge,:prefecture_code,:delivery_days,:price,item_images_attributes: [:image]).merge(user_id: current_user.id)
       
     end
