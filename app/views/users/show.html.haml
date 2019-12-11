@@ -33,7 +33,8 @@
         =link_to '#' do
           %figure
             = image_tag "", alt: "", height: "60"
-          %h2.bold あああ
+          %h2.bold
+            = @user.nickname
           .mypage-number
             %div
               評価
