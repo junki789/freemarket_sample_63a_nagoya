@@ -91,13 +91,13 @@ class ItemsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_item
       # 出品機能未実装のため仮置き
-        @item = Item.find(1)
+        @item = Item.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_params
-      #params.require(:item).permit( :name, :content, :price, :prefecture_code, :status, :size_type, :seller, :created_at, :updated_at, :category_id, :condition_id,  :delivery_charge, :delivery_days　)#.merge(user_id: current_user.id)
-      params.require(:item).permit(:name,:content,:category_id,:condition_id,:delivery_charge,:prefecture_code,:delivery_days,:price,item_images_attributes: [:image])
+      #params.require(:item).permit( :name, :content, :price, :prefecture_code, :status, :size_type, :seller, :created_at, :updated_at, :category_id, :condition_id,  :delivery_charge, :delivery_days)#.merge(user_id: current_user.id)
+      params.require(:item).permit(:name,:content,:category_id,:condition_id,:delivery_charge,:prefecture_code,:delivery_days,:price,item_images_attributes: [:image]).merge(user_id: current_user.id)
       
     end
 end
