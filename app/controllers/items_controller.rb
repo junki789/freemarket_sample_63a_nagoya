@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
   # GET /items/1.json
   def show
     # 出品機能未実装のため仮置き
-    @user = User.find(1)
+    @user = User.find(params[:id])
   end
 
   # GET /items/new
