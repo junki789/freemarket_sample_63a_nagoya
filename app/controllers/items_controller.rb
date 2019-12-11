@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
   # GET /items/1.json
   def show
     # 出品機能未実装のため仮置き
-    @user = User.find(params[:id])
+    @user = User.find(@item.user_id)
   end
 
   # GET /items/new
@@ -39,7 +39,6 @@ class ItemsController < ApplicationController
     @item.lower_category = watasi
     @item.seller = watasi
     @item.size_type = watasi
-    @item.user_id = atai
     
     
     @item.save
