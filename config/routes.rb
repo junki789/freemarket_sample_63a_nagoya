@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   resources :users, onry: [:index, :show, :edit] do
     collection do
       get 'confirmation'
+      get 'credit'
     end
   end
   resources :signup, only: [:index, :create] do

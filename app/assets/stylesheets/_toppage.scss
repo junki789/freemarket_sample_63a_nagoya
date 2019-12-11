@@ -288,15 +288,7 @@ a {
   text-decoration: none;
 }
 
-img{
-    margin: 0px;
-    padding: 0px;
-    border-width: 0px;
-    border-style: initial;
-    border-color: initial;
-    border-image: initial;
-    font: inherit;
-}
+
 
 a:-webkit-any-link {
   
@@ -719,14 +711,12 @@ a {
 }
 
 
-img {
-  vertical-align: middle;
-}
+
 
 
 
 .Join__main {
-  background: url("hurima.jpeg") center center / cover;
+  background: url(https://images.pexels.com/photos/296881/pexels-photo-296881.jpeg?auto=compress&cs=tinysrgb&h=350) center center / cover;
   background-position: center center;
 }
 
@@ -857,20 +847,26 @@ h3.show__brand {
 }
 
 section.pickup {
-  padding: 40px 0;
+  padding: 8px 0;
+  margin-top: 20px;
   display: flex;
   justify-content:center;
   align-items:center;
   flex-direction: column;
-  .pickup__area{
-    width: 100%;
+  background-color: #EEEEEE;
+  &__area{
+    max-width: 80%;
+    padding:  10px; 
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
     &__text-center {
       width: 100%;
       margin: 26px 0;
       font-size: 15px;
       font-weight: 600;
       color: #0099e8;
-      text-align: right;
+      
     }
     &__items-box {
       margin: auto;
@@ -879,16 +875,6 @@ section.pickup {
       justify-content: space-around;
       flex-wrap: wrap;
       &__items {
-        &__photo {
-          border:none;
-          background-color: #fff;
-          position: relative;
-          img {
-            width: 213px;
-            height: 213px;
-            object-fit: cover;
-          }
-        }
         &__body {
           box-sizing:border-box;
           width: 213px;
@@ -920,3 +906,19 @@ section.pickup {
     }
   }
 }
+a.pickup__morelook {
+  padding-left: 80%;
+  text-align: right;
+  color: #67c5ff;
+}
+.pickup__area__items-box__items__photo {
+    border:none;
+    background-color: #EEEEEE;
+    position: relative;
+    img {
+      width: 188px;
+      height: 252px;
+      object-fit: cover;
+      margin:  10px;
+    }
+  }

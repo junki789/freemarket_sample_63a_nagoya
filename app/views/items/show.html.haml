@@ -5,12 +5,12 @@
   .item__details__main-content-boxes
    .item__details__main-content-boxes__subject.back-silver
     .sold-item-big
-     .sold-item--text-big SOLD
-     = image_tag 'gahag-005749.jpg'
+     .sold-item--text-big
+      = image_tag @item.item_images.first.image, alt: @item.name, size: '300x300'
     .photos
      .photos--small
-      -# - @item.images.each do |image|サーバーサイド未完成のためコメントアウト
-       %img.sub{src: image.image}/
+      -# - @item.item_images.each do |image|
+       %img.sub{src: image.image, size: '50x50'}/
 
    %table.item-detail-table
     %tr
