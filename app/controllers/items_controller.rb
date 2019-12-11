@@ -30,16 +30,14 @@ class ItemsController < ApplicationController
 
     @item = Item.new(item_params)
     #まだView設定がまだのため仮の登録データ、あとでViewからのデータをitem_paramsで定義します。
-    atai = 1
     watasi = "hoge"
 
-    @item.status = atai
     @item.upper_category = watasi
     @item.middle_category = watasi
     @item.lower_category = watasi
     @item.seller = watasi
     @item.size_type = watasi
-    @item.user_id = atai
+   
     
     
     @item.save
