@@ -142,3 +142,4 @@ test
 
 ### Association
 - belongs_to :user
+tesuto
