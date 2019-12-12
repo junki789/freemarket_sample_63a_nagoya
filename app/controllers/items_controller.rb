@@ -13,7 +13,7 @@ class ItemsController < ApplicationController
     # 出品機能未実装のため仮置き
  delete_function
     @user = User.find(1)
-    #@item = Item.find(params[:id])
+
   end
 
   # GET /items/new
@@ -59,16 +59,13 @@ class ItemsController < ApplicationController
   # PATCH/PUT /items/1
   # PATCH/PUT /items/1.json
   def update
-    respond_to do |format|
-      if @item.update(item_params)
-        format.html { redirect_to @item, notice: 'Item was successfully updated.' }
-        format.json { render :show, status: :ok, location: @item }
-      else
-        format.html { render :edit }
-        format.json { render json: @item.errors, status: :unprocessable_entity }
-      end
+    if @item.update(item_params)
+    redirect_to action: "index"
+    else
+    redirect_to action: "edit"
     end
   end
+    
 
   # DELETE /items/1
   # DELETE /items/1.json

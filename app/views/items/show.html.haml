@@ -1,3 +1,7 @@
+= render 'shared/header2'
+.breadcrumb
+- breadcrumb :detail
+= render "shared/breadcrumb"
 .item__details
  %h2.item-name.bold
   = @item.name
@@ -34,27 +38,28 @@
       .item-detail-table-sub-category
       %i.fa.fa-chevron-right.items-link_to
       = link_to "ジャケット/アウター", class: "items-link_to" do
-       = @item.upper_category
-      .item-detail-table-sub-sub-category
-      %i.fa.fa-chevron-right.items-link_to
-      = link_to "ダウンジャケット", class: "items-link_to" do
-       = @item.middle_category
+       = link_to @category.name
+      -# .item-detail-table-sub-sub-category
+      -# %i.fa.fa-chevron-right.items-link_to
+      -# = link_to "ダウンジャケット", class: "items-link_to" do
+      -#  = @item.middle_category
     %tr
      %th.back-silver ブランド
      %td
       -# = link_to @item.brand.name, class: "items-link_to"サーバーサイド未完成のためコメントアウト
-      ck
+      CK
     %tr
      %th.back-silver 商品のサイズ
      %td
-      = @item.size_type
+      M
     %tr
      %th.back-silver 商品の状態
      %td
-      = @item.content
+      = @condition.value
     %tr
      %th.back-silver 配送料の負担
      %td
+      = link_to @delivery_charge.value
       -# = @item.postage.burdenサーバーサイド未完成のためコメントアウト
       送料こみ（出品者負担）
     %tr
@@ -65,11 +70,11 @@
     %tr
      %th.back-silver 発送元地域
      %td
-      = link_to @item.prefecture_code
+      = link_to @prefecture.name
     %tr
      %th.back-silver 発送日の目安
      %td
-      一ヶ月以内に発送
+      = link_to @delivery_days.value
  .item-price-box
   %span.item-price.bold 
    = @item.price 
@@ -90,18 +95,20 @@
  .item-edit__box-main
  - if user_signed_in? && (@item.user_id == current_user.id)
   .item-edit__box__price.back-red.font-white
-   = link_to "商品の編集", "#", method: :get
+   = link_to "商品の編集", edit_item_path , method: :get
   .item-edit__box__or or
   .item-edit__box__main-contents
    = form_tag("#", method: :post, action: :stop) do
-    %button:type: "submit", class: "submit"}
     %span.font-white 出品を停止する
   .item-edit__box__main-contents__button
+ delete_function
    %button{type: "submit", class: "submit", id: "openModal"}
    /%span.font-white この商品を削除する
    /削除ボタン追加
-   = link_to 'この商品を削除する', "/items/#{@item.id}", method: :delete
+   = link_to "この商品を削除する", purchase_items_path(@item), method: :delete
  - else
+  .item-button__right.items-link_to
+   = link_to '購入画面に進む', purchase_index_path(@item.id), class: 'itembuy-price-box', id: 'itembuy-price-box__decoration'
   .item-button-container
    .item-button-container__left
     %button{name: "like", type: "button"}
@@ -112,25 +119,10 @@
     %button{name: "report", type: "button"}
      %i.far.fa-flag
      %span 不適切な商品の報告
-   .item-button__right.items-link_to
-    -# = fa_icon "lock"サーバーサイド未完成のためコメントアウト
-    = link_to '購入画面に進む', purchase_index_path, class: 'itembuy-price-box', id: 'itembuy-price-box__decoration'
 
 
   .item-edit__box__main-contents__message
   .message-content__box
-
-.message-content__box
- .message-content__box__form
-  %form.message-form{method: "post"}
-  %input{type: "hidden"}
-  %p.attention 相手のことを考え丁寧なコメントを心がけましょう。不快な言葉遣いなどは利用制限や退会処分となることがあります。
-  %input{type: "hidden"}
-  %input{type: "hidden"}
-  %textarea.text{type: "text", name: "body"}
-  .message-sumit__details
-   %button{type: "submit", class: "submit"}
-    %span.font-white コメントする
 .next_or_back
  .previous-product.items-link_to
   -# =fa_icon "#"サーバーサイド未完成のためコメントアウト
@@ -147,3 +139,5 @@
    %i.fab.fa-twitter-square
   .pinterest
    %i.fab.fa-pinterest-square
+= render 'shared/fakefooter'
+= render 'shared/footer'
