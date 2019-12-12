@@ -3,7 +3,7 @@ crumb :root do
 end
 
 crumb :users do
-  link 'マイページ', user_path
+  link 'マイページ', user_path(current_user.id)
 end
 
 crumb :prof do
@@ -11,7 +11,25 @@ crumb :prof do
   parent :users
 end
 
+crumb :card do
+  link '支払い情報', credit_users_path
+  parent :users
+end
 
+crumb :out do
+  link 'ログアウト', edit_user_registration_path
+  parent :users
+end
+
+crumb :check do
+  link '本人確認', confirmation_users_path
+  parent :users
+end
+
+crumb :detail do
+  link '商品詳細', item_path
+  parent :root
+end
 
 
 # crumb :projects do

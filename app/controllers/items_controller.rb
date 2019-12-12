@@ -12,6 +12,11 @@ class ItemsController < ApplicationController
   def show
     # 出品機能未実装のため仮置き
     @user = User.find(@item.user_id)
+    @prefecture = Prefecture.find(@item.prefecture_code)
+    @category = Category.find(@item.category_id)
+    @delivery_charge = DeliveryCharge.find(@item.delivery_charge)
+    @delivery_days= DeliveryDay.find(@item.delivery_days)
+    @condition = Condition.find(@item.condition_id)
   end
 
   # GET /items/new
