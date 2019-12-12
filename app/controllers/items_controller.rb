@@ -18,6 +18,10 @@ class ItemsController < ApplicationController
   def new
     @item = Item.new
     @item.item_images.build
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   # GET /items/1/edit
