@@ -58,8 +58,6 @@ class ItemsController < ApplicationController
   # PATCH/PUT /items/1.json
   def update
     if @item.update(item_params)
-    # @item_image = Item_image.find(params[:id])
-    # @item_image.destroy
     redirect_to action: "index"
     else
     redirect_to action: "edit"
