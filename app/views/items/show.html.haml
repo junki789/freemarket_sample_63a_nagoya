@@ -103,7 +103,6 @@
   .item-edit__box__main-contents__button
  delete_function
    %button{type: "submit", class: "submit", id: "openModal"}
-   /%span.font-white この商品を削除する
    /削除ボタン追加
    = link_to "この商品を削除する", purchase_items_path(@item), method: :delete
  - else

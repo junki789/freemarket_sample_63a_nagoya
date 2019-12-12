@@ -27,8 +27,6 @@ Rails.application.routes.draw do
   resources :items do
     collection do
       post 'purchase'
-      #deleteメソッドを使ったルーティングを定義
-      delete 'items/:id' => 'item#destroy'
     end
   end
 
