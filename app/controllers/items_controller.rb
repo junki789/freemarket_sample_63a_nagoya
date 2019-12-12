@@ -73,9 +73,8 @@ class ItemsController < ApplicationController
   # DELETE /items/1
   # DELETE /items/1.json
   def destroy
-    @item.destroy
-    redirect_to root_path,
-    end
+   @item.destroy
+   redirect_to root_path
   end
 
   def purchase
