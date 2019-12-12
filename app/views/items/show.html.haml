@@ -101,8 +101,9 @@
    = form_tag("#", method: :post, action: :stop) do
     %span.font-white 出品を停止する
   .item-edit__box__main-contents__button
-   %span.font-white この商品を削除する
-
+   %button{type: "submit", class: "submit", id: "openModal"}
+   /削除ボタン追加
+   = link_to "この商品を削除する", item_path(@item), method: :delete
  - else
   .item-button__right.items-link_to
    = link_to '購入画面に進む', purchase_index_path(@item.id), class: 'itembuy-price-box', id: 'itembuy-price-box__decoration'
