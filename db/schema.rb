@@ -77,23 +77,23 @@ ActiveRecord::Schema.define(version: 20191211065600) do
   end
 
   create_table "items", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "name",                                       null: false
-    t.text     "content",         limit: 65535,              null: false
-    t.integer  "price",                                      null: false
-    t.integer  "prefecture_code",                            null: false
-    t.integer  "status",                        default: 0,  null: false
-    t.string   "upper_category",                             null: false
-    t.string   "middle_category",                            null: false
-    t.string   "lower_category",                             null: false
-    t.string   "size_type",                     default: "", null: false
-    t.string   "seller",                                     null: false
-    t.datetime "created_at",                                 null: false
-    t.datetime "updated_at",                                 null: false
+    t.string   "name",                                      null: false
+    t.text     "content",         limit: 65535,             null: false
+    t.integer  "price",                                     null: false
+    t.integer  "prefecture_code",                           null: false
+    t.integer  "status",                        default: 0, null: false
+    t.string   "upper_category",                            null: false
+    t.string   "middle_category",                           null: false
+    t.string   "lower_category",                            null: false
+    t.string   "size_type",                                 null: false
+    t.string   "seller",                                    null: false
+    t.integer  "user_id"
+    t.datetime "created_at",                                null: false
+    t.datetime "updated_at",                                null: false
     t.integer  "category_id"
     t.integer  "condition_id"
     t.string   "delivery_charge"
     t.string   "delivery_days"
-    t.integer  "user_id"
   end
 
   create_table "sellers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
