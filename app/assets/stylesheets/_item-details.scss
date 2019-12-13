@@ -326,7 +326,20 @@ h2.item-name.bold{
   transition: all ease-out .3s;
 }
  
-.item-edit__box__main-contents,.item-edit__box__main-contents__button{
+.item-edit__box__main-contents{
+  display: block;
+  margin-top: 16px;
+  background: rgb(177, 173, 173);
+  font-size: 14px;
+  color: #fff;
+  line-height: 56px;
+  text-align: center;
+  font-weight: 600;
+  -webkit-transition: all ease-out .3s;
+  transition: all ease-out .3s;
+}
+
+.item-edit__box button[type="submit"] {
   display: block;
   margin-top: 16px;
   background: rgb(177, 173, 173);
