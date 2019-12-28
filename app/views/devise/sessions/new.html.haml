@@ -1,15 +1,19 @@
-.registration-container
-  = render 'shared/regi_header'
+.signup-container
+  %header.signup-header
+    %h1
+      = link_to root_path do
+        = image_tag 'fmarket_logo_white.svg'
+
   .registration-container__main
     .login-container
       .login-container__noaccount
         %p アカウントをお持ちでない方はこちら
         = link_to "新規会員登録", new_user_registration_path, class: "newbtn"
       .login-container__form
-        %button{ id: 'facebook-login' } 
-          = link_to user_facebook_omniauth_authorize_path, style:'color:black' do
+        %button.signup-main__btn-default.signup-main__btn-sns.signup-main__btn-sns--facebook{id: 'signup-main__facebook-login' }
+          = link_to user_facebook_omniauth_authorize_path, style:'color:white' do
             facebookでログイン
-        %button{type: "submit", class: "btn-default"} 
+        %button.signup-main__btn-default.signup-main__btn-sns.signup-main__btn-sns--google{ id: 'signup-main__google-login' }
           = link_to user_google_oauth2_omniauth_authorize_path, style:'color:black' do
             googleでログイン
       
@@ -22,6 +26,21 @@
             = f.submit 'ログイン', class: 'signup-main__login-submit signup-main__btn-default signup-main__btn-red'
           = link_to '#' do
             パスワードをお忘れの方
-  .registration-container__footer
-    .registration-container__nav
-    = render 'shared/regi_footer'
+            
+  .signup-footer
+    %nav
+      %ul.clearfix
+        %li
+          = link_to root_path do
+            プライバシーポリシー
+        %li
+          = link_to root_path do
+            メルカリ利用規約
+        %li
+          = link_to root_path do
+            特定商取引に関する表記
+    = link_to root_path, class: 'signup-footer__logo' do
+      = image_tag 'fmarket_logo_white.svg', alt: 'mercari', height: '65', width: '80'
+    %p
+      %small
+        © 2019 Mercari 
